@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OHARU 이수연 | AI 음악·뷰티 강사</title>
+<meta name="description" content="오하루(OHARU) 이수연 — 헤어·메이크업 12년, 피아노 교육 15년, 예배 반주 30년 경력의 AI 음악·뷰티 강사. AI 작사·작곡과 영상 제작, 반주법·메이크업 연출 강의.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OHARU 이수연 | AI 음악·뷰티 강사">
+<meta property="og:description" content="오하루(OHARU) 이수연 — 헤어·메이크업 12년, 피아노 교육 15년, 예배 반주 30년 경력의 AI 음악·뷰티 강사. AI 작사·작곡과 영상 제작, 반주법·메이크업 연출 강의.">
+<meta property="og:image" content="https://iamoharu.netlify.app/img/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OHARU 이수연, AI 음악·뷰티 강사 소개 이미지">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#ffffff">
+<meta name="naver-site-verification" content="d9fb13f4c4dd6f3cb665a5ceb4a0165d576eb358" />
+<link rel="canonical" href="https://iamoharu.netlify.app/">
+<meta property="og:url" content="https://iamoharu.netlify.app/">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: liner-note page — big type hero over a playable keyboard strip, then sections read like an album booklet */
+:root{
+  --bg:#ffffff; --surface:#f8f7fb; --ink:#111111; --ink-soft:#5c5a63; --line:#e9e7ee;
+  --accent:#ece6fd; --accent-ink:#3b2a85; --on-accent:#3b2a85; --violet:#6a4bd6; --on-violet:#ffffff;
+  --line-strong:#6a4bd6; --key:#ffffff; --key-dark:#111111;
+  --display:"Gowun Dodum","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR",system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --accent-ink:#e4dcff; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111;
+  --line-strong:#9c86f2; --key:#ecebf0; --key-dark:#0a0a0a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --accent-ink:#e4dcff; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111;
+  --line-strong:#9c86f2; --key:#ecebf0; --key-dark:#0a0a0a; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.75;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.wrap{max-width:1080px;margin:0 auto}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.2;text-wrap:balance;margin:0}
+body{word-break:keep-all;overflow-wrap:break-word}
+p{margin:0}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-size:20px;text-decoration:none}
+.brand span{color:var(--ink-soft);font-family:var(--body);font-size:13px;margin-left:8px;letter-spacing:.02em}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:14px;flex-wrap:wrap}
+nav ul a{text-decoration:none;color:var(--ink-soft)}
+nav ul a:hover{color:var(--ink)}
+
+.hero{padding-block:40px 0;display:grid;gap:28px}
+.hero h1{font-size:clamp(40px,8.4vw,92px);letter-spacing:-.01em}
+.hero h1 .h1-kicker{display:block;font-family:var(--body);font-size:clamp(15px,1.8vw,18px);font-weight:500;letter-spacing:.02em;color:var(--ink-soft);margin-bottom:14px;line-height:1.5}
+.hero h1 em{font-style:normal;background:linear-gradient(transparent 45%,var(--accent) 45%);padding:0 .06em}
+.hero .lede{max-width:46em;font-size:clamp(16px,2vw,19px);line-height:1.75;color:var(--ink-soft);text-wrap:pretty}
+.hero .lede .ln{display:block}
+.hero .sign{font-size:14px;color:var(--ink-soft);margin-top:-12px}
+.hero .sign b{color:var(--ink);font-weight:700}
+.hero-top .label{font-family:var(--body);letter-spacing:.04em;font-weight:500}
+.who{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1.5px solid var(--ink);border-bottom:1px solid var(--line)}
+.who div{padding:20px 16px 20px 0;display:grid;align-content:start;gap:10px;min-width:0}
+.who div+div{padding-left:16px;border-left:1px solid var(--line)}
+.who b{font-family:var(--display);font-weight:400;font-size:clamp(26px,3.4vw,36px);line-height:1.1;font-variant-numeric:tabular-nums}
+.who span{font-size:13px;color:var(--ink-soft);line-height:1.5}
+.who span strong{display:block;font-size:14.5px;font-weight:500;color:var(--ink);margin-bottom:2px}
+
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:15px;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-1px)}
+
+.keys{margin-top:36px;position:relative;height:150px;display:flex;border:1.5px solid var(--ink);border-radius:6px 6px 14px 14px;overflow:hidden;background:var(--key)}
+.wk{flex:1;min-width:0;border:0;border-right:1px solid var(--line);background:var(--key);cursor:pointer;overflow:hidden;
+  display:flex;align-items:flex-end;justify-content:center;padding:0 2px 10px;font-family:var(--body);font-size:11px;color:#8a8794;transition:background .15s;white-space:nowrap}
+.wk:last-child{border-right:0}
+.wk:hover,.wk.on{background:var(--accent)}
+.wk.on{color:var(--on-accent)}
+.bk{position:absolute;top:0;width:calc(100%/14*.6);height:60%;background:var(--key-dark);border-radius:0 0 4px 4px;pointer-events:none}
+.keynote{margin-top:10px;font-size:13px;color:var(--ink-soft)}
+
+section{padding-block:88px 0}
+.sec-head{display:grid;gap:12px;margin-bottom:36px;max-width:40em}
+.sec-head h2{font-size:clamp(30px,4.6vw,48px)}
+.sec-head p{color:var(--ink-soft)}
+
+.bridge{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch}
+.bridge .side{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;gap:10px;align-content:start;min-width:0}
+.bridge .side h3{font-size:26px}
+.bridge .mid{display:grid;place-items:center;font-family:var(--display);font-size:26px;color:var(--accent-ink);background:var(--accent);border-radius:999px;width:78px;height:78px;align-self:center}
+.bridge .side ul{margin:0;padding-left:18px;color:var(--ink-soft);font-size:15px}
+.thesis{margin-top:24px;font-size:clamp(18px,2.4vw,22px);max-width:36em}
+
+/* beauty career: three ledgers */
+.ledgers{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:18px}
+.ledger{border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:26px;display:grid;gap:12px;align-content:start;min-width:0}
+.ledger.teach{border:1.5px solid var(--ink);background:var(--accent);color:var(--on-accent)}
+.ledger.teach .label,.ledger.teach .yr,.ledger.teach small{color:var(--on-accent);opacity:.8}
+.ledger h3{font-size:26px}
+.ledger .count{font-size:14px;color:var(--ink-soft)}
+.ledger.teach .count{color:var(--on-accent)}
+.ledger ul{list-style:none;margin:0;padding:0;border-top:1px solid currentColor;border-top-color:color-mix(in srgb,currentColor 25%,transparent)}
+.ledger li{display:grid;grid-template-columns:78px 1fr;gap:10px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,currentColor 14%,transparent);align-items:baseline}
+.ledger li:last-child{border-bottom:0}
+.ledger .yr{font-family:var(--mono);font-size:11.5px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.ledger li div{display:grid;min-width:0;font-size:14.5px;line-height:1.55}
+.ledger small{font-size:13px;color:var(--ink-soft)}
+
+/* licenses */
+.licenses{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1.5px solid var(--ink)}
+.lic{padding:20px 18px 22px 0;border-bottom:1px solid var(--line);display:grid;gap:4px;align-content:start;min-width:0}
+.lic:not(:nth-child(4n+1)){padding-left:18px;border-left:1px solid var(--line)}
+.lic b{font-weight:700;font-size:15.5px;line-height:1.45}
+.lic span{font-size:13px;color:var(--ink-soft)}
+.lic .yr{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+.lic.key b{background:linear-gradient(transparent 55%,var(--accent) 55%)}
+
+/* classes */
+.ctrack{margin-top:44px;display:grid;gap:20px}
+.ctrack + .ctrack{padding-top:44px;border-top:1px solid var(--line)}
+.track-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px}
+.track-head .label{flex-basis:100%}
+.track-head h3{font-size:clamp(28px,3.8vw,40px);display:inline-block;padding:6px 22px 8px;border-radius:999px;border:3px solid var(--line-strong)}
+.ctrack.ai .track-head h3{border-color:var(--violet);background:var(--violet);color:var(--on-violet)}
+.ctrack.human .track-head h3{border-color:var(--ink)}
+.track-head p:not(.label){color:var(--ink-soft);font-size:15px;max-width:34em}
+.signature{background:var(--ink);color:var(--bg);border-radius:22px;padding:clamp(24px,4vw,40px);display:grid;grid-template-columns:1.4fr 1fr;gap:20px 40px;align-items:end;min-width:0}
+.sig-main,.sig-side{display:grid;gap:12px;min-width:0}
+.signature h4{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,42px);margin:0;line-height:1.2}
+.signature p{opacity:.9;line-height:1.7}
+.sig-side{border-left:1px solid color-mix(in srgb,var(--bg) 25%,transparent);padding-left:28px}
+.sig-side .base-label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;opacity:.7}
+.sig-link{justify-self:start;font-size:14px;font-weight:700;text-decoration:none;padding:9px 18px;border-radius:999px;background:var(--accent);color:var(--on-accent)}
+.courses{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.ctrack.human .courses{grid-template-columns:repeat(4,minmax(0,1fr))}
+.course{border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ctrack.ai .course{box-shadow:inset 0 4px 0 var(--accent)}
+.ctrack.human .course{background:var(--accent);border-color:transparent;color:var(--on-accent)}
+.ctrack.human .course p{color:var(--on-accent);opacity:.85}
+.course .num{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+.ctrack.human .course .num{color:var(--on-accent);opacity:.7}
+.course h4{font-family:var(--display);font-weight:400;font-size:22px;margin:0;line-height:1.3;text-wrap:balance}
+.course p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin:0}
+.course .tools{font-family:var(--mono);font-size:12px;color:var(--ink)!important;opacity:1}
+.course .tools::before{content:"도구  "; color:var(--ink-soft)}
+.course .base{margin-top:auto;padding-top:12px;border-top:1px solid color-mix(in srgb,currentColor 18%,transparent);font-size:13px;line-height:1.55}
+.course .base b{display:block;font-family:var(--mono);font-size:10.5px;font-weight:500;letter-spacing:.08em;margin-bottom:2px}
+.c-tag{align-self:flex-start;font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;background:var(--ink);color:var(--bg)}
+.class-note{margin-top:28px;color:var(--ink-soft);font-size:15px}
+@media (max-width:960px){.courses,.ctrack.human .courses{grid-template-columns:repeat(2,minmax(0,1fr))}.signature{grid-template-columns:1fr}.sig-side{border-left:0;padding-left:0;border-top:1px solid color-mix(in srgb,var(--bg) 25%,transparent);padding-top:18px}}
+@media (max-width:560px){.courses,.ctrack.human .courses{grid-template-columns:1fr}}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1.5px solid var(--ink)}
+.steps li{padding:24px 22px 28px 0;border-bottom:1px solid var(--line);display:grid;gap:8px;min-width:0}
+.steps li:not(:nth-child(3n)){border-right:1px solid var(--line)}
+.steps li:not(:nth-child(3n+1)){padding-left:22px}
+.steps .n{font-family:var(--mono);font-size:13px;color:var(--ink-soft)}
+.steps h3{font-size:22px}
+.steps p{font-size:15px;color:var(--ink-soft)}
+.tool{font-family:var(--mono);font-size:12px;color:var(--ink)}
+.tool::before{content:"→ "}
+.steps .beauty{background:linear-gradient(var(--accent),var(--accent)) left top/40px 3px no-repeat}
+
+.programs{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:18px}
+.prog{border:1.5px solid var(--ink);border-radius:18px;padding:28px;display:grid;gap:14px;align-content:start;min-width:0}
+.prog.main{background:var(--ink);color:var(--bg)}
+.prog.main .label,.prog.main p{color:inherit;opacity:.85}
+.prog h3{font-size:26px}
+.prog ul{margin:0;padding-left:18px;font-size:15px}
+.tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.08em;padding:4px 10px;border-radius:999px;background:var(--accent);color:var(--on-accent);justify-self:start}
+
+.tracks{border-top:1.5px solid var(--ink)}
+.track{display:grid;grid-template-columns:110px 1fr auto;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.track time{font-family:var(--mono);font-size:13px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.track h3{font-size:24px}
+.track .kind{font-size:13px;color:var(--ink-soft);margin-top:2px}
+.credits{font-family:var(--mono);font-size:12px;letter-spacing:-.01em;color:var(--ink-soft);text-align:right;white-space:nowrap}
+@media (max-width:900px){.credits{white-space:normal}}
+.listen,.artist-links{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.listen a,.artist-links a{font-size:12.5px;text-decoration:none;padding:4px 11px;border:1px solid var(--line);border-radius:999px;color:var(--ink);background:var(--surface)}
+.listen a:hover,.artist-links a:hover{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.artist-links{margin-top:22px;align-items:center;gap:8px}
+.artist-links .label{margin-right:6px}
+.label-head{margin-top:64px;margin-bottom:22px;display:grid;gap:8px;max-width:40em}
+.ai-tag{display:inline-block;vertical-align:middle;margin-left:8px;font-family:var(--body);font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;background:var(--accent);color:var(--on-accent)}
+.label-head h3{font-size:clamp(24px,3.4vw,34px)}
+.label-head p:not(.label){color:var(--ink-soft);font-size:15px}
+.channels{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ch{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:8px;min-width:0}
+.ch h3{font-size:24px}
+.ch.own{border:1.5px solid var(--ink)}
+.ch-link{justify-self:start;margin-top:6px;font-size:14px;font-weight:700;text-decoration:none;padding:7px 14px;border-radius:999px;background:var(--accent);color:var(--on-accent)}
+@media (max-width:860px){.channels{grid-template-columns:1fr!important}}
+.ch p{font-size:15px;color:var(--ink-soft)}
+
+.about{display:grid;grid-template-columns:1fr 1.15fr;gap:48px}
+.about .bio{display:grid;gap:16px;align-content:start;min-width:0}
+.about .bio p{color:var(--ink-soft)}
+.about .role{font-size:15px;color:var(--ink)!important}
+.careers{display:grid;gap:28px;min-width:0}
+.current{background:var(--accent);color:var(--on-accent);border:1.5px solid var(--ink);border-radius:14px;padding:16px 20px;display:grid;gap:2px}
+.current .when{font-family:var(--mono);font-size:12px}
+.current b{font-size:18px;font-weight:700}
+.current span:last-child{font-size:14px}
+.cgroup{display:grid;gap:12px}
+.cgroup .timeline{gap:14px}
+.timeline{list-style:none;margin:0;padding:0;border-left:1.5px solid var(--ink);display:grid;gap:20px;min-width:0}
+.timeline li{padding-left:22px;position:relative;display:grid;gap:2px}
+.timeline li::before{content:"";position:absolute;left:-6px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--bg);border:1.5px solid var(--ink)}
+.timeline li.now::before{background:var(--accent)}
+.timeline .when{font-family:var(--mono);font-size:12px;color:var(--ink-soft);font-variant-numeric:tabular-nums}
+.hero-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px}
+.now-pill{font-size:13px;font-weight:500;padding:5px 14px;border-radius:999px;background:var(--accent);color:var(--on-accent);border:1px solid var(--ink)}
+.timeline li.feature{background:var(--accent);color:var(--on-accent);border-radius:12px;padding:12px 16px 12px 22px;margin-left:10px}
+.timeline li.feature::before{left:-16px;top:21px;background:var(--accent)}
+.timeline li.feature .when,.timeline li.feature span{color:var(--on-accent)}
+.timeline li.feature b{font-size:17px}
+.timeline b{font-weight:700}
+.timeline span{font-size:14px;color:var(--ink-soft)}
+
+.faq{display:grid;gap:0;border-top:1.5px solid var(--ink);max-width:820px}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);color:var(--ink-soft)}
+details[open] summary::after{content:"–"}
+details p{margin-top:12px;color:var(--ink-soft);max-width:40em}
+
+.contact{margin-top:88px;background:var(--ink);color:var(--bg);border-radius:24px;padding:48px clamp(22px,5vw,56px);display:grid;gap:18px}
+.contact h2{font-size:clamp(28px,4.4vw,46px)}
+.contact p{opacity:.85;max-width:34em}
+.contact .btn{border-color:var(--bg);color:var(--bg)}
+.contact .btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+footer{padding-block:40px 48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-soft)}
+
+@media (max-width:920px){
+  .ledgers{grid-template-columns:1fr}
+  .licenses{grid-template-columns:1fr 1fr}
+  .lic{padding-left:0!important;border-left:0!important;padding-right:16px}
+  .lic:nth-child(even){padding-left:16px!important;border-left:1px solid var(--line)!important}
+}
+@media (max-width:860px){
+  .programs{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps li{padding:22px 16px 24px 0!important;border-right:0!important}
+  .steps li:nth-child(odd){border-right:1px solid var(--line)!important}
+  .steps li:nth-child(even){padding-left:16px!important}
+  .about{grid-template-columns:1fr;gap:36px}
+  .bridge{grid-template-columns:1fr}
+  .bridge .mid{justify-self:center;width:62px;height:62px;font-size:22px}
+  .who{grid-template-columns:1fr 1fr}
+  .who div{padding:14px 14px 14px 0!important;border-left:0!important}
+  .who div:nth-child(even){padding-left:14px!important;border-left:1px solid var(--line)!important}
+  .who div:nth-child(-n+4){border-bottom:1px solid var(--line)}
+  .who div:last-child{grid-column:1/-1;padding-left:0!important;border-left:0!important}
+}
+@media (max-width:560px){
+  .steps{grid-template-columns:1fr}
+  .steps li{border-right:0!important;padding-left:0!important}
+  .channels{grid-template-columns:1fr}
+  .track{grid-template-columns:1fr;gap:6px}
+  .credits{text-align:left}
+  nav ul{gap:14px}
+  .keys{height:120px}
+  .wk{font-size:0}
+  .licenses{grid-template-columns:1fr}
+  .lic{padding-left:0!important;border-left:0!important}
+  .ledger li{grid-template-columns:68px 1fr}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}.btn:hover{transform:none}}
+
+/* violet accents */
+.now-pill{background:var(--violet)!important;color:var(--on-violet)!important;border-color:var(--violet)!important}
+.who .ai-stat b{color:var(--violet)}
+.ch-link,.c-tag{background:var(--violet)!important;color:var(--on-violet)!important}
+.ctrack.ai .course{box-shadow:inset 0 4px 0 var(--violet)}
+.listen a:hover,.artist-links a:hover{background:var(--violet)!important;border-color:var(--violet)!important;color:var(--on-violet)!important}
+.hero .label,.sec-head .label{color:var(--violet)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:var(--violet)}
+.ai-tag{background:var(--violet)!important;color:var(--on-violet)!important}
+
+.course .base b,.course .num{font-family:var(--body);letter-spacing:.02em}
+/* readability pass */
+.ln{display:block}
+.label.ko{font-family:var(--body);letter-spacing:.02em;font-weight:500;text-transform:none}
+.sec-head{max-width:58em}
+.sec-head p,.label-head p:not(.label){line-height:1.75}
+.label-head{max-width:58em}
+.track-head{display:grid;justify-items:start;gap:14px}
+.track-head p:not(.label){max-width:none;line-height:1.7}
+.thesis{max-width:none;line-height:1.7}
+.credits{font-family:var(--body);font-size:13px;letter-spacing:0;line-height:1.6}
+.ledger li{grid-template-columns:62px 1fr;gap:12px}
+.ledger .count{line-height:1.6}
+@media (max-width:640px){.ledger li{grid-template-columns:58px 1fr}}
+
+.sec-head h2,.sec-head h3.as-h2{font-size:clamp(28px,4.2vw,44px)}
+.sec-head h3.as-h2{font-family:var(--display);font-weight:400;line-height:1.2;margin:0}
+.sec-tag{font-family:var(--display);font-size:clamp(18px,2.4vw,23px);line-height:1.5;color:var(--ink)!important;margin-top:-2px}
+/* 결 고운 하루 노트 */
+.notes-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:22px}
+.note-tabs{display:flex;flex-wrap:wrap;gap:8px}
+.note-tabs button{font:inherit;font-size:14px;padding:8px 16px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink-soft);cursor:pointer}
+.note-tabs button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.blog-link{font-size:14px;font-weight:700;color:var(--violet);text-decoration:none}
+.blog-link[aria-disabled="true"]{color:var(--ink-soft);font-weight:500;pointer-events:none}
+.notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.note{border:1px solid var(--line);background:var(--surface);border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:10px;min-width:0;text-decoration:none;color:inherit;transition:transform .15s,border-color .15s}
+a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
+.note .meta{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--ink-soft)}
+.note .cat{color:var(--violet);font-weight:500}
+.note h4{font-family:var(--display);font-weight:400;font-size:21px;line-height:1.4;margin:0}
+.note p{margin:0;font-size:14.5px;line-height:1.65;color:var(--ink-soft)}
+.note .go{margin-top:auto;padding-top:8px;font-size:13.5px;font-weight:700;color:var(--violet)}
+.note.soon .go{color:var(--ink-soft);font-weight:500}
+.notes-empty{grid-column:1/-1;color:var(--ink-soft);font-size:15px;padding:24px 0}
+@media (max-width:960px){.notes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.notes{grid-template-columns:1fr}}
+
+/* one-person production */
+.made{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:32px;margin-bottom:48px}
+.made-lead{display:grid;gap:12px;align-content:start;padding-right:10px}
+.made-lead h3{font-size:clamp(20px,2.1vw,24px);line-height:1.45}
+.made-lead p:not(.label){font-size:14.5px;line-height:1.7;color:var(--ink-soft)}
+.made-card{border-top:1.5px solid var(--ink);padding-top:18px;display:grid;gap:14px;align-content:start;min-width:0}
+.made-kind{display:flex;align-items:baseline;gap:8px;font-size:13px;font-weight:700;color:var(--violet);margin:0}
+.made-kind em{font-style:normal;font-family:var(--mono);font-weight:400;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
+.made-card h4{font-family:var(--display);font-weight:400;font-size:clamp(20px,2.1vw,24px);line-height:1.35;margin:0;min-height:4.05em}
+@media (max-width:960px){.made-card h4{min-height:0}}
+.roles{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;column-gap:22px}
+.roles li{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px;white-space:nowrap}
+.roles li span{font-family:var(--mono);font-size:11px;color:var(--violet)}
+.ktag{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--ink);color:var(--bg);margin-right:8px;vertical-align:1px}
+.ktag.vocal{background:var(--violet);color:var(--on-violet)}
+#works .tracks.oharu .track{grid-template-columns:110px 1fr}
+@media (max-width:960px){.made{grid-template-columns:1fr 1fr}.made-lead{grid-column:1/-1;padding-right:0}}
+@media (max-width:560px){.made{grid-template-columns:1fr;gap:32px}}
+</style>
+
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top">OHARU<span>이수연</span></a>
+  <ul>
+    <li><a href="#classes">강의</a></li>
+    <li><a href="#beauty">헤어 · 메이크업</a></li>
+    <li><a href="#works">작품</a></li>
+    <li><a href="#about">소개</a></li>
+    <li><a href="#notes">결 고운 하루 노트</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-top"><p class="label ko">결 고운 하루 · OHARU</p><span class="now-pill">현재 · 한국AI융합연구원 AI 연구원</span></div>
+  <h1><span class="h1-kicker">OHARU 이수연 · AI 음악·뷰티 강사</span>모든 아름다움에는<br><em>결</em>이 있습니다.</h1>
+  <p class="lede"><span class="ln">눈에 보이는 아름다움을 빚던 손이 건반 위로 옮겨 와, 마음을 울리는 손이 되었습니다.</span> <span class="ln">이제 생성형 AI와 함께 그 모든 결을 하나로 잇고, 세상과 소통하는 법을 가르칩니다.</span></p>
+  <div class="who">
+    <div><b>30년+</b><span><strong>예배 피아노 반주</strong>한국 · 호치민 교회</span></div>
+    <div><b>15년</b><span><strong>피아노 개인 교육</strong>베트남 호치민</span></div>
+    <div><b>12년+</b><span><strong>헤어 · 메이크업 · 뷰티</strong>교육 · 심사 · 현장</span></div>
+    <div><b>8곡</b><span><strong>OHARU 아티스트 음원</strong>싱글 4곡 · EP 연주곡 4곡</span></div>
+    <div class="ai-stat"><b>95곡</b><span><strong>clickply · Suno AI 활용</strong>앨범 4장 · 싱글 1장</span></div>
+  </div>
+  <div class="cta">
+    <a class="btn primary" href="#classes">강의 살펴보기</a>
+    <a class="btn" href="#beauty">헤어 · 메이크업 경력 보기</a>
+  </div>
+
+  <div>
+    <div class="keys" id="keys" aria-label="눌러서 소리를 들어 보세요"></div>
+    <p class="keynote">건반을 눌러 보세요. 각 건반은 아티스트를 만드는 단계 하나씩입니다.</p>
+  </div>
+</header>
+
+<section id="classes">
+  <div class="sec-head">
+    <p class="label">Classes · AI × Human Touch</p>
+    <h2>AI 음악 · 영상 강의와 피아노 · 메이크업 레슨</h2>
+    <p class="sec-tag">AI와 함께 가르치고, 사람의 손으로 전합니다</p>
+    <p><span class="ln">생성형 AI로 음악 · 영상 · 비주얼을 만드는 AI 강의와, 직접 손으로 가르치는 휴먼터치 강의를 함께 엽니다.</span> <span class="ln">모든 강의는 현장에서 쌓은 경력 위에서 설계됩니다.</span></p>
+  </div>
+
+  <div class="ctrack ai">
+    <div class="track-head"><p class="label">Track 01</p><h3>AI 강의</h3><p><span class="ln">기획부터 작곡, 비주얼, 영상, 발매까지. 창작의 모든 단계를 각각의 강의로 엽니다.</span> <span class="ln">필요한 분야만 골라 들을 수 있습니다.</span></p></div>
+    <div class="courses">
+        <article class="course"><span class="num">01</span><h4>AI 기획 · 글쓰기</h4><p>ChatGPT와 Claude로 콘셉트를 잡고, 이야기와 가사의 뼈대를 세우고, 강의 · 홍보 글까지 쓰는 생성형 AI 활용법.</p><p class="tools">ChatGPT · Claude</p><p class="base"><b>경력 근거</b>AI 활용 전문가 1급, 한국AI융합연구원 AI 연구원</p></article>
+        <article class="course"><span class="num">02</span><h4>AI 작사 · 작곡</h4><p>Suno AI로 가사와 멜로디의 초안을 만들고, 좋은 선율과 화성을 직접 골라내는 귀를 함께 훈련합니다.</p><p class="tools">Suno AI</p><p class="base"><b>경력 근거</b>OHARU 싱글 4장 · EP 1장, clickply 앨범 4장 · 싱글 1장(총 95곡) 작사 · 작곡 · 총괄 프로듀서</p></article>
+        <article class="course"><span class="num">03</span><h4>AI 음악 편곡 · 프로듀싱</h4><p>AI가 만든 초안을 악기 구성, 그루브, 사운드 질감까지 사람의 귀로 다듬어 완성도를 높입니다.</p><p class="tools">Suno AI · Logic Pro</p><p class="base"><b>경력 근거</b>작곡 · 편곡 · 피아노 · 음악 프로듀싱, 15년 피아노 교육</p></article>
+        <article class="course"><span class="num">04</span><h4>AI 뷰티 비주얼 연출</h4><p>AI 이미지 속 인물의 헤어 · 메이크업 · 의상 · 조명을 자연스럽게 연출하는 프롬프트 설계.</p><p class="tools">이미지 생성 AI</p><p class="base"><b>경력 근거</b>헤어디자이너 · 메이크업 아티스트 현장, 메이크업 대회 심사위원</p></article>
+        <article class="course"><span class="num">05</span><h4>AI 이미지 · 영상 제작</h4><p>앨범 커버, 뮤직비주얼, 유튜브 썸네일과 숏폼 영상을 AI로 만들고 편집하는 법.</p><p class="tools">이미지 생성 AI · CapCut</p><p class="base"><b>경력 근거</b>앨범 커버 · 썸네일 직접 제작, AI 미디어 아트 전문가 1급</p></article>
+        <article class="course"><span class="num">06</span><h4>AI 음원 발매 · 채널 운영</h4><p>완성한 음악을 음원 사이트에 유통하고, 플레이리스트 채널을 기획해 청취자를 만나는 법.</p><p class="tools">DistroKid · YouTube Studio</p><p class="base"><b>경력 근거</b>DistroKid 발매, clickply · parisoldpop 채널 운영</p></article>
+    </div>
+  </div>
+
+  <div class="ctrack human">
+    <div class="track-head"><p class="label">Track 02</p><h3>휴먼터치 강의</h3><p><span class="ln">손끝의 감각은 사람이 사람에게 전합니다.</span> <span class="ln">오랜 현장 경험으로 직접 가르치는 강의입니다.</span></p></div>
+    <div class="courses">
+        <article class="course"><span class="num">01</span><h4>피아노 레슨</h4><p>학습자의 수준과 특성에 맞춘 실기 지도, 음악 기초와 표현력 향상.</p><p class="base"><b>경력 근거</b>호치민 피아노 개인 강사 15년</p></article>
+        <article class="course"><span class="num">02</span><h4>반주법 레슨</h4><p>예배 · 찬양 반주, 코드 반주와 흐름에 맞는 연주를 익히는 실전 반주법.</p><p class="base"><b>경력 근거</b>30년 넘는 예배 반주, 한인교회 메인 반주자</p></article>
+        <article class="course"><span class="num">03</span><h4>헤어·메이크업&nbsp;연출법</h4><p>업스타일과 메이크업 연출을 현장 감각 그대로 배우는 실기 강의.</p><p class="base"><b>경력 근거</b>헤어디자이너 · 웨딩 · 방송 분장 현장, 뷰티아카데미 강사</p></article>
+        <article class="course"><span class="num">04 · 학원 연계</span><h4>미용 자격증반 강사</h4><p>학원과 연계해 미용사 자격증 취득을 준비하는 자격증반 수업을 맡습니다.</p><p class="base"><b>경력 근거</b>실기교사(미용), 직업능력개발훈련교사, 직업전문학교 전임강사</p></article>
+    </div>
+  </div>
+  <p class="class-note">강의 일정, 기관 출강, 학원 연계는 개별 상담으로 맞춤 구성합니다. 강사 · 교육기관을 위한 AI 수업 설계 과정도 함께 운영합니다.</p>
+</section>
+
+<section id="bridge">
+  <div class="sec-head">
+    <p class="label">Why music × beauty</p>
+    <h2>헤어 · 메이크업과 음악을 AI로 잇는 교육</h2>
+    <p class="sec-tag">보이는 아름다움과 황홀한 사운드의 감동이 만나, 새로운 차원의 결을 만듭니다</p>
+  </div>
+  <div class="bridge">
+    <div class="side">
+      <p class="label ko">보이는 감각</p>
+      <h3>헤어 · 메이크업</h3>
+      <ul>
+        <li>1999년 미용사 국가기술자격 취득, 헤어디자이너로 시작</li>
+        <li>12년+ 현장 · 교육 경력 · 실기교사(미용) 자격</li>
+        <li>세계뷰티콘테스트 메이크업 국제심사위원</li>
+      </ul>
+    </div>
+    <div class="mid" aria-hidden="true">AI</div>
+    <div class="side">
+      <p class="label ko">들리는 감각</p>
+      <h3>음악</h3>
+      <ul>
+        <li>작사 · 작곡 · 편곡 · 피아노 연주</li>
+        <li>2025년 데뷔, 음반 5장 · 음원 8곡 발표</li>
+        <li>15년 개인 레슨, 30년 넘는 예배 반주</li>
+      </ul>
+    </div>
+  </div>
+  <p class="thesis"><span class="ln">사람의 손으로 빚은 작품에는 AI가 몇 초 만에 만든 결과물과는 다른 울림이 있습니다.</span> <span class="ln">왜 자연스러운지, 왜 감동을 주는지, 왜 자꾸 떠오르는지, 왜 아름다운지.</span> <span class="ln">그 다름을 알아보는 눈과 귀는 훈련으로 길러지는 감각입니다.</span> <span class="ln">이 클래스는 잠들어 있던 그 감각을 깨우고, 나만의 고유한 결을 찾도록 돕습니다.</span></p>
+</section>
+
+<section id="beauty">
+  <div class="sec-head">
+    <p class="label">Hair · Makeup career · 1999 – 2011</p>
+    <h2>헤어 · 메이크업 경력: 강의 · 현장 · 심사</h2>
+    <p class="sec-tag">손으로 아름다움을 창조하고, 눈으로 그 아름다움을 심사하다</p>
+    <p><span class="ln">헤어디자이너로 시작해 방송과 공연 무대를 거쳤고,</span> <span class="ln">미용 교육기관의 강단과 메이크업 대회의 심사석까지, 아름다움이 피어나는 현장을 두루 지나왔습니다.</span></p>
+  </div>
+  <div class="ledgers">
+    <article class="ledger teach">
+      <p class="label">Teaching</p>
+      <h3>강단</h3>
+      <p class="count"><span class="ln">고등학교 · 직업전문학교 · 뷰티아카데미 강사</span><span class="ln">대학 조교</span></p>
+      <ul>
+        <li><span class="yr">2011</span><div>일산 SBS 뷰티아카데미<small>업스타일 · 메이크업 강사</small></div></li>
+        <li><span class="yr">2010</span><div>아뜰리에 뷰티아카데미(안양)<small>메이크업 강사</small></div></li>
+        <li><span class="yr">2010</span><div>MBC 뷰티스쿨(안양)<small>인증강사 자격증반 특강</small></div></li>
+        <li><span class="yr">2009–10</span><div>안산미용직업전문학교<small>헤어 · 스타일리스트반 전임강사</small></div></li>
+        <li><span class="yr">2007–08</span><div>성남 성보정보고등학교<small>특기적성(미용) 강사</small></div></li>
+        <li><span class="yr">2007</span><div>아름다운사람들 뷰티스쿨(안양)<small>헤어연구반 강사</small></div></li>
+        <li><span class="yr">2006–10</span><div>아름다운사람들 뷰티스쿨(영등포)<small>메이크업 강사</small></div></li>
+        <li><span class="yr">2004–06</span><div>안산공과대학 뷰티디자인과<small>조교</small></div></li>
+      </ul>
+    </article>
+    <article class="ledger">
+      <p class="label">Field</p>
+      <h3>현장</h3>
+      <p class="count"><span class="ln">헤어살롱 · 웨딩 · 방송 · 공연</span><span class="ln">아티스트 스타일링</span></p>
+      <ul>
+        <li><span class="yr">2011–26</span><div>베트남 호치민<small>웨딩·돌잔치 출장 헤어·메이크업</small></div></li>
+        <li><span class="yr">2010</span><div>KTV 국회방송 분장실<small>헤어 · 메이크업</small></div></li>
+        <li><span class="yr">2008–11</span><div>CCM 가수 하준<small>스타일리스트 · 메이크업</small></div></li>
+        <li><span class="yr">2007–08</span><div>웨딩 노블레스<small>웨딩 헤어 · 메이크업</small></div></li>
+        <li><span class="yr">2006</span><div>최가을 헤어드레서<small>메이크업 실장</small></div></li>
+        <li><span class="yr">2004–08</span><div>CCM 그룹 마르지않는 샘 MINISTRY<small>스타일리스트</small></div></li>
+        <li><span class="yr">2003</span><div>연극 「버지니아 그레이스의 초상」 「등신과 머저리」<small>분장</small></div></li>
+        <li><span class="yr">2000–02</span><div>세광미용실<small>헤어디자이너</small></div></li>
+        <li><span class="yr">1999–00</span><div>Y헤어<small>헤어 실무</small></div></li>
+      </ul>
+    </article>
+    <article class="ledger">
+      <p class="label">Judging · Awards</p>
+      <h3>심사 · 협회</h3>
+      <p class="count">메이크업 대회 심사와 자격시험 감독</p>
+      <ul>
+        <li><span class="yr">2010</span><div>백대미용인대상 · 뉴 헤어라인 발표회 작품상<small>국제미용뉴스사</small></div></li>
+        <li><span class="yr">2008</span><div>서울뷰티콘테스트<small>심사위원</small></div></li>
+        <li><span class="yr">2008</span><div>제5회 세계뷰티콘테스트<small>국제심사위원(메이크업)</small></div></li>
+        <li><span class="yr">2008</span><div>세계뷰티콘테스트<small>메이크업 심사위원</small></div></li>
+        <li><span class="yr">2008</span><div>한국메이크업전문가협회<small>감독 · 심사위원 인증, 공로패</small></div></li>
+        <li><span class="yr">2007–11</span><div>한국메이크업전문가협회<small>운영위원 · 자격시험 감독위원</small></div></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section id="licenses">
+  <div class="sec-head">
+    <p class="label">Licenses · Certifications</p>
+    <h3 class="as-h2">미용사 · 직업훈련교사 · AI 교육 자격증</h3>
+    <p class="sec-tag">가르칠 자격</p>
+    <p>미용과 직업훈련 교사 자격에, 생성형 AI 교육 자격을 더했습니다.</p>
+  </div>
+  <div class="licenses">
+    <div class="lic"><span class="yr">1999</span><b>미용사 국가기술자격증</b><span>한국산업인력공단</span></div>
+    <div class="lic key"><span class="yr">2004</span><b>실기교사(미용) 자격증</b><span>교육부장관</span></div>
+    <div class="lic key"><span class="yr">2009</span><b>직업능력개발훈련교사 3급</b><span>서울지방노동청</span></div>
+    <div class="lic"><span class="yr">2010</span><b>미용사 면허증</b><span>대학 뷰티디자인과 졸업 · 경기도 안산시장</span></div>
+    <div class="lic key"><span class="yr">2026</span><b>AI 융합교육전문가 1급</b><span>한국AI교육협회</span></div>
+    <div class="lic"><span class="yr">2026</span><b>AI 활용 전문가 1급</b><span>한국AI교육협회 · (사)청소년불씨운동</span></div>
+    <div class="lic"><span class="yr">2026</span><b>AI 미디어 아트 전문가 1급</b><span>한국AI교육협회</span></div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="sec-head">
+    <p class="label">Discography · OHARU</p>
+    <h2>OHARU 음원과 Suno AI 음악 작품</h2>
+    <p class="sec-tag">가르치기 전에, 먼저 만들었습니다</p>
+    <p>음악 작품은 오하루(OHARU)라는 이름으로 발표합니다.</p>
+  </div>
+  <div class="made">
+    <div class="made-lead">
+      <p class="label">One-person production</p>
+      <h3>프로듀싱부터 자켓&nbsp;디자인까지,<br>전 과정을 직접 만들었습니다</h3>
+      <p>OHARU의 음반 5장, 음원 8곡은 기획과 작곡, 편곡, 연주, 앨범 자켓까지 한 사람의 손으로 완성했습니다. 보컬곡은 피처링 가수와 함께했습니다.</p>
+    </div>
+    <div class="made-card">
+      <p class="made-kind">연주곡<em>Instrumental</em></p>
+      <h4>Delightful Piano Album<br>Homesick</h4>
+      <ul class="roles"><li><span>01</span>프로듀서</li><li><span>02</span>작곡</li><li><span>03</span>편곡</li><li><span>04</span>피아노 연주</li><li><span>05</span>자켓 디자인</li></ul>
+    </div>
+    <div class="made-card">
+      <p class="made-kind">보컬곡<em>Vocal</em></p>
+      <h4>그리운 날엔<br>그래도 괜찮아<br>너는 별이야</h4>
+      <ul class="roles"><li><span>01</span>프로듀서</li><li><span>02</span>작사</li><li><span>03</span>작곡</li><li><span>04</span>편곡</li><li><span>05</span>피아노</li><li><span>06</span>신디사이저</li><li><span>07</span>자켓 디자인</li></ul>
+    </div>
+  </div>
+  <div class="tracks oharu">
+    <div class="track"><time datetime="2025-10-17">2025.10.17</time><div><h3>Delightful Piano Album</h3><p class="kind"><span class="ktag">연주곡</span>EP · 피아노 연주 음반 · 봄 바람 / 비 오는 여름 밤 / 가을이 오는 소리 / 하얀 겨울</p><p class="listen"><a href="https://www.melon.com/album/detail.htm?albumId=12164857" target="_blank" rel="noopener">멜론</a><a href="https://www.genie.co.kr/detail/albumInfo?axnm=86839081" target="_blank" rel="noopener">지니</a><a href="https://music.bugs.co.kr/album/20762082" target="_blank" rel="noopener">벅스</a><a href="https://www.music-flo.com/detail/album/444550107/albumtrack" target="_blank" rel="noopener">FLO</a><a href="https://music.apple.com/kr/album/1846591192" target="_blank" rel="noopener">Apple Music</a><a href="https://open.spotify.com/album/20AiRHW9q6j4F2Ht48CiPH" target="_blank" rel="noopener">Spotify</a><a href="https://www.youtube.com/watch?v=Mk0rkks14VU" target="_blank" rel="noopener">YouTube</a></p></div></div>
+    <div class="track"><time datetime="2025-06-19">2025.06.19</time><div><h3>Homesick</h3><p class="kind"><span class="ktag">연주곡</span>Single</p><p class="listen"><a href="https://www.melon.com/album/detail.htm?albumId=11859678" target="_blank" rel="noopener">멜론</a><a href="https://www.genie.co.kr/detail/albumInfo?axnm=86399312" target="_blank" rel="noopener">지니</a><a href="https://music.bugs.co.kr/album/20733700" target="_blank" rel="noopener">벅스</a><a href="https://www.music-flo.com/detail/album/439458983/albumtrack" target="_blank" rel="noopener">FLO</a><a href="https://music.apple.com/kr/album/1821516536" target="_blank" rel="noopener">Apple Music</a><a href="https://open.spotify.com/album/1Y4wcMbVb7haeuY00Oo1iw" target="_blank" rel="noopener">Spotify</a><a href="https://www.youtube.com/watch?v=X6Rz4mTkB6w" target="_blank" rel="noopener">YouTube</a></p></div></div>
+    <div class="track"><time datetime="2025-05-20">2025.05.20</time><div><h3>그리운 날엔</h3><p class="kind"><span class="ktag vocal">보컬곡</span>Single · Feat. 이지연</p><p class="listen"><a href="https://www.melon.com/album/detail.htm?albumId=11812121" target="_blank" rel="noopener">멜론</a><a href="https://www.genie.co.kr/detail/albumInfo?axnm=86281919" target="_blank" rel="noopener">지니</a><a href="https://music.bugs.co.kr/album/20726790" target="_blank" rel="noopener">벅스</a><a href="https://www.music-flo.com/detail/album/438163089/albumtrack" target="_blank" rel="noopener">FLO</a><a href="https://music.apple.com/kr/album/1815325889" target="_blank" rel="noopener">Apple Music</a><a href="https://open.spotify.com/album/3ClSuacvun0QXXTAzRdzqY" target="_blank" rel="noopener">Spotify</a><a href="https://www.youtube.com/watch?v=fgj59o41Y-s" target="_blank" rel="noopener">YouTube</a></p></div></div>
+    <div class="track"><time datetime="2025-04-21">2025.04.21</time><div><h3>그래도 괜찮아</h3><p class="kind"><span class="ktag vocal">보컬곡</span>Single · Feat. 하준</p><p class="listen"><a href="https://www.melon.com/album/detail.htm?albumId=11781400" target="_blank" rel="noopener">멜론</a><a href="https://www.genie.co.kr/detail/albumInfo?axnm=86183214" target="_blank" rel="noopener">지니</a><a href="https://music.bugs.co.kr/album/20720261" target="_blank" rel="noopener">벅스</a><a href="https://www.music-flo.com/detail/album/436797227/albumtrack" target="_blank" rel="noopener">FLO</a><a href="https://music.apple.com/kr/album/1809666266" target="_blank" rel="noopener">Apple Music</a><a href="https://open.spotify.com/album/67UCmZJqC0raUxIgkkbhc0" target="_blank" rel="noopener">Spotify</a><a href="https://www.youtube.com/watch?v=9aiK3wwEnic" target="_blank" rel="noopener">YouTube</a></p></div></div>
+    <div class="track"><time datetime="2025-03-26">2025.03.26</time><div><h3>너는 별이야</h3><p class="kind"><span class="ktag vocal">보컬곡</span>Single · 데뷔 · Feat. 이지연</p><p class="listen"><a href="https://www.melon.com/album/detail.htm?albumId=11750897" target="_blank" rel="noopener">멜론</a><a href="https://www.genie.co.kr/detail/albumInfo?axnm=86101022" target="_blank" rel="noopener">지니</a><a href="https://music.bugs.co.kr/album/20713679" target="_blank" rel="noopener">벅스</a><a href="https://vibe.naver.com/album/33465776" target="_blank" rel="noopener">바이브</a><a href="https://www.music-flo.com/detail/album/435677439/albumtrack" target="_blank" rel="noopener">FLO</a><a href="https://www.youtube.com/watch?v=ycKPTGjtTIo" target="_blank" rel="noopener">YouTube</a></p></div></div>
+  </div>
+  <p class="artist-links"><span class="label ko">OHARU 아티스트 페이지</span><a href="https://www.melon.com/artist/timeline.htm?artistId=4170391" target="_blank" rel="noopener">멜론</a><a href="https://www.genie.co.kr/detail/artistInfo?xxnm=82830570" target="_blank" rel="noopener">지니</a><a href="https://music.bugs.co.kr/artist/20232361" target="_blank" rel="noopener">벅스</a><a href="https://music.apple.com/kr/artist/1809666267" target="_blank" rel="noopener">Apple Music</a><a href="https://open.spotify.com/artist/47AE9ibGMnjhErPM3VonxE" target="_blank" rel="noopener">Spotify</a><a href="https://www.youtube.com/channel/UC7FKnoXmpd3EP7lbI2fbrqw" target="_blank" rel="noopener">YouTube Music</a><a href="https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu" target="_blank" rel="noopener">YouTube 채널</a></p>
+  <div class="label-head">
+    <p class="label">Discography · clickply</p>
+    <h3>clickply 발매 앨범 <span class="ai-tag">Suno AI 활용</span></h3>
+    <p><span class="ln">Suno AI를 활용해 작사 · 작곡한 칠 힙합 · 팝랩 음악입니다.</span> <span class="ln">작사 · 작곡과 총괄 프로듀서를 맡아 장르와 곡의 방향을 기획하고, 완성된 곡을 선별해 DistroKid로 해외 음원 사이트에 발매했습니다.</span> <span class="ln">피아노로 직접 작곡하고 연주한 OHARU 작품과는 제작 방식을 구분해 소개합니다.</span></p>
+  </div>
+  <div class="tracks">
+    <div class="track"><time datetime="2026-06-26">2026.06.26</time><div><h3>Lucky Start</h3><p class="kind">앨범 · 35곡</p><p class="listen"><a href="https://open.spotify.com/album/6tKr1p4u14UfRLoVvSHbOV" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/kr/album/6785040134" target="_blank" rel="noopener">Apple Music</a><a href="https://www.youtube.com/playlist?list=OLAK5uy_mJ4N4u2eXR10wWotOBwN6OfxBpr9eq3k0" target="_blank" rel="noopener">YouTube Music</a></p></div><p class="credits">작사 · 작곡 · 총괄&nbsp;프로듀서<br>Suno AI 활용</p></div>
+    <div class="track"><time datetime="2026-06-26">2026.06.26</time><div><h3>One Summer Day</h3><p class="kind">앨범 · 35곡</p><p class="listen"><a href="https://open.spotify.com/album/7c9ehIWvTnUmlazk0WZ9L2" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/kr/album/6784946961" target="_blank" rel="noopener">Apple Music</a><a href="https://www.youtube.com/playlist?list=OLAK5uy_l9Xp0G2G4WN26-ffvMg3iJx81MG9kqUDQ" target="_blank" rel="noopener">YouTube Music</a></p></div><p class="credits">작사 · 작곡 · 총괄&nbsp;프로듀서<br>Suno AI 활용</p></div>
+    <div class="track"><time datetime="2026-06-13">2026.06.13</time><div><h3>My Ladylove</h3><p class="kind">앨범 · 10곡</p><p class="listen"><a href="https://open.spotify.com/album/2bTfEX0wkVnWtdfv1BWGvp" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/kr/album/6779865914" target="_blank" rel="noopener">Apple Music</a><a href="https://www.youtube.com/playlist?list=OLAK5uy_nhwKic_LmI5ny0ntLkj3U7y722V66Ccic" target="_blank" rel="noopener">YouTube Music</a></p></div><p class="credits">작사 · 작곡 · 총괄&nbsp;프로듀서<br>Suno AI 활용</p></div>
+    <div class="track"><time datetime="2026-05-05">2026.05.05</time><div><h3>Disconnected</h3><p class="kind">앨범 · 14곡</p><p class="listen"><a href="https://open.spotify.com/album/27cLlNJBGjDHLLbe6KsUup" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/kr/album/6766363602" target="_blank" rel="noopener">Apple Music</a><a href="https://www.youtube.com/playlist?list=OLAK5uy_nLquYua4kPKDPSEGsmUzC-pJscEgvuMLk" target="_blank" rel="noopener">YouTube Music</a></p></div><p class="credits">작사 · 작곡 · 총괄&nbsp;프로듀서<br>Suno AI 활용</p></div>
+    <div class="track"><time datetime="2026-05-04">2026.05.04</time><div><h3>Playlist Breakup</h3><p class="kind">싱글 · 1곡</p><p class="listen"><a href="https://open.spotify.com/album/76pZawmgEh7ETAu2l7BgZ7" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/kr/album/6766735673" target="_blank" rel="noopener">Apple Music</a><a href="https://www.youtube.com/playlist?list=OLAK5uy_kNLJge9ct_s2mpvZjigZ4xoeemmHZVWZA" target="_blank" rel="noopener">YouTube Music</a></p></div><p class="credits">작사 · 작곡 · 총괄&nbsp;프로듀서<br>Suno AI 활용</p></div>
+  </div>
+  <p class="artist-links"><span class="label ko">clickply 아티스트 페이지</span><a href="https://open.spotify.com/artist/5Vg7WxOTaKLDhpAdlCWpAB" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/kr/artist/clickply/1896198416" target="_blank" rel="noopener">Apple Music</a><a href="https://www.youtube.com/channel/UCF4u7FjcYouOwxJNv123Ngw" target="_blank" rel="noopener">YouTube Music</a><a href="https://www.youtube.com/@clickply" target="_blank" rel="noopener">YouTube 채널</a></p>
+
+  <div class="channels">
+    <div class="ch own"><p class="label">YouTube · Artist channel</p><h3>Oh!하루하루</h3><p>OHARU의 곡과 피아노, 그림이 쌓이는 아티스트 채널.</p><a class="ch-link" href="https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu" target="_blank" rel="noopener">@오하루-oharu 채널 보기</a></div>
+    <div class="ch"><p class="label ko">YouTube Playlist · 20–40대</p><h3>clickply</h3><p>칠 힙합, 팝랩, R&amp;B. 드라이브와 카페, 도시의 하루에 어울리는 그루브.</p><a class="ch-link" href="https://www.youtube.com/@clickply" target="_blank" rel="noopener">@clickply 채널 보기</a></div>
+    <div class="ch"><p class="label ko">YouTube Playlist · 50대 이상</p><h3>parisoldpop</h3><p>샹송과 빈티지 올드팝. 파리의 카페와 비&nbsp;오는 창가에서 이어지는 사랑과 추억의 이야기.</p><a class="ch-link" href="https://www.youtube.com/@parisoldpop" target="_blank" rel="noopener">@parisoldpop 채널 보기</a></div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about">
+    <div class="bio">
+      <p class="label">About</p>
+      <h2 style="font-size:clamp(30px,4.6vw,48px)">OHARU 이수연 소개 · 경력</h2>
+      <p class="role">본명 이수연 · 한국AI융합연구원 AI 연구원</p>
+      <p>눈에 보이는 아름다움과 마음을 울리는 아름다움, 그 두 결을 이어 새로운 아름다움을 빚는 사람입니다.</p>
+      <p>헤어디자이너와 메이크업 아티스트, 스타일리스트로 현장을 누볐고, 뷰티아카데미 강사와 메이크업 대회 심사위원을 지냈습니다. 이후 베트남 호치민에서 15년 동안 피아노를 가르치고 한인교회 예배 반주를 맡으며 음악으로 영역을 넓혔고, 웨딩과 돌잔치 헤어 · 메이크업으로 미용의 손도 놓지 않았습니다. 30년 넘게 이어 온 예배 반주는 지금도 제 음악의 뿌리입니다.</p>
+      <p>지금은 한국AI융합연구원에서 AI 연구원으로 일하며 AI 융합 경영학 석사과정을 밟고 있습니다. 음악 작품과 아티스트 활동은 OHARU로, 교육과 공식 경력은 본명 이수연으로 이어 갑니다.</p>
+    </div>
+    <div class="careers">
+      <div class="current"><span class="when">현재 · 2026.03 —</span><b>한국AI융합연구원 AI 연구원</b><span>AI 융합 부서</span></div>
+      <div class="cgroup">
+        <p class="label ko">학력</p>
+        <ol class="timeline">
+          <li><span class="when">2026 —</span><b>Georgia Central University</b><span>AI 융합 경영학 석사과정 재학</span></li>
+          <li><span class="when">2010</span><b>성결대학교 대학원 미용교육학과</b><span>입학(휴학)</span></li>
+          <li><span class="when">2010</span><b>배재대학교 의류패션학과 졸업</b></li>
+          <li><span class="when">2004</span><b>안산공과대학 뷰티디자인과 졸업</b></li>
+        </ol>
+      </div>
+      <div class="cgroup">
+        <p class="label ko">미용 경력</p>
+        <ol class="timeline">
+          <li><span class="when">2007 — 2011</span><b>메이크업 대회 심사위원</b><span>세계뷰티콘테스트 · 서울뷰티콘테스트, 한국메이크업전문가협회 운영위원</span></li>
+          <li><span class="when">2004 — 2011</span><b>미용 교육기관 강사</b><span>고등학교 · 직업전문학교 · 뷰티아카데미 7곳, 대학 조교</span></li>
+          <li><span class="when">1999 — 2011</span><b>헤어 · 메이크업 현장</b><span>헤어살롱 · 웨딩 · 방송 분장실 · 공연 · 아티스트&nbsp;스타일링</span></li>
+          <li><span class="when">1999</span><b>미용사 국가기술자격 취득</b><span>헤어디자이너로 현장 시작</span></li>
+        </ol>
+      </div>
+      <div class="cgroup">
+        <p class="label ko">음악 경력</p>
+        <ol class="timeline">
+          <li><span class="when">2026</span><b>clickply 앨범 발매</b><span>Suno AI를 활용한 작사 · 작곡 · 총괄 프로듀서, 앨범 4장 · 싱글 1장 총 95곡</span></li>
+          <li><span class="when">2025</span><b>OHARU 데뷔</b><span>「너는 별이야」로 시작해 음반 5장 · 음원 8곡 발표</span></li>
+          <li><span class="when">2011 — 2026</span><b>호치민 한인교회 피아노 반주자</b><span>사이공한인연합교회, 사이공한마음연합교회 메인 반주</span></li>
+          <li><span class="when">2011 — 2026</span><b>호치민 피아노 개인 강사</b><span>15년 맞춤형 레슨</span></li>
+          <li><span class="when">청소년기 —</span><b>예배 피아노 반주 시작</b><span>30년 넘게 이어 오는 자리</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="notes">
+  <div class="sec-head">
+    <p class="label">Notes · 자료실</p>
+    <h2>결 고운 하루 노트: AI 음악 · 뷰티 자료실</h2>
+    <p><span class="ln">미용 · 반주 · AI 현장에서 직접 확인한 정보와 새로운 기술을 정리해 둡니다.</span><span class="ln">카드를 누르면 노트 전문을 읽을 수 있습니다.</span></p>
+  </div>
+  <div class="notes-bar">
+    <div class="note-tabs" role="group" aria-label="노트 분류"></div>
+  </div>
+  <div class="notes" id="noteList"><a class="note" href="notes/suno-lyrics.html"><div class="meta"><span class="cat">AI 음악 만들기</span><span>2026.10.21</span></div><h4>수노(Suno) AI로 작사부터 시작하는 법</h4><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
+</section>
+
+<script>
+/* ===== 결 고운 하루 노트 : 글 목록 =====
+   새 노트를 만들면 notes 폴더에 html 파일을 넣고, 아래 NOTES 맨 위에 한 줄 추가합니다.
+   url에 "notes/파일명.html"을 넣으면 카드가 노트로 연결되고, 비어 있으면 "준비 중"으로 표시됩니다. */
+const CATS = ["AI 음악 만들기","뷰티 × AI","반주 · 피아노","AI 툴 소식","오하루 작업일지"];
+const NOTES = [
+  {cat:"AI 음악 만들기", title:"수노(Suno) AI로 작사부터 시작하는 법", desc:"멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.", date:"2026.10.21", url:"notes/suno-lyrics.html"},
+  {cat:"오하루 작업일지", title:"미용, 건반, 그리고 AI", desc:"손으로 아름다움을 빚던 시간부터 AI 연구원이 되기까지, 이 노트를 쓰는 이유.", date:"", url:""},
+  {cat:"AI 음악 만들기", title:"AI가 만든 곡, 사람이 손봐야 하는 3가지", desc:"clickply 95곡을 만들며 직접 고르고 다듬은 기준을 정리합니다.", date:"", url:""},
+  {cat:"반주 · 피아노", title:"예배 반주 초보가 먼저 익힐 코드 진행", desc:"30년 반주 현장에서 가장 자주 쓰인 진행부터 차근차근.", date:"", url:""},
+  {cat:"뷰티 × AI", title:"AI 헤어스타일 시뮬레이션, 미용사 눈으로 본 장단점", desc:"AI가 그려 준 스타일을 현장 경험으로 다시 읽어 봅니다.", date:"", url:""},
+  {cat:"AI 툴 소식", title:"이번 달 AI 툴 소식 3줄 정리", desc:"창작과 강의에 바로 쓸 만한 새 기능만 골라 짧게.", date:"", url:""}
+];
+(function(){
+  const tabs=document.querySelector('.note-tabs'), list=document.getElementById('noteList');
+  let cur='전체';
+  ['전체',...CATS].forEach(c=>{const b=document.createElement('button');b.type='button';b.textContent=c;b.setAttribute('aria-pressed',c===cur);b.onclick=()=>{cur=c;tabs.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.textContent===c));draw();};tabs.appendChild(b);});
+  const esc=t=>String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+  function draw(){
+    const items=NOTES.filter(n=>cur==='전체'||n.cat===cur);
+    if(!items.length){list.innerHTML='<p class="notes-empty">이 분류의 노트를 준비하고 있습니다.</p>';return;}
+    list.innerHTML=items.map(n=>{
+      const live=!!n.url, tag=live?'a':'article';
+      const attr=live?` href="${esc(n.url)}"`:'';
+      return `<${tag} class="note${live?'':' soon'}"${attr}><div class="meta"><span class="cat">${esc(n.cat)}</span><span>${esc(n.date||'')}</span></div><h4>${esc(n.title)}</h4><p>${esc(n.desc)}</p><span class="go">${live?'노트 읽기 →':'준비 중입니다'}</span></${tag}>`;
+    }).join('');
+  }
+  draw();
+})();
+</script>
+
+<footer>
+  <span>© 2026 OHARU · 이수연</span>
+  <span>결 고운 하루, OHARU</span>
+</footer>
+</div>
+
+<script>
+(function(){
+  var steps=["콘셉트","작사","작곡","편곡","헤어","메이크업","커버","영상","발매","채널","","","",""];
+  var freqs=[261.63,293.66,329.63,349.23,392.00,440.00,493.88,523.25,587.33,659.25,698.46,783.99,880.00,987.77];
+  var keys=document.getElementById('keys'); var ctx=null;
+  steps.forEach(function(s,i){
+    var b=document.createElement('button'); b.className='wk'; b.type='button';
+    b.setAttribute('aria-label',(s||'건반')+' 소리'); b.textContent=s;
+    b.addEventListener('click',function(){play(freqs[i]);b.classList.add('on');setTimeout(function(){b.classList.remove('on')},260)});
+    keys.appendChild(b);
+  });
+  [0,1,3,4,5,7,8,10,11,12].forEach(function(i){
+    var k=document.createElement('div'); k.className='bk';
+    k.style.left='calc('+(i+1)+'*100%/14 - 100%/14*.3)'; keys.appendChild(k);
+  });
+  function play(f){
+    try{
+      ctx=ctx||new (window.AudioContext||window.webkitAudioContext)();
+      var o=ctx.createOscillator(),g=ctx.createGain(),t=ctx.currentTime;
+      o.type='triangle';o.frequency.value=f;
+      g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.25,t+0.01);g.gain.exponentialRampToValueAtTime(0.0001,t+1.1);
+      o.connect(g).connect(ctx.destination);o.start(t);o.stop(t+1.2);
+    }catch(e){}
+  }
+})();
+</script>
