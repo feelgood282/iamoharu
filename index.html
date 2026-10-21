@@ -22,7 +22,11 @@
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"></noscript>
 <style>
 /* Layout: liner-note page — big type hero over a playable keyboard strip, then sections read like an album booklet */
 :root{
@@ -83,7 +87,7 @@ nav ul a:hover{color:var(--ink)}
 
 .keys{margin-top:36px;position:relative;height:150px;display:flex;border:1.5px solid var(--ink);border-radius:6px 6px 14px 14px;overflow:hidden;background:var(--key)}
 .wk{flex:1;min-width:0;border:0;border-right:1px solid var(--line);background:var(--key);cursor:pointer;overflow:hidden;
-  display:flex;align-items:flex-end;justify-content:center;padding:0 2px 10px;font-family:var(--body);font-size:11px;color:#8a8794;transition:background .15s;white-space:nowrap}
+  display:flex;align-items:flex-end;justify-content:center;padding:0 2px 10px;font-family:var(--body);font-size:11px;color:#615e6b;transition:background .15s;white-space:nowrap}
 .wk:last-child{border-right:0}
 .wk:hover,.wk.on{background:var(--accent)}
 .wk.on{color:var(--on-accent)}
@@ -149,7 +153,7 @@ section{padding-block:88px 0}
 .ctrack.human .course{background:var(--accent);border-color:transparent;color:var(--on-accent)}
 .ctrack.human .course p{color:var(--on-accent);opacity:.85}
 .course .num{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
-.ctrack.human .course .num{color:var(--on-accent);opacity:.7}
+.ctrack.human .course .num{color:var(--on-accent);opacity:1}
 .course h4{font-family:var(--display);font-weight:400;font-size:22px;margin:0;line-height:1.3;text-wrap:balance}
 .course p{font-size:14.5px;color:var(--ink-soft);line-height:1.65;margin:0}
 .course .tools{font-family:var(--mono);font-size:12px;color:var(--ink)!important;opacity:1}
@@ -335,17 +339,17 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:var(--v
 a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
 .note .meta{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;color:var(--ink-soft)}
 .note .cat{color:var(--violet);font-weight:500}
-.note h4{font-family:var(--display);font-weight:400;font-size:21px;line-height:1.4;margin:0}
+.note h3{font-family:var(--display);font-weight:400;font-size:21px;line-height:1.4;margin:0}
 .note p{margin:0;font-size:14.5px;line-height:1.65;color:var(--ink-soft)}
 .note .go{margin-top:auto;padding-top:8px;font-size:13.5px;font-weight:700;color:var(--violet)}
 .note.soon .go{color:var(--ink-soft);font-weight:500}
 .note.feature{grid-column:1/-1;padding:32px clamp(22px,4vw,40px);gap:14px;border:1.5px solid var(--violet);background:linear-gradient(120deg,var(--accent) 0%,var(--surface) 70%)}
-.note.feature h4{font-size:clamp(24px,3.2vw,34px);line-height:1.3;max-width:24em}
+.note.feature h3{font-size:clamp(24px,3.2vw,34px);line-height:1.3;max-width:24em}
 .note.feature p{font-size:15.5px;max-width:42em}
 .note.feature .go{align-self:flex-start;margin-top:10px;padding:10px 20px;border-radius:999px;background:var(--violet);color:var(--on-violet)}
 .new-badge{display:inline-block;margin-right:10px;padding:2px 10px;border-radius:999px;background:var(--violet);color:var(--on-violet);font-size:11.5px;font-weight:700;vertical-align:1px}
 .note.soon{background:transparent;border-style:dashed}
-.note.soon h4{color:var(--ink-soft)}
+.note.soon h3{color:var(--ink-soft)}
 .notes-empty{grid-column:1/-1;color:var(--ink-soft);font-size:15px;padding:24px 0}
 @media (max-width:960px){.notes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.notes{grid-template-columns:1fr}}
@@ -382,6 +386,7 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
     <li><a href="#contact">문의하기</a></li>
   </ul>
 </nav>
+<main>
 
 <header class="hero" id="top">
   <div class="hero-top"><p class="label ko">결 고운 하루 · OHARU</p><span class="now-pill">현재 · 한국AI융합연구원 AI 연구원</span></div>
@@ -646,7 +651,7 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
   <div class="notes-bar">
     <div class="note-tabs" role="group" aria-label="노트 분류"></div>
   </div>
-  <div class="notes" id="noteList"><a class="note feature" href="notes/suno-lyrics.html"><div class="meta"><span class="cat"><span class="new-badge">최신 노트</span>AI 음악 만들기</span><span>2026.10.21</span></div><h4>수노(Suno) AI로 작사부터 시작하는 법</h4><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
+  <div class="notes" id="noteList"><a class="note feature" href="notes/suno-lyrics.html"><div class="meta"><span class="cat"><span class="new-badge">최신 노트</span>AI 음악 만들기</span><span>2026.10.21</span></div><h3>수노(Suno) AI로 작사부터 시작하는 법</h3><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
 </section>
 
 <script>
@@ -673,7 +678,7 @@ const NOTES = [
     const attr=live?` href="${esc(n.url)}"`:'';
     const cls='note'+(live?'':' soon')+(feature?' feature':'');
     const badge=feature?'<span class="new-badge">최신 노트</span>':'';
-    return `<${tag} class="${cls}"${attr}><div class="meta"><span class="cat">${badge}${esc(n.cat)}</span><span>${esc(n.date||'')}</span></div><h4>${esc(n.title)}</h4><p>${esc(n.desc)}</p><span class="go">${live?'노트 읽기 →':'준비 중입니다'}</span></${tag}>`;
+    return `<${tag} class="${cls}"${attr}><div class="meta"><span class="cat">${badge}${esc(n.cat)}</span><span>${esc(n.date||'')}</span></div><h3>${esc(n.title)}</h3><p>${esc(n.desc)}</p><span class="go">${live?'노트 읽기 →':'준비 중입니다'}</span></${tag}>`;
   }
   function draw(){
     const items=NOTES.filter(n=>cur==='전체'||n.cat===cur);
@@ -711,6 +716,8 @@ const NOTES = [
     <button type="submit">문의 보내기</button>
   </form>
 </section>
+
+</main>
 
 <footer>
   <span>© 2026 OHARU · 이수연</span>
