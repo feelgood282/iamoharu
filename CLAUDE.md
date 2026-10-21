@@ -13,6 +13,7 @@
 - notes/<slug>.html: 노트 페이지 (suno-lyrics.html 형식을 그대로 따름)
 - img/og-<slug>.png: 1200×630 공유 미리보기 이미지
 - sitemap.xml, robots.txt
+- llms.txt: AI용 사이트 안내. 새 노트를 내면 "결 고운 하루 노트" 목록에 한 줄 추가
 - googlee2cfc72e2d1d882e.html: 구글 서치콘솔 소유확인 파일. 삭제 금지
 - index.html의 naver-site-verification 메타 태그: 네이버 소유확인. 삭제 금지
 
@@ -39,7 +40,7 @@
 2. notes/<slug>.html 작성: 핵심 요약 3줄, 본문, 체크리스트, 참고 자료, 작성자 상자
 3. img/og-<slug>.png 제작
 4. index.html NOTES 배열 맨 위에 추가하고 정적 링크도 추가
-5. sitemap.xml에 주소 추가
+5. sitemap.xml과 llms.txt에 주소 추가
 6. SEO 점검: title 30자 안팎, description 80~120자, H1 1개, H2 3~6개, 이미지 alt, 내부 링크, 모바일 가로 스크롤 없음
 7. 푸시 후 실제 주소가 열리는지 확인
 8. 사용자에게 전달: 구글 서치콘솔 URL 검사로 색인 요청할 주소, Aside용 정보(노트 주소, 요약 3줄, 블로그 글감 2~3개, 글 끝 연결 문장)
