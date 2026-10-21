@@ -308,6 +308,21 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:var(--v
 .sec-head h2,.sec-head h3.as-h2{font-size:clamp(28px,4.2vw,44px)}
 .sec-head h3.as-h2{font-family:var(--display);font-weight:400;line-height:1.2;margin:0}
 .sec-tag{font-family:var(--display);font-size:clamp(18px,2.4vw,23px);line-height:1.5;color:var(--ink)!important;margin-top:-2px}
+
+/* 문의하기 */
+.contact form{display:grid;gap:14px;margin-top:6px;max-width:640px}
+.contact .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.contact label{display:grid;gap:6px;font-size:14px;font-weight:500}
+.contact input,.contact select,.contact textarea{font:inherit;font-size:15px;padding:12px 14px;border-radius:12px;border:1px solid color-mix(in srgb,var(--bg) 30%,transparent);background:color-mix(in srgb,var(--bg) 8%,transparent);color:var(--bg);width:100%}
+.contact select option{color:#111}
+.contact input::placeholder,.contact textarea::placeholder{color:color-mix(in srgb,var(--bg) 55%,transparent)}
+.contact textarea{min-height:140px;resize:vertical}
+.contact .agree{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13.5px;opacity:.85;line-height:1.6}
+.contact .agree input{width:auto;margin-top:4px}
+.contact button{justify-self:start;font:inherit;font-weight:700;font-size:15px;padding:13px 26px;border-radius:999px;border:0;background:var(--accent);color:var(--on-accent);cursor:pointer}
+.contact .hp{position:absolute;left:-9999px}
+.contact h3.as-h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4.4vw,46px);line-height:1.2;margin:0}
+@media (max-width:560px){.contact .row{grid-template-columns:1fr}}
 /* 결 고운 하루 노트 */
 .notes-bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;margin-bottom:22px}
 .note-tabs{display:flex;flex-wrap:wrap;gap:8px}
@@ -357,6 +372,7 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
     <li><a href="#works">작품</a></li>
     <li><a href="#about">소개</a></li>
     <li><a href="#notes">결 고운 하루 노트</a></li>
+    <li><a href="#contact">문의하기</a></li>
   </ul>
 </nav>
 
@@ -657,6 +673,32 @@ const NOTES = [
   draw();
 })();
 </script>
+
+<section id="contact" class="contact">
+  <p class="label" style="color:inherit;opacity:.7">Contact</p>
+  <h3 class="as-h2">강의 · 레슨 문의하기</h3>
+  <p>AI 음악 · 영상 강의, 피아노 · 반주 레슨, 헤어 · 메이크업 강의에 대해 궁금한 점을 남겨 주세요. 남겨 주신 이메일로 답장드립니다.</p>
+  <form name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="subject" value="[결 고운 하루] 홈페이지 문의가 도착했습니다">
+    <p class="hp"><label>이 칸은 비워 두세요 <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <div class="row">
+      <label>이름<input type="text" name="name" required autocomplete="name" placeholder="성함 또는 기관명"></label>
+      <label>답장 받을 이메일<input type="email" name="email" required autocomplete="email" placeholder="name@example.com"></label>
+    </div>
+    <label>문의 분야
+      <select name="topic" required>
+        <option value="">선택해 주세요</option>
+        <option>AI 음악 · 영상 강의</option>
+        <option>피아노 · 반주 레슨</option>
+        <option>헤어 · 메이크업 강의</option>
+        <option>협업 · 기타</option>
+      </select>
+    </label>
+    <label>문의 내용<textarea name="message" required placeholder="강의 대상, 인원, 희망 일정 등을 적어 주시면 더 정확히 안내드릴 수 있습니다."></textarea></label>
+    <label class="agree"><input type="checkbox" name="agree" value="동의" required><span>문의 답변을 위해 이름과 이메일을 수집하며, 답변 후 지체 없이 파기합니다. 이에 동의합니다.</span></label>
+    <button type="submit">문의 보내기</button>
+  </form>
+</section>
 
 <footer>
   <span>© 2026 OHARU · 이수연</span>
