@@ -653,7 +653,7 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
   <div class="notes-bar">
     <div class="note-tabs" role="group" aria-label="노트 분류"></div>
   </div>
-  <div class="notes" id="noteList"><a class="note feature" href="notes/suno-lyrics.html"><img class="thumb" src="img/note-suno-lyrics-768.webp" width="768" height="512" loading="lazy" alt="손글씨 가사 노트와 수노 v6 화면이 뜬 노트북이 놓인 라벤더빛 책상"><div class="meta"><span class="cat"><span class="new-badge">최신 노트</span>AI 음악 만들기</span><span>2026.10.21</span></div><h3>수노(Suno) AI로 작사부터 시작하는 법</h3><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
+  <div class="notes" id="noteList"><a class="note" href="notes/ai-news-2026-10-3.html"><div class="meta"><span class="cat">AI 뉴스 브리핑</span><span>2026.10.21</span></div><h3>이번 주 AI 소식 5가지</h3><p>2026년 10월 셋째 주, 챗GPT·제미나이·클로드 소식과 화제의 이슈를 공식 발표 기준으로 정리합니다.</p><span class="go">노트 읽기 →</span></a><a class="note" href="notes/chatgpt-gemini-claude.html"><div class="meta"><span class="cat">AI 활용 노하우</span><span>2026.10.21</span></div><h3>챗GPT·제미나이·클로드, 무엇을 쓸까</h3><p>무료로 쓸 수 있는 범위와 용도별 강점을 비교해 내게 맞는 AI를 고르는 법.</p><span class="go">노트 읽기 →</span></a><a class="note" href="notes/suno-lyrics.html"><div class="meta"><span class="cat">AI 음악 만들기</span><span>2026.10.21</span></div><h3>수노(Suno) AI로 작사부터 시작하는 법</h3><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a><a class="note" href="notes/personal-color.html"><div class="meta"><span class="cat">뷰티 × AI</span><span>2026.10.21</span></div><h3>퍼스널컬러 진단, 받기 전에 알아 둘 것과 AI 활용법</h3><p>기본 원리와 진단 전 준비, 주의사항, AI 진단을 정확하게 쓰는 법까지 정리합니다.</p><span class="go">노트 읽기 →</span></a><a class="note" href="notes/worship-chord-progressions.html"><div class="meta"><span class="cat">반주 · 피아노 × AI</span><span>2026.10.21</span></div><h3>찬양 반주 코드 진행, 초보가 먼저 익힐 5가지</h3><p>찬양과 대중음악에 널리 쓰이는 진행을 원리부터 차근차근, 연습에 쓸 AI 도구까지.</p><span class="go">노트 읽기 →</span></a><a class="note" href="notes/ai-music-copyright.html"><div class="meta"><span class="cat">AI 시대의 창작과 교육</span><span>2026.10.21</span></div><h3>AI로 만든 노래의 저작권, 지금 어디까지 왔나</h3><p>음저협 등록 기준의 시행과 철회, AI 표시 의무 등 창작자가 알아야 할 변화를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
 </section>
 
 <script>
@@ -662,12 +662,12 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
    url에 "notes/파일명.html"을 넣으면 카드가 노트로 연결되고, 비어 있으면 "준비 중"으로 표시됩니다. */
 const CATS = ["AI 뉴스 브리핑","AI 활용 노하우","AI 음악 만들기","뷰티 × AI","반주 · 피아노 × AI","AI 시대의 창작과 교육"];
 const NOTES = [
-  {cat:"AI 뉴스 브리핑", title:"이번 주 AI 소식 5가지", desc:"챗GPT·제미나이·클로드의 업데이트와 화제의 이슈를 공식 발표 기준으로 정리합니다.", date:"", url:""},
-  {cat:"AI 활용 노하우", title:"챗GPT·제미나이·클로드, 무엇을 쓸까", desc:"무료로 쓸 수 있는 범위와 용도별 강점을 비교해 내게 맞는 AI를 고르는 법.", date:"", url:""},
+  {cat:"AI 뉴스 브리핑", title:"이번 주 AI 소식 5가지", desc:"2026년 10월 셋째 주, 챗GPT·제미나이·클로드 소식과 화제의 이슈를 공식 발표 기준으로 정리합니다.", date:"2026.10.21", url:"notes/ai-news-2026-10-3.html"},
+  {cat:"AI 활용 노하우", title:"챗GPT·제미나이·클로드, 무엇을 쓸까", desc:"무료로 쓸 수 있는 범위와 용도별 강점을 비교해 내게 맞는 AI를 고르는 법.", date:"2026.10.21", url:"notes/chatgpt-gemini-claude.html"},
   {cat:"AI 음악 만들기", title:"수노(Suno) AI로 작사부터 시작하는 법", desc:"멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.", date:"2026.10.21", url:"notes/suno-lyrics.html", img:"img/note-suno-lyrics-768.webp", alt:"손글씨 가사 노트와 수노 v6 화면이 뜬 노트북이 놓인 라벤더빛 책상"},
-  {cat:"뷰티 × AI", title:"AI 헤어스타일 앱, 미용사 눈으로 본 장단점", desc:"AI가 그려 준 스타일을 헤어·메이크업 현장 경험으로 다시 읽어 봅니다.", date:"", url:""},
-  {cat:"반주 · 피아노 × AI", title:"찬양 반주 코드 진행, 초보가 먼저 익힐 5가지", desc:"30년 반주 현장에서 가장 자주 쓰인 진행부터 차근차근, 연습에 쓸 AI 도구까지.", date:"", url:""},
-  {cat:"AI 시대의 창작과 교육", title:"AI로 만든 노래의 저작권, 지금 어디까지 왔나", desc:"음저협 등록 규정 변경과 AI 표시 의무 등 창작자가 알아야 할 변화를 정리합니다.", date:"", url:""}
+  {cat:"뷰티 × AI", title:"퍼스널컬러 진단, 받기 전에 알아 둘 것과 AI 활용법", desc:"기본 원리와 진단 전 준비, 주의사항, AI 진단을 정확하게 쓰는 법까지 정리합니다.", date:"2026.10.21", url:"notes/personal-color.html"},
+  {cat:"반주 · 피아노 × AI", title:"찬양 반주 코드 진행, 초보가 먼저 익힐 5가지", desc:"찬양과 대중음악에 널리 쓰이는 진행을 원리부터 차근차근, 연습에 쓸 AI 도구까지.", date:"2026.10.21", url:"notes/worship-chord-progressions.html"},
+  {cat:"AI 시대의 창작과 교육", title:"AI로 만든 노래의 저작권, 지금 어디까지 왔나", desc:"음저협 등록 기준의 시행과 철회, AI 표시 의무 등 창작자가 알아야 할 변화를 정리합니다.", date:"2026.10.21", url:"notes/ai-music-copyright.html"}
 ];
 (function(){
   const tabs=document.querySelector('.note-tabs'), list=document.getElementById('noteList');
@@ -685,7 +685,7 @@ const NOTES = [
   function draw(){
     const items=NOTES.filter(n=>cur==='전체'||n.cat===cur);
     if(!items.length){list.innerHTML='<p class="notes-empty">이 분류의 노트를 준비하고 있습니다.</p>';return;}
-    const fi=items.findIndex(n=>!!n.url);
+    const fi=-1; /* 분류마다 1장씩 3×2로 고르게 보이도록 강조 카드는 쓰지 않음 */
     list.innerHTML=items.map((n,i)=>card(n,i===fi)).join('');
   }
   draw();
