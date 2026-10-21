@@ -617,8 +617,8 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
 <section id="notes">
   <div class="sec-head">
     <p class="label">Notes · 자료실</p>
-    <h2>결 고운 하루 노트: AI 음악 · 뷰티 자료실</h2>
-    <p><span class="ln">미용 · 반주 · AI 현장에서 직접 확인한 정보와 새로운 기술을 정리해 둡니다.</span><span class="ln">카드를 누르면 노트 전문을 읽을 수 있습니다.</span></p>
+    <h2>결 고운 하루 노트: AI · 음악 · 뷰티 자료실</h2>
+    <p><span class="ln">AI 소식과 활용법, 그리고 음악 · 뷰티 · 반주 현장의 AI 정보를 공식 자료로 확인해 정리합니다.</span><span class="ln">카드를 누르면 노트 전문을 읽을 수 있습니다.</span></p>
   </div>
   <div class="notes-bar">
     <div class="note-tabs" role="group" aria-label="노트 분류"></div>
@@ -630,14 +630,15 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
 /* ===== 결 고운 하루 노트 : 글 목록 =====
    새 노트를 만들면 notes 폴더에 html 파일을 넣고, 아래 NOTES 맨 위에 한 줄 추가합니다.
    url에 "notes/파일명.html"을 넣으면 카드가 노트로 연결되고, 비어 있으면 "준비 중"으로 표시됩니다. */
-const CATS = ["AI 음악 만들기","뷰티 × AI","반주 · 피아노","AI 툴 소식","오하루 작업일지"];
+const CATS = ["AI 뉴스 브리핑","AI 활용 노하우","AI 음악 만들기","뷰티 × AI","반주 · 피아노 × AI","AI 시대의 창작과 교육"];
 const NOTES = [
   {cat:"AI 음악 만들기", title:"수노(Suno) AI로 작사부터 시작하는 법", desc:"멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.", date:"2026.10.21", url:"notes/suno-lyrics.html"},
-  {cat:"오하루 작업일지", title:"미용, 건반, 그리고 AI", desc:"손으로 아름다움을 빚던 시간부터 AI 연구원이 되기까지, 이 노트를 쓰는 이유.", date:"", url:""},
-  {cat:"AI 음악 만들기", title:"AI가 만든 곡, 사람이 손봐야 하는 3가지", desc:"clickply 95곡을 만들며 직접 고르고 다듬은 기준을 정리합니다.", date:"", url:""},
-  {cat:"반주 · 피아노", title:"예배 반주 초보가 먼저 익힐 코드 진행", desc:"30년 반주 현장에서 가장 자주 쓰인 진행부터 차근차근.", date:"", url:""},
-  {cat:"뷰티 × AI", title:"AI 헤어스타일 시뮬레이션, 미용사 눈으로 본 장단점", desc:"AI가 그려 준 스타일을 현장 경험으로 다시 읽어 봅니다.", date:"", url:""},
-  {cat:"AI 툴 소식", title:"이번 달 AI 툴 소식 3줄 정리", desc:"창작과 강의에 바로 쓸 만한 새 기능만 골라 짧게.", date:"", url:""}
+  {cat:"AI 음악 만들기", title:"AI가 부른 노래가 멜론 3위, 수노로 만든 곡은 어떻게 만들어졌나", desc:"화제의 AI 곡 제작 과정을 공개된 사실로 따라가 보고, 사람이 맡은 몫을 짚어 봅니다.", date:"", url:""},
+  {cat:"AI 뉴스 브리핑", title:"이번 주 AI 소식 5가지", desc:"챗GPT·제미나이·클로드의 업데이트와 화제의 이슈를 공식 발표 기준으로 정리합니다.", date:"", url:""},
+  {cat:"AI 활용 노하우", title:"챗GPT·제미나이·클로드, 무엇을 쓸까", desc:"무료로 쓸 수 있는 범위와 용도별 강점을 비교해 내게 맞는 AI를 고르는 법.", date:"", url:""},
+  {cat:"뷰티 × AI", title:"AI 헤어스타일 앱, 미용사 눈으로 본 장단점", desc:"AI가 그려 준 스타일을 헤어·메이크업 현장 경험으로 다시 읽어 봅니다.", date:"", url:""},
+  {cat:"반주 · 피아노 × AI", title:"찬양 반주 코드 진행, 초보가 먼저 익힐 5가지", desc:"30년 반주 현장에서 가장 자주 쓰인 진행부터 차근차근, 연습에 쓸 AI 도구까지.", date:"", url:""},
+  {cat:"AI 시대의 창작과 교육", title:"AI로 만든 노래의 저작권, 지금 어디까지 왔나", desc:"음저협 등록 규정 변경과 AI 표시 의무 등 창작자가 알아야 할 변화를 정리합니다.", date:"", url:""}
 ];
 (function(){
   const tabs=document.querySelector('.note-tabs'), list=document.getElementById('noteList');
