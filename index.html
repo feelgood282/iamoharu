@@ -339,6 +339,13 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
 .note p{margin:0;font-size:14.5px;line-height:1.65;color:var(--ink-soft)}
 .note .go{margin-top:auto;padding-top:8px;font-size:13.5px;font-weight:700;color:var(--violet)}
 .note.soon .go{color:var(--ink-soft);font-weight:500}
+.note.feature{grid-column:1/-1;padding:32px clamp(22px,4vw,40px);gap:14px;border:1.5px solid var(--violet);background:linear-gradient(120deg,var(--accent) 0%,var(--surface) 70%)}
+.note.feature h4{font-size:clamp(24px,3.2vw,34px);line-height:1.3;max-width:24em}
+.note.feature p{font-size:15.5px;max-width:42em}
+.note.feature .go{align-self:flex-start;margin-top:10px;padding:10px 20px;border-radius:999px;background:var(--violet);color:var(--on-violet)}
+.new-badge{display:inline-block;margin-right:10px;padding:2px 10px;border-radius:999px;background:var(--violet);color:var(--on-violet);font-size:11.5px;font-weight:700;vertical-align:1px}
+.note.soon{background:transparent;border-style:dashed}
+.note.soon h4{color:var(--ink-soft)}
 .notes-empty{grid-column:1/-1;color:var(--ink-soft);font-size:15px;padding:24px 0}
 @media (max-width:960px){.notes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.notes{grid-template-columns:1fr}}
@@ -639,7 +646,7 @@ a.note:hover{transform:translateY(-2px);border-color:var(--violet)}
   <div class="notes-bar">
     <div class="note-tabs" role="group" aria-label="노트 분류"></div>
   </div>
-  <div class="notes" id="noteList"><a class="note" href="notes/suno-lyrics.html"><div class="meta"><span class="cat">AI 음악 만들기</span><span>2026.10.21</span></div><h4>수노(Suno) AI로 작사부터 시작하는 법</h4><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
+  <div class="notes" id="noteList"><a class="note feature" href="notes/suno-lyrics.html"><div class="meta"><span class="cat"><span class="new-badge">최신 노트</span>AI 음악 만들기</span><span>2026.10.21</span></div><h4>수노(Suno) AI로 작사부터 시작하는 법</h4><p>멜로디보다 가사를 먼저 잡고, AI와 대화하며 곡의 뼈대를 세우는 순서를 정리합니다.</p><span class="go">노트 읽기 →</span></a></div>
 </section>
 
 <script>
@@ -661,14 +668,18 @@ const NOTES = [
   let cur='전체';
   ['전체',...CATS].forEach(c=>{const b=document.createElement('button');b.type='button';b.textContent=c;b.setAttribute('aria-pressed',c===cur);b.onclick=()=>{cur=c;tabs.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x.textContent===c));draw();};tabs.appendChild(b);});
   const esc=t=>String(t).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+  function card(n,feature){
+    const live=!!n.url, tag=live?'a':'article';
+    const attr=live?` href="${esc(n.url)}"`:'';
+    const cls='note'+(live?'':' soon')+(feature?' feature':'');
+    const badge=feature?'<span class="new-badge">최신 노트</span>':'';
+    return `<${tag} class="${cls}"${attr}><div class="meta"><span class="cat">${badge}${esc(n.cat)}</span><span>${esc(n.date||'')}</span></div><h4>${esc(n.title)}</h4><p>${esc(n.desc)}</p><span class="go">${live?'노트 읽기 →':'준비 중입니다'}</span></${tag}>`;
+  }
   function draw(){
     const items=NOTES.filter(n=>cur==='전체'||n.cat===cur);
     if(!items.length){list.innerHTML='<p class="notes-empty">이 분류의 노트를 준비하고 있습니다.</p>';return;}
-    list.innerHTML=items.map(n=>{
-      const live=!!n.url, tag=live?'a':'article';
-      const attr=live?` href="${esc(n.url)}"`:'';
-      return `<${tag} class="note${live?'':' soon'}"${attr}><div class="meta"><span class="cat">${esc(n.cat)}</span><span>${esc(n.date||'')}</span></div><h4>${esc(n.title)}</h4><p>${esc(n.desc)}</p><span class="go">${live?'노트 읽기 →':'준비 중입니다'}</span></${tag}>`;
-    }).join('');
+    const fi=items.findIndex(n=>!!n.url);
+    list.innerHTML=items.map((n,i)=>card(n,i===fi)).join('');
   }
   draw();
 })();
