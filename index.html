@@ -679,6 +679,7 @@ const NOTES = [
   <h3 class="as-h2">강의 · 레슨 문의하기</h3>
   <p>AI 음악 · 영상 강의, 피아노 · 반주 레슨, 헤어 · 메이크업 강의에 대해 궁금한 점을 남겨 주세요. 남겨 주신 이메일로 답장드립니다.</p>
   <form name="contact" method="POST" action="/thanks" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
     <input type="hidden" name="subject" value="[결 고운 하루] 홈페이지 문의가 도착했습니다">
     <p class="hp"><label>이 칸은 비워 두세요 <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
     <div class="row">
