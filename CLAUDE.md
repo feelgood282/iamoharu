@@ -15,7 +15,7 @@
 - sitemap.xml, robots.txt
 - llms.txt: AI용 사이트 안내. 새 노트를 내면 "결 고운 하루 노트" 목록에 한 줄 추가
 - googlee2cfc72e2d1d882e.html: 구글 서치콘솔 소유확인 파일. 삭제 금지
-- index.html의 naver-site-verification 메타 태그: 네이버 소유확인. 삭제 금지
+- index.html의 naver-site-verification 메타 태그 2개(d9fb13…, dcefff63… 2026-10-22 추가): 네이버 소유확인. 삭제 금지
 
 ## 노트 분류 (6섹션, 2026-10-21 확정)
 유입형(많이 검색되는 AI 정보)과 전문가형(사용자 경력 분야 × AI)을 반씩 운영
