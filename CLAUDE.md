@@ -102,3 +102,4 @@
 | 2026-10-22 | 뷰티 × AI | 퍼스널컬러 진단 1편: 받기 전 준비 5가지·업체 고르는 법 4가지 | personal-color | https://blog.naver.com/iamoharu/224450597035 |
 | 2026-10-22 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (10월 셋째 주) | ai-news-2026-10-3 | https://blog.naver.com/iamoharu/224450670519 |
 | 2026-10-23 | 반주 · 피아노 × AI | 찬양 반주 코드 진행 1편: 코드를 숫자로 읽는 법·기본 진행 3가지 | worship-chord-progressions | https://blog.naver.com/iamoharu/224451050917 |
+| 2026-10-23 19:00 예약 | AI 시대의 창작과 교육 | AI 노래 저작권 1편: 음저협 철회·정부 "사람이 한 몫만 보호" 원칙 | ai-music-copyright | https://blog.naver.com/iamoharu/224451080504 |
