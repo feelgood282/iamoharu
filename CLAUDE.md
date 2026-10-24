@@ -104,3 +104,4 @@
 | 2026-10-23 | 반주 · 피아노 × AI | 찬양 반주 코드 진행 1편: 코드를 숫자로 읽는 법·기본 진행 3가지 | worship-chord-progressions | https://blog.naver.com/iamoharu/224451050917 |
 | 2026-10-23 19:00 예약 | AI 시대의 창작과 교육 | AI 노래 저작권 1편: 음저협 철회·정부 "사람이 한 몫만 보호" 원칙 | ai-music-copyright | https://blog.naver.com/iamoharu/224451080504 |
 | 2026-10-24 | AI 활용 노하우 | 챗GPT·제미나이·클로드 무료 비교 1편: 무료로 어디까지·용도별 고르기 | chatgpt-gemini-claude | https://blog.naver.com/iamoharu/224452129955 |
+| 2026-10-24 19:00 예약 | AI 음악 만들기 | 수노(Suno) AI 작사 1편: 가사부터 쓰는 5단계 | suno-lyrics | https://blog.naver.com/iamoharu/224452147156 |
