@@ -107,3 +107,4 @@
 | 2026-10-24 | AI 활용 노하우 | 챗GPT·제미나이·클로드 무료 비교 1편: 무료로 어디까지·용도별 고르기 | chatgpt-gemini-claude | https://blog.naver.com/iamoharu/224452129955 |
 | 2026-10-24 19:00 예약 | AI 음악 만들기 | 수노(Suno) AI 작사 1편: 가사부터 쓰는 5단계 | suno-lyrics | https://blog.naver.com/iamoharu/224452147156 |
 | 2026-10-24 | 뷰티 × AI | 퍼스널컬러 진단 2편: AI 진단 사진 찍기 4단계·진단 후 주의할 점 5가지 | personal-color | https://blog.naver.com/iamoharu/224452172720 |
+| 2026-10-24 21:00 예약 | 반주 · 피아노 × AI | 찬양 반주 코드 진행 2편: ii–V–I·부속 7화음·AI 연습 도구 | worship-chord-progressions | https://blog.naver.com/iamoharu/224452182096 |
