@@ -108,3 +108,4 @@
 | 2026-10-24 19:00 예약 | AI 음악 만들기 | 수노(Suno) AI 작사 1편: 가사부터 쓰는 5단계 | suno-lyrics | https://blog.naver.com/iamoharu/224452147156 |
 | 2026-10-24 | 뷰티 × AI | 퍼스널컬러 진단 2편: AI 진단 사진 찍기 4단계·진단 후 주의할 점 5가지 | personal-color | https://blog.naver.com/iamoharu/224452172720 |
 | 2026-10-24 21:00 예약 | 반주 · 피아노 × AI | 찬양 반주 코드 진행 2편: ii–V–I·부속 7화음·AI 연습 도구 | worship-chord-progressions | https://blog.naver.com/iamoharu/224452182096 |
+| 2026-10-25 09:00 예약 | AI 시대의 창작과 교육 | AI 노래 저작권 2편: AI 기본법 표시 의무·해외 흐름·창작자 체크리스트 | ai-music-copyright | https://blog.naver.com/iamoharu/224452490946 |
