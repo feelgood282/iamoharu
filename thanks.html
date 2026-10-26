@@ -8,12 +8,14 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="/img/icon-192.png">
 <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&display=swap"></noscript>
+<!--fonts:start-->
+<link rel="preload" href="/fonts/gowun-dodum-400.woff2?v=0ad82943" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Gowun Dodum";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/gowun-dodum-400.woff2?v=0ad82943) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/ibm-plex-mono-400.woff2?v=0ad82943) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-mono-500.woff2?v=0ad82943) format("woff2")}</style>
+<!--fonts:end-->
 <style>
 :root{--bg:#fff;--ink:#111;--soft:#5c5a63;--accent:#ece6fd;--on-accent:#3b2a85}
 @media (prefers-color-scheme:dark){:root{--bg:#111;--ink:#f3f2f6;--soft:#a8a5b2;--accent:#2c2450;--on-accent:#e4dcff}}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",system-ui,sans-serif;padding:24px 16px;box-sizing:border-box;word-break:keep-all}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;padding:24px 16px;box-sizing:border-box;word-break:keep-all}
 main{max-width:520px;text-align:center;display:grid;gap:16px}
 h1{font-family:"Gowun Dodum",sans-serif;font-weight:400;font-size:clamp(28px,6vw,40px);margin:0}
 p{margin:0;color:var(--soft);line-height:1.8}
