@@ -125,3 +125,4 @@
 | 2026-10-25 19:00 예약 | AI 음악 만들기 | 수노(Suno) AI 작사 2편: v6 무료·유료 차이·플랜별 소유권·작사 체크리스트 | suno-lyrics | https://blog.naver.com/iamoharu/224452507155 |
 | 2026-10-26 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (10월 넷째 주) | ai-news-2026-10-4 | https://blog.naver.com/iamoharu/224454503448 |
 | 2026-10-27 09:00 예약 | AI 활용 노하우 | 제미나이 Gems 스킬 전환 1편: 11/17 읽기 전용·12/17 자동 변환·빠지는 파일 | gemini-gems-to-skills | https://blog.naver.com/iamoharu/224454761717 |
+| 2026-10-28 09:00 예약 | AI 음악 만들기 | 수노(Suno) Styles 칸 1편: 장르·템포·악기·보컬·분위기 순서와 예시 | suno-styles | https://blog.naver.com/iamoharu/224454772727 |
