@@ -127,3 +127,4 @@
 | 2026-10-27 09:00 예약 | AI 활용 노하우 | 제미나이 Gems 스킬 전환 1편: 11/17 읽기 전용·12/17 자동 변환·빠지는 파일 | gemini-gems-to-skills | https://blog.naver.com/iamoharu/224454761717 |
 | 2026-10-28 09:00 예약 | AI 음악 만들기 | 수노(Suno) Styles 칸 1편: 장르·템포·악기·보컬·분위기 순서와 예시 | suno-styles | https://blog.naver.com/iamoharu/224454772727 |
 | 2026-10-29 09:00 예약 | 뷰티 × AI | AI 헤어스타일 시뮬레이션 1편: 도구 3가지·정확도 한계·사진 찍는 법 | ai-hairstyle-simulation | https://blog.naver.com/iamoharu/224454781150 |
+| 2026-10-30 09:00 예약 | 반주 · 피아노 × AI | 찬양 반주 조옮김 1편: 반음 세기·도수로 읽기·신디사이저 트랜스포즈 | worship-transpose | https://blog.naver.com/iamoharu/224454794414 |
