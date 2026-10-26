@@ -113,3 +113,4 @@
 | 2026-10-25 09:00 예약 | AI 시대의 창작과 교육 | AI 노래 저작권 2편: AI 기본법 표시 의무·해외 흐름·창작자 체크리스트 | ai-music-copyright | https://blog.naver.com/iamoharu/224452490946 |
 | 2026-10-25 13:00 예약 | AI 활용 노하우 | 챗GPT·제미나이·클로드 유료 비교 2편: 플랜 한눈에·결제 전 체크리스트 | chatgpt-gemini-claude | https://blog.naver.com/iamoharu/224452500299 |
 | 2026-10-25 19:00 예약 | AI 음악 만들기 | 수노(Suno) AI 작사 2편: v6 무료·유료 차이·플랜별 소유권·작사 체크리스트 | suno-lyrics | https://blog.naver.com/iamoharu/224452507155 |
+| 2026-10-26 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (10월 넷째 주) | ai-news-2026-10-4 | https://blog.naver.com/iamoharu/224454503448 |
