@@ -15,7 +15,8 @@
   - 하루 2편은 3주 뒤 작업 시간 보고 검토
 
 ## 파일 구조
-- index.html: 메인. 노트 카드는 스크립트의 NOTES 배열 + 크롤러용 정적 링크(#noteList 안)
+- index.html: 메인. 노트 카드는 스크립트의 NOTES 배열에서 그려짐. #noteList 안의 정적 마크업(크롤러용)은 `node tools/build_notes.js`로 자동 생성(손으로 쓰지 않음)
+- 노트 목록 화면(2026-10-26 사용자 요청): 전체 탭 = 분야마다 최신 노트 1편씩 6장(카드에 "지난 노트 N편" 버튼), 분야 탭 = 최신 노트 크게 + 지난 노트 날짜순 목록. 날짜(date) 기준 정렬이라 NOTES 순서가 틀려도 최신이 위로 감. 고른 탭은 sessionStorage에 기억(노트 읽고 돌아와도 유지)
 - notes/<slug>.html: 노트 페이지 (suno-lyrics.html 형식을 그대로 따름)
 - img/og-<slug>.png: 1200×630 공유 미리보기 이미지
 - sitemap.xml, robots.txt
@@ -46,7 +47,7 @@
 1. 자료 조사와 출처 확인
 2. notes/<slug>.html 작성: 핵심 요약 3줄, 본문, 체크리스트, 참고 자료, 작성자 상자 (대표 이미지용 챗GPT 프롬프트도 사용자에게 전달)
 3. img/og-<slug>.png 제작
-4. index.html NOTES 배열 맨 위에 추가하고 정적 링크도 추가
+4. index.html NOTES 배열 맨 위에 추가한 뒤 `node tools/build_notes.js` 실행(정적 마크업 자동 갱신). 같은 분야의 이전 노트는 자동으로 '지난 노트' 목록으로 내려감
 5. sitemap.xml과 llms.txt에 주소 추가
 6. SEO 점검: title 30자 안팎, description 80~120자, H1 1개, H2 3~6개, 이미지 alt, 내부 링크, 모바일 가로 스크롤 없음
 7. 글꼴 다시 빌드: `python3 tools/build_fonts.py` (새 제목 글자가 제목 글꼴에 들어가도록. 안 하면 새 글자만 기본 글꼴로 보임). 새 노트 HTML은 기존 노트의 `<!--fonts:start-->…<!--fonts:end-->` 블록을 그대로 복사해 두면 스크립트가 자동 갱신
@@ -86,7 +87,7 @@
 - 연락처(전화번호 등) 개인 정보는 넣지 않음
 
 ## 현재 상태 (2026-10-26 기준)
-- 2026-10-26 정규 루틴 첫 배포: 새 노트 6편 추가(총 12편). ai-news-2026-10-4 이번 주 AI 소식(10월 넷째 주), gemini-gems-to-skills 제미나이 Gems 스킬 전환, suno-styles 수노 Styles 칸, ai-hairstyle-simulation AI 헤어스타일 시뮬레이션, worship-transpose 찬양 반주 조옮김, music-education-ai 음악 교육 현장의 AI 도구. 메인 카드는 새 노트가 위(4줄×3)
+- 2026-10-26 정규 루틴 첫 배포: 새 노트 6편 추가(총 12편). ai-news-2026-10-4 이번 주 AI 소식(10월 넷째 주), gemini-gems-to-skills 제미나이 Gems 스킬 전환, suno-styles 수노 Styles 칸, ai-hairstyle-simulation AI 헤어스타일 시뮬레이션, worship-transpose 찬양 반주 조옮김, music-education-ai 음악 교육 현장의 AI 도구. 메인 노트는 분야별 정리 화면으로 개편(전체 6장 + 분야별 지난 노트 목록)
 - notes.json의 "related"(slug 3개)로 노트별 "함께 읽을 노트"를 지정할 수 있음(없으면 목록 앞 3개)
 - (이하 2026-10-21 기준) 노트 6편, 분류마다 1편씩. 메인 카드는 탭 순서대로 3×2, 강조(최신) 카드는 쓰지 않음(fi=-1). 모든 카드에 대표 이미지 썸네일(NOTES의 img·alt)
   1. ai-news-2026-10-3 이번 주 AI 소식 5가지(10월 셋째 주)
