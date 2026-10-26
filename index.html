@@ -17,6 +17,7 @@
 <meta name="theme-color" content="#ffffff">
 <meta name="naver-site-verification" content="d9fb13f4c4dd6f3cb665a5ceb4a0165d576eb358" />
 <meta name="naver-site-verification" content="dcefff63b9d80fe6a928885e5c80d6a568addebc" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"30초로 보는 OHARU 이수연","description":"헤어·메이크업 12년, 피아노 교육 15년, 예배 반주 30년. AI 음악·뷰티 강사 OHARU 이수연의 강의와 음반을 30초로 소개합니다.","thumbnailUrl":"https://iamoharu.netlify.app/img/shorts-poster.webp","uploadDate":"2026-10-26T21:30:00+09:00","duration":"PT30S","contentUrl":"https://iamoharu.netlify.app/media/oharu-shorts.mp4","inLanguage":"ko"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "이수연", "alternateName": ["오하루", "OHARU", "OHARU 이수연"], "url": "https://iamoharu.netlify.app/", "image": "https://iamoharu.netlify.app/img/og-home.png", "jobTitle": "AI 음악·뷰티 강사", "description": "헤어·메이크업 12년, 피아노 교육 15년, 예배 반주 30년 경력의 AI 음악·뷰티 강사이자 싱어송라이터 오하루(OHARU).", "worksFor": {"@type": "Organization", "name": "한국AI융합연구원"}, "knowsAbout": ["AI 작사·작곡", "Suno AI", "AI 영상 제작", "피아노 반주", "헤어·메이크업"], "sameAs": ["https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu", "https://www.melon.com/artist/timeline.htm?artistId=4170391", "https://www.genie.co.kr/detail/artistInfo?xxnm=82830570", "https://music.bugs.co.kr/artist/20232361", "https://open.spotify.com/artist/47AE9ibGMnjhErPM3VonxE", "https://music.apple.com/kr/artist/1809666267"]}</script>
 <link rel="canonical" href="https://iamoharu.netlify.app/">
 <meta property="og:url" content="https://iamoharu.netlify.app/">
@@ -213,6 +214,17 @@ section{padding-block:88px 0}
 .about .bio{display:grid;gap:16px;align-content:start;min-width:0}
 .about .bio p{color:var(--ink-soft)}
 .about .role{font-size:15px;color:var(--ink)!important}
+.shorts{margin:12px 0 0;max-width:300px;display:grid;gap:12px}
+.shorts-play{position:relative;display:block;width:100%;aspect-ratio:9/16;padding:0;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:#fff;cursor:pointer;box-shadow:0 18px 40px rgba(59,42,133,.14)}
+.shorts-play img,.shorts video{display:block;width:100%;height:100%;object-fit:cover}
+.shorts-btn{position:absolute;left:50%;top:86%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:var(--violet);color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(106,75,214,.4);transition:transform .2s}
+.shorts-btn svg{margin-left:3px}
+.shorts-play:hover .shorts-btn,.shorts-play:focus-visible .shorts-btn{transform:scale(1.08)}
+.shorts-len{position:absolute;right:12px;bottom:12px;font:500 12px/1 var(--mono);color:#fff;background:rgba(17,17,17,.7);padding:6px 8px;border-radius:999px}
+.shorts video{height:auto;aspect-ratio:9/16;border-radius:22px;background:#000}
+.shorts figcaption{display:grid;gap:2px;font-size:14px;color:var(--ink-soft)}
+.shorts figcaption b{color:var(--ink);font-weight:600;font-size:15px}
+@media (max-width:860px){.shorts{max-width:280px}}
 .careers{display:grid;gap:28px;min-width:0}
 .current{background:var(--accent);color:var(--on-accent);border:1.5px solid var(--ink);border-radius:14px;padding:16px 20px;display:grid;gap:2px}
 .current .when{font-family:var(--mono);font-size:12px}
@@ -648,6 +660,14 @@ a.note:hover,.note.live:hover{transform:translateY(-2px);border-color:var(--viol
       <p>눈에 보이는 아름다움과 마음을 울리는 아름다움, 그 두 결을 이어 새로운 아름다움을 빚는 사람입니다.</p>
       <p>헤어디자이너와 메이크업 아티스트, 스타일리스트로 현장을 누볐고, 뷰티아카데미 강사와 메이크업 대회 심사위원을 지냈습니다. 이후 베트남 호치민에서 15년 동안 피아노를 가르치고 한인교회 예배 반주를 맡으며 음악으로 영역을 넓혔고, 웨딩과 돌잔치 헤어 · 메이크업으로 미용의 손도 놓지 않았습니다. 30년 넘게 이어 온 예배 반주는 지금도 제 음악의 뿌리입니다.</p>
       <p>지금은 한국AI융합연구원에서 AI 연구원으로 일하며 AI 융합 경영학 석사과정을 밟고 있습니다. 음악 작품과 아티스트 활동은 OHARU로, 교육과 공식 경력은 본명 이수연으로 이어 갑니다.</p>
+      <figure class="shorts" id="shorts">
+        <button type="button" class="shorts-play" id="shortsPlay" aria-label="30초 소개 영상 재생 (소리 있음)">
+          <img src="img/shorts-poster.webp" width="540" height="960" loading="lazy" decoding="async" alt="영상 첫 장면: 모든 아름다움에는 결이 있습니다">
+          <span class="shorts-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="shorts-len" aria-hidden="true">0:30</span>
+        </button>
+        <figcaption><b>30초로 보는 OHARU</b><span>소리를 켜고 보세요 · 음악 OHARU 피아노</span></figcaption>
+      </figure>
     </div>
     <div class="careers">
       <div class="current"><span class="when">현재 · 2026.03 —</span><b>한국AI융합연구원 AI 연구원</b><span>AI 융합 부서</span></div>
@@ -834,4 +854,7 @@ function notesHTML(cur){
     }catch(e){}
   }
 })();
+</script>
+<script>
+(function(){var b=document.getElementById('shortsPlay');if(!b)return;b.addEventListener('click',function(){var v=document.createElement('video');v.src='media/oharu-shorts.mp4';v.controls=true;v.playsInline=true;v.setAttribute('playsinline','');v.preload='auto';v.poster='img/shorts-poster.webp';v.width=540;v.height=960;v.setAttribute('aria-label','OHARU 30초 소개 영상');b.replaceWith(v);var p=v.play();if(p&&p.catch)p.catch(function(){});});})();
 </script>
