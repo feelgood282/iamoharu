@@ -135,3 +135,4 @@
 | 2026-10-30 09:00 예약 | 반주 · 피아노 × AI | 찬양 반주 조옮김 1편: 반음 세기·도수로 읽기·신디사이저 트랜스포즈 | worship-transpose | https://blog.naver.com/iamoharu/224454794414 |
 | 2026-10-31 09:00 예약 | AI 시대의 창작과 교육 | 음악 교육과 AI 1편: AI 디지털교과서 34.2%→5.2%·음악 수업 도구 5가지 구분 | music-education-ai | https://blog.naver.com/iamoharu/224454801514 |
 | 2026-11-03 09:00 예약 | AI 활용 노하우 | 제미나이 스킬 2편: 직접 만들기 5단계·이름 규칙·백업 | gemini-gems-to-skills | https://blog.naver.com/iamoharu/224460091348 |
+| 2026-11-04 09:00 예약 | AI 음악 만들기 | 수노(Suno) Styles 2편: Variety 슬라이더·My Taste·가수 이름 대신 묘사 | suno-styles | https://blog.naver.com/iamoharu/224460101070 |
