@@ -9,6 +9,7 @@
 - [강의 · 레슨 문의](https://iamoharu.netlify.app/#contact): 문의 양식
 
 ## 결 고운 하루 노트
+- [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-10-5.html): 2026년 10월 다섯째 주 AI 소식 5가지: 수노 MCP 베타(챗GPT·클로드·제미나이 안에서 노래 만들기), 챗GPT 아이클라우드 메일·캘린더 플러그인, 크롬 자동 완성 지메일 연동, 제미나이 4 카본 제한 공개, 호주 아동 챗봇 보호 법안 하원 통과 (2026-10-31)
 - [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-10-4.html): 2026년 10월 넷째 주 AI 소식 5가지: 챗GPT 잠긴 대화, 스포티파이 AI 스팸 곡 정리와 AI 표시, 구글 개인정보처리방침 변경, 클로드 듀엣 미리보기, 모두의 AI 이름 공모 (2026-10-26)
 - [제미나이 Gems가 스킬로 바뀐다, 미리 할 일](https://iamoharu.netlify.app/notes/gemini-gems-to-skills.html): 제미나이 Gems의 스킬 전환 일정(개인 계정 11월 17일 읽기 전용, 12월 17일 자동 변환), 자동 변환에서 빠지는 파일, 스킬 직접 만드는 법 (2026-10-26, Gemini 앱 도움말 기준)
 - [수노(Suno) Styles 칸, 이렇게 쓰면 곡이 달라진다](https://iamoharu.netlify.app/notes/suno-styles.html): 수노 v6 Styles 칸 쓰는 법: Variety 슬라이더와 My Taste(공식), 장르·템포·악기·보컬·분위기 순서와 4~7단어(커뮤니티 가이드), 실존 가수 이름 대신 소리 묘사 (2026-10-26, Suno v6 기준)
