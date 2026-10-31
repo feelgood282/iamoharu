@@ -140,7 +140,7 @@
 | 2026-11-05 09:00 예약 | 뷰티 × AI | AI 헤어스타일 시뮬레이션 2편: 개인정보 확인 3가지·상담 활용 4단계 | ai-hairstyle-simulation | https://blog.naver.com/iamoharu/224460110553 |
 | 2026-11-06 09:00 예약 | 반주 · 피아노 × AI | 찬양 반주 조옮김 2편: 뮤즈스코어·플래닝센터·AI로 코드표 옮기기 | worship-transpose | https://blog.naver.com/iamoharu/224460119220 |
 | 2026-11-02 09:00 예약 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (10월 다섯째 주) | ai-news-2026-10-5 | https://blog.naver.com/iamoharu/224460151172 |
-| 2026-11-07 09:00 예약 | AI 시대의 창작과 교육 | 음악 교육과 AI 2편: 수노·챗GPT·제미나이 연령 기준·수업 전 체크리스트 | music-education-ai | (주소 확인 필요) |
+| 2026-11-07 09:00 예약 | AI 시대의 창작과 교육 | 음악 교육과 AI 2편: 수노·챗GPT·제미나이 연령 기준·수업 전 체크리스트 | music-education-ai | https://blog.naver.com/iamoharu/224460141412 |
 | 2026-10-31 | AI 활용 노하우 | 피클(Pickle) AI 비서 직접 써 본 후기: 무료 한도·초대 링크 가입법, 인스팅트와 비교 (1편) | pickle-ai-agent | https://blog.naver.com/iamoharu/224460219080 |
 | 2026-11-06 13:00 예약 | AI 활용 노하우 | 피클 AI 비서 2편: 대신 전화·캡처로 문제 해결·하루 한도와 앱 연결 | pickle-ai-agent | https://blog.naver.com/iamoharu/224460265922 |
 | 2026-11-13 13:00 예약 | AI 활용 노하우 | 인스팅트(Instinct) AI 비서란? 문자로 일 맡기는 법·한국 가입·개인정보 논란 정리 (정보 글, 사용자 미사용) | pickle-ai-agent | https://blog.naver.com/iamoharu/224460301081 |
