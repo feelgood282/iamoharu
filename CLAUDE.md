@@ -136,3 +136,4 @@
 | 2026-10-31 09:00 예약 | AI 시대의 창작과 교육 | 음악 교육과 AI 1편: AI 디지털교과서 34.2%→5.2%·음악 수업 도구 5가지 구분 | music-education-ai | https://blog.naver.com/iamoharu/224454801514 |
 | 2026-11-03 09:00 예약 | AI 활용 노하우 | 제미나이 스킬 2편: 직접 만들기 5단계·이름 규칙·백업 | gemini-gems-to-skills | https://blog.naver.com/iamoharu/224460091348 |
 | 2026-11-04 09:00 예약 | AI 음악 만들기 | 수노(Suno) Styles 2편: Variety 슬라이더·My Taste·가수 이름 대신 묘사 | suno-styles | https://blog.naver.com/iamoharu/224460101070 |
+| 2026-11-05 09:00 예약 | 뷰티 × AI | AI 헤어스타일 시뮬레이션 2편: 개인정보 확인 3가지·상담 활용 4단계 | ai-hairstyle-simulation | https://blog.naver.com/iamoharu/224460110553 |
