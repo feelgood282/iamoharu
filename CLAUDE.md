@@ -150,4 +150,4 @@
 | 2026-11-07 09:00 예약 | AI 시대의 창작과 교육 | 음악 교육과 AI 2편: 수노·챗GPT·제미나이 연령 기준·수업 전 체크리스트 | music-education-ai | https://blog.naver.com/iamoharu/224460141412 |
 | 2026-10-31 | AI 활용 노하우 | 피클(Pickle) AI 비서 직접 써 본 후기: 무료 한도·초대 링크 가입법, 인스팅트와 비교 (1편) | pickle-ai-agent | https://blog.naver.com/iamoharu/224460219080 |
 | 2026-11-06 13:00 예약 | AI 활용 노하우 | 피클 AI 비서 2편: 대신 전화·캡처로 문제 해결·하루 한도와 앱 연결 | pickle-ai-agent | https://blog.naver.com/iamoharu/224460265922 |
-| 2026-11-13 13:00 예약 | AI 활용 노하우 | 인스팅트(Instinct) AI 비서란? 문자로 일 맡기는 법·한국 가입·개인정보 논란 정리 (정보 글, 사용자 미사용) | pickle-ai-agent | https://blog.naver.com/iamoharu/224460301081 |
+| 2026-11-05 13:00 예약 (11/13에서 앞당김: 피클 2편 전날에 올려 피클 중심, 인스팅트는 참고 정보로) | AI 활용 노하우 | 인스팅트(Instinct) AI 비서란? 문자로 일 맡기는 법·한국 가입·개인정보 논란 정리 (정보 글, 사용자 미사용) | pickle-ai-agent | https://blog.naver.com/iamoharu/224460301081 |
