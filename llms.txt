@@ -6,6 +6,7 @@
 
 ## 소개
 - [홈페이지](https://iamoharu.netlify.app/): 경력, 강의, 작품(OHARU 음원, clickply), 소개
+- [작곡가 오하루 프로필](https://iamoharu.netlify.app/oharu.html): 활동명 오하루(OHARU), 본명 이수연, 작곡가·음악 프로듀서, 2025년 「너는 별이야」 데뷔, 음반 목록
 - [강의 · 레슨 문의](https://iamoharu.netlify.app/#contact): 문의 양식
 
 ## 결 고운 하루 노트
