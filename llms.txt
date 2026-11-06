@@ -17,6 +17,7 @@
 - 공식 채널: [유튜브 @오하루-oharu](https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu), [멜론](https://www.melon.com/artist/timeline.htm?artistId=4170391), [Spotify](https://open.spotify.com/artist/47AE9ibGMnjhErPM3VonxE), [Apple Music](https://music.apple.com/kr/artist/1809666267), [위키데이터 Q142024758](https://www.wikidata.org/wiki/Q142024758)
 
 ## 결 고운 하루 노트
+- [로보월드 2026으로 본 휴머노이드·피지컬 AI 5가지](https://iamoharu.netlify.app/notes/robotworld-2026.html): 2026 로보월드(11.4~7 킨텍스 제1전시장 3~5홀, 산업통상부 주최, 17개국 402개사 1,198부스) 행사 개요와 관람 시간, 휴머노이드 특별관·VLA·제조 AX·핵심 부품·해외 기업 흐름, 국제로봇비즈니스컨퍼런스와 부대행사 (2026-11-06, 보도·주최 측 발표·전시 포털 안내 기준)
 - [AIoT 위크 코리아 2026으로 본 피지컬 AI 5가지](https://iamoharu.netlify.app/notes/aiot-week-2026.html): 2026 AIoT 위크 코리아(11.3~5 코엑스, 과기정통부 주최) 행사 개요와 관람 정보, 오토노머스에이투지 자율주행 셔틀 로이, UBTECH 휴머노이드 U1, 다국어 안내로봇 크루저 S1, 코딩 교육 로봇 G봇, 피지컬 AI 악기 리듬게임 트리니티 비트 (2026-11-03, 공식 안내·보도·현장 안내문 기준)
 - [휴대폰 속 AI 비서 피클, 인스팅트와 무엇이 다른가](https://iamoharu.netlify.app/notes/pickle-ai-agent.html): 대신 전화·예약·주문하는 AI 에이전트 앱 피클의 공식 기능, 한국 무료 하루 한도와 초대 링크 가입(보도 기준), 인스팅트와의 비교, 맡기기 전 확인할 점 (2026-10-31, 앱스토어 공식 설명·보도 기준)
 - [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-10-5.html): 2026년 10월 다섯째 주 AI 소식 5가지: 수노 MCP 베타(챗GPT·클로드·제미나이 안에서 노래 만들기), 챗GPT 아이클라우드 메일·캘린더 플러그인, 크롬 자동 완성 지메일 연동, 제미나이 4 카본 제한 공개, 호주 아동 챗봇 보호 법안 하원 통과 (2026-10-31)
