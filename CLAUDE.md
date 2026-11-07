@@ -167,6 +167,7 @@
 | 2026-11-10 09:00 예약 | AI 활용 노하우 | 제미나이 요금제 비교 1편: 무료·AI 플러스 7,500원·프로·울트라 한국 가격·11/13 변경 | gemini-plans-2026 | https://blog.naver.com/iamoharu/224468620115 |
 | 2026-11-11 09:00 예약 | AI 음악 만들기 | 수노(Suno) 커버 사용법 1편: 장르 바꾸는 5단계·남의 곡 업로드 금지 이유(v6) | suno-cover-extend | https://blog.naver.com/iamoharu/224468633627 |
 | 2026-11-12 09:00 예약 | 뷰티 × AI | AI 가상 메이크업 앱 비교 1편: 유캠·뷰티플러스·스노우 기능과 가격·색이 다른 이유 4가지 | ai-virtual-makeup | https://blog.naver.com/iamoharu/224468641321 |
+| 2026-11-13 09:00 예약 | 반주 · 피아노 × AI | 성탄 찬양 반주 준비 1편: 새찬송가 성탄 찬송 목록·분위기 살리는 반주 기법(페달 포인트·sus4 등, C코드 곡 예시) | christmas-worship-accompaniment | https://blog.naver.com/iamoharu/224468650507 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
