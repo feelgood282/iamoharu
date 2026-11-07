@@ -17,12 +17,12 @@
 - 공식 채널: [유튜브 @오하루-oharu](https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu), [멜론](https://www.melon.com/artist/timeline.htm?artistId=4170391), [Spotify](https://open.spotify.com/artist/47AE9ibGMnjhErPM3VonxE), [Apple Music](https://music.apple.com/kr/artist/1809666267), [위키데이터 Q142024758](https://www.wikidata.org/wiki/Q142024758)
 
 ## 결 고운 하루 노트
-- [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-11-1.html): 2026년 11월 첫째 주 AI 소식 5가지: 챗GPT 이미지 2.6(GIF 만들기·참고 이미지 저장), 구글 AI 플러스 11월 13일부터 프로 모델 선택 불가, 구글 Vids 제미나이 옴니 1.2 플래시 15초 영상, 클로드 개인 재무(미국 베타), AI 콘텐츠 페스티벌 2026(11.12~14 코엑스) (2026-11-09)
-- [제미나이 요금제 비교, 11월 13일 이후 무엇을 고를까](https://iamoharu.netlify.app/notes/gemini-plans-2026.html): 한국 제미나이 무료·AI 플러스·AI 프로·AI 울트라 가격과 모델·저장공간 차이, 11월 13일 AI 플러스 프로 모델 제외, 대학생 혜택, 구독 해지 방법 (2026-11-09, 구글 공식 요금제 페이지 기준)
-- [수노(Suno) 커버·익스텐드, 내 곡을 바꾸고 이어 만드는 법](https://iamoharu.netlify.app/notes/suno-cover-extend.html): 수노 v6 커버와 익스텐드 사용 순서, Get Whole Song, 플랜별 크레딧·업로드·다운로드 한도, 소유권과 업로드 저작권 정책 (2026-11-09, 수노 공식 도움말·약관 기준)
-- [AI 가상 메이크업 앱, 어디까지 믿을 수 있나](https://iamoharu.netlify.app/notes/ai-virtual-makeup.html): 유캠 메이크업·뷰티플러스·스노우 기능과 한국 가격 비교, 가상 메이크업 색이 실제와 다른 이유, 얼굴 사진 처리·보관 기간과 개인정보 체크리스트 (2026-11-09, 앱스토어·처리방침 기준)
-- [성탄 찬양 반주 준비, 코드 진행과 편곡 아이디어](https://iamoharu.netlify.app/notes/christmas-worship-accompaniment.html): 새찬송가 성탄 찬송 목록과 원곡 정보, 페달 포인트·sus4·부속 딸림화음·아멘 종지·마지막 절 전조, 악보·음원 저작권, 연습 도구 (2026-11-09)
-- [유튜브 AI 콘텐츠, 수익 정책 어디까지 알아야 하나](https://iamoharu.netlify.app/notes/youtube-ai-monetization.html): 유튜브 파트너 프로그램 요건과 2027년 2월 변경, 비진정성(반복·대량) 콘텐츠 기준, AI 음악 사용 공개 의무, AI 라벨과 수익의 관계, 심사·재신청 (2026-11-09, 유튜브 고객센터·공식 블로그 기준)
+- [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-11-1.html): 2026년 11월 첫째 주 AI 소식 5가지: 챗GPT 이미지 2.6(GIF 만들기·참고 이미지 저장), 구글 AI 플러스 11월 13일부터 프로 모델 선택 불가, 구글 Vids 제미나이 옴니 1.2 플래시 15초 영상, 클로드 개인 재무(미국 베타), AI 콘텐츠 페스티벌 2026(11.12~14 코엑스) (2026-11-07)
+- [제미나이 요금제 비교, 11월 13일 이후 무엇을 고를까](https://iamoharu.netlify.app/notes/gemini-plans-2026.html): 한국 제미나이 무료·AI 플러스·AI 프로·AI 울트라 가격과 모델·저장공간 차이, 11월 13일 AI 플러스 프로 모델 제외, 대학생 혜택, 구독 해지 방법 (2026-11-07, 구글 공식 요금제 페이지 기준)
+- [수노(Suno) 커버·익스텐드, 내 곡을 바꾸고 이어 만드는 법](https://iamoharu.netlify.app/notes/suno-cover-extend.html): 수노 v6 커버와 익스텐드 사용 순서, Get Whole Song, 플랜별 크레딧·업로드·다운로드 한도, 소유권과 업로드 저작권 정책 (2026-11-07, 수노 공식 도움말·약관 기준)
+- [AI 가상 메이크업 앱, 어디까지 믿을 수 있나](https://iamoharu.netlify.app/notes/ai-virtual-makeup.html): 유캠 메이크업·뷰티플러스·스노우 기능과 한국 가격 비교, 가상 메이크업 색이 실제와 다른 이유, 얼굴 사진 처리·보관 기간과 개인정보 체크리스트 (2026-11-07, 앱스토어·처리방침 기준)
+- [성탄 찬양 반주 준비, 코드 진행과 편곡 아이디어](https://iamoharu.netlify.app/notes/christmas-worship-accompaniment.html): 새찬송가 성탄 찬송 목록과 원곡 정보, 페달 포인트·sus4·부속 딸림화음·아멘 종지·마지막 절 전조, 악보·음원 저작권, 연습 도구 (2026-11-07)
+- [유튜브 AI 콘텐츠, 수익 정책 어디까지 알아야 하나](https://iamoharu.netlify.app/notes/youtube-ai-monetization.html): 유튜브 파트너 프로그램 요건과 2027년 2월 변경, 비진정성(반복·대량) 콘텐츠 기준, AI 음악 사용 공개 의무, AI 라벨과 수익의 관계, 심사·재신청 (2026-11-07, 유튜브 고객센터·공식 블로그 기준)
 - [로보월드 2026으로 본 휴머노이드·피지컬 AI 5가지](https://iamoharu.netlify.app/notes/robotworld-2026.html): 2026 로보월드(11.4~7 킨텍스 제1전시장 3~5홀, 산업통상부 주최, 17개국 402개사 1,198부스) 행사 개요와 관람 시간, 휴머노이드 특별관·VLA·제조 AX·핵심 부품·해외 기업 흐름, 국제로봇비즈니스컨퍼런스와 부대행사 (2026-11-06, 보도·주최 측 발표·전시 포털 안내 기준)
 - [AIoT 위크 코리아 2026으로 본 피지컬 AI 5가지](https://iamoharu.netlify.app/notes/aiot-week-2026.html): 2026 AIoT 위크 코리아(11.3~5 코엑스, 과기정통부 주최) 행사 개요와 관람 정보, 오토노머스에이투지 자율주행 셔틀 로이, UBTECH 휴머노이드 U1, 다국어 안내로봇 크루저 S1, 코딩 교육 로봇 G봇, 피지컬 AI 악기 리듬게임 트리니티 비트 (2026-11-03, 공식 안내·보도·현장 안내문 기준)
 - [휴대폰 속 AI 비서 피클, 인스팅트와 무엇이 다른가](https://iamoharu.netlify.app/notes/pickle-ai-agent.html): 대신 전화·예약·주문하는 AI 에이전트 앱 피클의 공식 기능, 한국 무료 하루 한도와 초대 링크 가입(보도 기준), 인스팅트와의 비교, 맡기기 전 확인할 점 (2026-10-31, 앱스토어 공식 설명·보도 기준)

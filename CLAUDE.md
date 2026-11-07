@@ -18,7 +18,7 @@
     - 블로그: 월~토 6편 모두 각 요일 09:00 예약(월 AI 뉴스, 화~토 분야 글). 사진은 편마다 3장을 사용자가 챗GPT로 만들고 도식 2장은 Claude가 만듦
     - 11/1(일): AI 뉴스 노트(11월 첫째 주) + 블로그 AI 뉴스 + 2편 5개(제미나이·수노 Styles·AI 헤어·조옮김·음악 교육)
     - 11/8(일): AI 뉴스 노트 + 새 분야 노트 5편 + 블로그 AI 뉴스 + 새 노트 1편 5개
-    - 11/8 작업 실제(2026-11-07 밤에 앞당겨 진행): 노트 6편 ai-news-2026-11-1, gemini-plans-2026(화), suno-cover-extend(수, 사용자 선택), ai-virtual-makeup(목, 사용자 선택), christmas-worship-accompaniment(금), youtube-ai-monetization(토). 노트 HTML·OG·NOTES·sitemap·llms·글꼴은 [skip netlify]로 저장, 대표 이미지(note-<slug>.webp)는 사용자 챗GPT 생성 대기 → 받으면 넣고 한 번 배포. 블로그 6편(1편들)은 Aside 붙여넣기 파일 완성, 사진 18장 대기. 다음 주(11/17~22) 화~토는 이 노트들의 2편
+    - 11/8 작업 실제(2026-11-07 밤에 앞당겨 진행): 노트 6편 ai-news-2026-11-1, gemini-plans-2026(화), suno-cover-extend(수, 사용자 선택), ai-virtual-makeup(목, 사용자 선택), christmas-worship-accompaniment(금), youtube-ai-monetization(토). 노트 HTML·OG·NOTES·sitemap·llms·글꼴은 [skip netlify]로 저장, 대표 이미지 6장 받아 넣고 2026-11-07 밤 배포(노트 날짜 2026.11.07). 블로그 6편(1편들)은 Aside 붙여넣기 파일 완성, 사진 18장 대기. 다음 주(11/17~22) 화~토는 이 노트들의 2편
 
 ## 방문자 통계 (2026-11-02 설치)
 - Google Analytics 4 측정 ID G-MVBF937WLR (속성 iamoharu, 스트림 "홈페이지", 계정 feelgood282). 모든 페이지 머리말에 `<!--ga:start-->…<!--ga:end-->` 블록이 있음
