@@ -18,7 +18,7 @@
     - 블로그: 월~토 6편 모두 각 요일 09:00 예약(월 AI 뉴스, 화~토 분야 글). 사진은 편마다 3장을 사용자가 챗GPT로 만들고 도식 2장은 Claude가 만듦
     - 11/1(일): AI 뉴스 노트(11월 첫째 주) + 블로그 AI 뉴스 + 2편 5개(제미나이·수노 Styles·AI 헤어·조옮김·음악 교육)
     - 11/8(일): AI 뉴스 노트 + 새 분야 노트 5편 + 블로그 AI 뉴스 + 새 노트 1편 5개
-    - 11/8 작업 실제(2026-11-07 밤에 앞당겨 진행): 노트 6편 ai-news-2026-11-1, gemini-plans-2026(화), suno-cover-extend(수, 사용자 선택), ai-virtual-makeup(목, 사용자 선택), christmas-worship-accompaniment(금), youtube-ai-monetization(토). 노트 HTML·OG·NOTES·sitemap·llms·글꼴은 [skip netlify]로 저장, 대표 이미지 6장 받아 넣고 2026-11-07 밤 배포(노트 날짜 2026.11.07). 블로그 6편(1편들)은 Aside 붙여넣기 파일 완성, 사진 18장 대기. 다음 주(11/17~22) 화~토는 이 노트들의 2편
+    - 11/8 작업 실제(2026-11-07 밤에 앞당겨 진행): 노트 6편 ai-news-2026-11-1, gemini-plans-2026(화), suno-cover-extend(수, 사용자 선택), ai-virtual-makeup(목, 사용자 선택), christmas-worship-accompaniment(금), youtube-ai-monetization(토). 노트 HTML·OG·NOTES·sitemap·llms·글꼴은 [skip netlify]로 저장, 대표 이미지 6장 받아 넣고 2026-11-07 밤 배포(노트 날짜 2026.11.07). 블로그 6편(1편들)은 2026-11-07 밤 11/9~11/14 09:00 예약 완료. 다음 주(11/17~22) 화~토는 이 노트들의 2편
 
 ## 방문자 통계 (2026-11-02 설치)
 - Google Analytics 4 측정 ID G-MVBF937WLR (속성 iamoharu, 스트림 "홈페이지", 계정 feelgood282). 모든 페이지 머리말에 `<!--ga:start-->…<!--ga:end-->` 블록이 있음
@@ -168,6 +168,7 @@
 | 2026-11-11 09:00 예약 | AI 음악 만들기 | 수노(Suno) 커버 사용법 1편: 장르 바꾸는 5단계·남의 곡 업로드 금지 이유(v6) | suno-cover-extend | https://blog.naver.com/iamoharu/224468633627 |
 | 2026-11-12 09:00 예약 | 뷰티 × AI | AI 가상 메이크업 앱 비교 1편: 유캠·뷰티플러스·스노우 기능과 가격·색이 다른 이유 4가지 | ai-virtual-makeup | https://blog.naver.com/iamoharu/224468641321 |
 | 2026-11-13 09:00 예약 | 반주 · 피아노 × AI | 성탄 찬양 반주 준비 1편: 새찬송가 성탄 찬송 목록·분위기 살리는 반주 기법(페달 포인트·sus4 등, C코드 곡 예시) | christmas-worship-accompaniment | https://blog.naver.com/iamoharu/224468650507 |
+| 2026-11-14 09:00 예약 | AI 시대의 창작과 교육 | 유튜브 AI 콘텐츠 수익 정책 1편: AI 음악·영상도 수익 날까? 비진정성 콘텐츠 기준과 2027년 YPP 조건 변경 | youtube-ai-monetization | https://blog.naver.com/iamoharu/224468658510 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
