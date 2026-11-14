@@ -180,6 +180,7 @@
 | 2026-11-16 09:00 예약 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (11월 둘째 주): 챗GPT 음성 12월 11일 변경·클로드 시트·제미나이 카플레이·AI 안경 | ai-news-2026-11-2 | https://blog.naver.com/iamoharu/224476974953 |
 | 2026-11-17 09:00 예약 | AI 활용 노하우 | 제미나이 요금제 2편: 나에게 맞는 요금제 고르는 법·대학생 혜택·구독 해지 4단계 (11월 13일 변경 반영) | gemini-plans-2026 | https://blog.naver.com/iamoharu/224476999749 |
 | 2026-11-18 09:00 예약 | AI 음악 만들기 | 수노(Suno) 익스텐드 사용법 2편: 짧게 끝난 곡 이어 만드는 4단계·Get Whole Song·플랜별 크레딧과 다운로드 한도 (v6 기준) | suno-cover-extend | https://blog.naver.com/iamoharu/224477031099 |
+| 2026-11-19 09:00 예약 | 뷰티 × AI | AI 가상 메이크업 앱 2편: 얼굴 사진 보관 기간 비교(유캠·뷰티플러스·스노우)·처리방침에서 볼 3가지·잘 쓰는 법 4단계 | ai-virtual-makeup | https://blog.naver.com/iamoharu/224477103798 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
