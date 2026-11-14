@@ -17,6 +17,7 @@
 - 공식 채널: [유튜브 @오하루-oharu](https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu), [멜론](https://www.melon.com/artist/timeline.htm?artistId=4170391), [Spotify](https://open.spotify.com/artist/47AE9ibGMnjhErPM3VonxE), [Apple Music](https://music.apple.com/kr/artist/1809666267), [위키데이터 Q142024758](https://www.wikidata.org/wiki/Q142024758)
 
 ## 결 고운 하루 노트
+- [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-11-2.html): 2026년 11월 둘째 주 AI 소식 5가지: 챗GPT 고급·표준 음성 12월 11일 종료(라이브 음성으로 통일), 클로드 화이트보드·시트·데이터와 클로드 미팅 베타, 제미나이 애플 카플레이, 어도비 맥스 2026 파이어플라이 크리에이티브 에이전트, 제미나이 탑재 인텔리전트 아이웨어 미국 사전 예약 (2026-11-16)
 - [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-11-1.html): 2026년 11월 첫째 주 AI 소식 5가지: 챗GPT 이미지 2.6(GIF 만들기·참고 이미지 저장), 구글 AI 플러스 11월 13일부터 프로 모델 선택 불가, 구글 Vids 제미나이 옴니 1.2 플래시 15초 영상, 클로드 개인 재무(미국 베타), AI 콘텐츠 페스티벌 2026(11.12~14 코엑스) (2026-11-07)
 - [제미나이 요금제 비교, 11월 13일 이후 무엇을 고를까](https://iamoharu.netlify.app/notes/gemini-plans-2026.html): 한국 제미나이 무료·AI 플러스·AI 프로·AI 울트라 가격과 모델·저장공간 차이, 11월 13일 AI 플러스 프로 모델 제외, 대학생 혜택, 구독 해지 방법 (2026-11-07, 구글 공식 요금제 페이지 기준)
 - [수노(Suno) 커버·익스텐드, 내 곡을 바꾸고 이어 만드는 법](https://iamoharu.netlify.app/notes/suno-cover-extend.html): 수노 v6 커버와 익스텐드 사용 순서, Get Whole Song, 플랜별 크레딧·업로드·다운로드 한도, 소유권과 업로드 저작권 정책 (2026-11-07, 수노 공식 도움말·약관 기준)
