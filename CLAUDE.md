@@ -184,6 +184,7 @@
 | 2026-11-18 09:00 예약 | AI 음악 만들기 | 수노(Suno) 익스텐드 사용법 2편: 짧게 끝난 곡 이어 만드는 4단계·Get Whole Song·플랜별 크레딧과 다운로드 한도 (v6 기준) | suno-cover-extend | https://blog.naver.com/iamoharu/224477031099 |
 | 2026-11-19 09:00 예약 | 뷰티 × AI | AI 가상 메이크업 앱 2편: 얼굴 사진 보관 기간 비교(유캠·뷰티플러스·스노우)·처리방침에서 볼 3가지·잘 쓰는 법 4단계 | ai-virtual-makeup | https://blog.naver.com/iamoharu/224477103798 |
 | 2026-11-20 09:00 예약 | 반주 · 피아노 × AI | 성탄 찬양 반주 2편: 성탄 악보·음원 저작권 4가지와 연습 도구 3가지(뮤즈스코어·모이세스·아이리얼 프로). 사진은 성탄 빨강 대신 라벤더 톤으로 교체(11/14) | christmas-worship-accompaniment | https://blog.naver.com/iamoharu/224477117669 |
+| 2026-11-21 09:00 예약 | AI 시대의 창작과 교육 | 유튜브 AI 콘텐츠 수익 2편: AI 사용 공개 기준·AI 라벨·YPP 심사와 재신청 기간 | youtube-ai-monetization | https://blog.naver.com/iamoharu/224477158850 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
