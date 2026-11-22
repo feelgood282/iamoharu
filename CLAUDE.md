@@ -189,6 +189,7 @@
 | 2026-11-21 09:00 예약 | AI 시대의 창작과 교육 | 유튜브 AI 콘텐츠 수익 2편: AI 사용 공개 기준·AI 라벨·YPP 심사와 재신청 기간 | youtube-ai-monetization | https://blog.naver.com/iamoharu/224477158850 |
 | 2026-11-23 09:00 예약 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (11월 셋째 주): 제미나이 태스크 한국 무료·챗GPT 스페이스·라이브 받아쓰기·모바일 새 화면·앤트로픽 상장 | ai-news-2026-11-3 | https://blog.naver.com/iamoharu/224487117722 |
 | 2026-11-24 09:00 예약 | AI 활용 노하우 | 제미나이 태스크 무료 사용법 1편: 채팅과 다른 점·한국에서 쓰는 조건·시작하는 5단계 | gemini-tasks-free | https://blog.naver.com/iamoharu/224487138080 |
+| 2026-11-25 09:00 예약 | AI 음악 만들기 | 수노(Suno) Visuals 사용법 1편: 내 노래로 15초 영상·가사 영상 만드는 5단계 | suno-visuals | https://blog.naver.com/iamoharu/224487291574 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
