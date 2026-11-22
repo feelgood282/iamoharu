@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PDF 악보를 편집 가능한 악보로 | AI 악보 인식 도구 비교</title>
+<meta name="description" content="종이·PDF 악보를 뮤즈스코어에서 고칠 수 있는 악보로 바꾸는 악보 인식(OMR). 뮤즈스코어 PDF 가져오기·오디베리스·플레이스코어 2·사운드슬라이스 비교와 변환 순서, 검수·저작권 주의점을 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PDF 악보를 편집할 수 있는 악보로, AI 악보 인식(OMR) 정리">
+<meta property="og:description" content="PDF는 그림일 뿐. 악보 인식으로 MusicXML을 만드는 순서와 도구, 꼭 고쳐야 할 곳. 결 고운 하루 노트 · OHARU 이수연">
+<meta property="og:image" content="https://iamoharu.netlify.app/img/og-sheet-music-omr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PDF 악보를 편집할 수 있는 악보로, AI 악보 인식(OMR) 정리, 결 고운 하루 노트 표지">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="결 고운 하루 · OHARU">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://iamoharu.netlify.app/notes/sheet-music-omr.html">
+<link rel="canonical" href="https://iamoharu.netlify.app/notes/sheet-music-omr.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<!--fonts:start-->
+<link rel="preload" href="/fonts/gowun-dodum-400.woff2?v=f4e0baeb" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Gowun Dodum";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/gowun-dodum-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/ibm-plex-mono-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-mono-500.woff2?v=f4e0baeb) format("woff2")}</style>
+<!--fonts:end-->
+<script type="application/ld+json">
+[{"@context": "https://schema.org", "@type": "Article", "headline": "PDF 악보를 편집할 수 있는 악보로, AI 악보 인식(OMR) 정리", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "inLanguage": "ko", "image": ["https://iamoharu.netlify.app/img/note-sheet-music-omr.webp", "https://iamoharu.netlify.app/img/og-sheet-music-omr.png"], "author": {"@type": "Person", "name": "이수연", "alternateName": "OHARU", "url": "https://iamoharu.netlify.app/"}, "mainEntityOfPage": "https://iamoharu.netlify.app/notes/sheet-music-omr.html"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "뮤즈스코어에서 PDF를 바로 열 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "뮤즈스코어 자체가 PDF를 읽는 것은 아니고, PDF 가져오기를 누르면 뮤즈스코어닷컴의 온라인 변환(오디베리스 기반 실험 기능)으로 연결됩니다. 결과는 꼭 원본과 대조해 고쳐야 합니다."}}, {"@type": "Question", "name": "무료로 쓸 수 있는 악보 인식 도구가 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "뮤즈스코어 PDF 가져오기와 오디베리스는 무료입니다. 플레이스코어 2는 앱은 무료지만 주요 기능은 유료 구독이고, 사운드슬라이스의 스캔 기능은 유료 플랜에서 쓸 수 있다고 알려져 있습니다."}}, {"@type": "Question", "name": "변환한 악보를 교회 단체방에 올려도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "형식을 바꿔도 원래 악보의 저작권은 그대로입니다. 여러 사람에게 나눠 주는 것은 배포에 해당할 수 있어 권리자 허락이 필요한지 먼저 확인해야 합니다."}}]}]
+</script>
+<style>
+:root{
+  --bg:#ffffff; --surface:#f8f7fb; --ink:#111111; --ink-soft:#5c5a63; --line:#e9e7ee;
+  --accent:#ece6fd; --on-accent:#3b2a85; --violet:#6a4bd6; --on-violet:#ffffff;
+  --display:"Gowun Dodum","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.85;
+  word-break:keep-all;overflow-wrap:break-word;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-size:20px;text-decoration:none}
+.brand span{color:var(--ink-soft);font-family:var(--body);font-size:13px;margin-left:8px}
+nav .back{font-size:14px;color:var(--ink-soft);text-decoration:none}
+nav .back:hover{color:var(--ink)}
+header{padding-block:48px 28px;display:grid;gap:16px}
+.crumb{font-size:13px;color:var(--violet);font-weight:500}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.3;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,6vw,46px)}
+.dates{font-size:13px;color:var(--ink-soft)}
+.summary{background:var(--accent);color:var(--on-accent);border-radius:16px;padding:22px 24px;margin:8px 0 12px}
+.summary b{display:block;font-size:13px;letter-spacing:.04em;margin-bottom:8px}
+.summary ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:15.5px;line-height:1.7}
+article h2{font-size:clamp(24px,4vw,30px);margin:56px 0 16px;padding-top:24px;border-top:1.5px solid var(--ink)}
+article h3{font-size:21px;margin:32px 0 10px}
+article p{margin:0 0 14px}
+article ul,article ol{margin:0 0 16px;padding-left:22px}
+article li{margin-bottom:6px}
+.step{display:inline-block;font-family:var(--mono);font-size:12px;color:var(--violet);margin-right:8px;vertical-align:2px}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.7;margin:0 0 18px;white-space:pre-wrap}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+pre code{background:none;border:0;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;border-bottom:1.5px solid var(--ink);font-size:14px}
+td:first-child{font-weight:500}
+.tags td:first-child{font-family:var(--mono);font-size:13px;font-weight:400}
+.note-box{border-left:3px solid var(--violet);background:var(--surface);padding:14px 18px;border-radius:0 12px 12px 0;margin:0 0 18px;font-size:15px;color:var(--ink-soft)}
+.note-box b{color:var(--ink)}
+.check{list-style:none;padding:0}
+.check li{padding:10px 0 10px 30px;border-bottom:1px solid var(--line);position:relative;margin:0}
+.check li::before{content:"";position:absolute;left:2px;top:16px;width:14px;height:14px;border:1.5px solid var(--violet);border-radius:4px}
+.sources{font-size:14px;color:var(--ink-soft)}
+.sources li{margin-bottom:8px}
+.sources a{color:var(--ink)}
+.author{margin-top:64px;border:1.5px solid var(--ink);border-radius:20px;padding:26px;display:grid;gap:12px}
+.author .who{font-family:var(--display);font-size:22px}
+.author p{margin:0;color:var(--ink-soft);font-size:15px;line-height:1.75}
+.author .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14.5px;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:var(--on-violet)}
+.more{margin-top:48px}
+.more h2{font-size:22px;border:0;padding:0;margin:0 0 14px}
+.more ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.more li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.more li span{color:var(--ink-soft);font-size:13px;white-space:nowrap}
+footer{padding-block:48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-soft)}
+.hero{margin:22px 0 8px}
+.hero img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.hero figcaption{margin-top:8px;font-size:12.5px;color:var(--ink-soft)}
+</style>
+
+<!--ga:start-->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MVBF937WLR');
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MVBF937WLR';document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--ga:end-->
+<!--naver:start-->
+<script>
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://wcs.pstatic.net/wcslog.js';
+s.onload=function(){if(!window.wcs_add)window.wcs_add={};wcs_add["wa"]="be82a2662495d8";if(window.wcs){wcs_do();}};document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--naver:end-->
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="../">OHARU<span>이수연</span></a>
+  <a class="back" href="../#notes">← 결 고운 하루 노트</a>
+</nav>
+<main>
+
+<header>
+  <p class="crumb">결 고운 하루 노트 · 반주 · 피아노 × AI</p>
+  <h1>PDF 악보를 편집할 수 있는 악보로, AI 악보 인식(OMR) 정리</h1>
+  <p class="dates">2026년 11월 기준 · 작성 2026.11.22 · 각 도구 공식 안내·앱스토어·사용자 포럼 기준</p>
+  <div class="summary">
+    <b>핵심 요약</b>
+    <ol>
+      <li>PDF 악보는 음표가 아니라 그림입니다. 악보 인식(OMR)은 이 그림을 읽어 음표 정보가 담긴 MusicXML 파일로 바꾸고, 그 파일을 뮤즈스코어 같은 악보 프로그램에서 열어 고칩니다.</li>
+      <li>무료로는 뮤즈스코어의 PDF 가져오기(오디베리스 기반 실험 기능)와 오디베리스 직접 설치가 있고, 유료로는 플레이스코어 2, 사운드슬라이스, 뉴직 같은 도구가 있습니다.</li>
+      <li>어떤 도구든 조표·박자·셋잇단음·가사·코드 기호에서 오류가 납니다. 변환 뒤 원본과 한 마디씩 대조해 고쳐야 하고, 산 악보라도 변환한 파일을 나눠 주는 일은 저작권 허락이 필요할 수 있습니다.</li>
+    </ol>
+  </div>
+</header>
+
+<figure class="hero">
+  <img src="../img/note-sheet-music-omr.webp" srcset="../img/note-sheet-music-omr-768.webp 768w, ../img/note-sheet-music-omr.webp 1536w" sizes="(max-width:760px) 100vw, 760px" width="1536" height="1024" fetchpriority="high" alt="흰 책상 위 노트북 화면에 연보라 오선지 악보가 펼쳐져 있고, 옆에 놓인 종이 악보를 왼손으로 짚으며 오른손으로 마우스를 쥔 모습">
+  <figcaption>AI 생성 이미지입니다.</figcaption>
+</figure>
+
+<article>
+<p>교회에서 받은 PDF 악보를 다른 조로 바꾸거나, 오래된 종이 악보를 깔끔하게 다시 만들고 싶을 때가 있습니다. 처음부터 음표를 하나하나 입력하면 시간이 오래 걸리는데, 악보 인식(OMR, Optical Music Recognition)을 쓰면 컴퓨터가 악보 그림을 읽어 편집할 수 있는 파일로 바꿔 줍니다. 이 노트는 각 도구의 공식 안내와 앱스토어 정보, 그리고 실제 사용자 포럼·리뷰를 바탕으로 정리했습니다. 공식 문서가 아닌 내용은 "사용자 포럼 기준"처럼 표시했습니다.</p>
+
+<h2>PDF 악보는 왜 바로 고칠 수 없나</h2>
+<p>PDF는 종이를 찍은 사진과 같아서, 사람 눈에는 음표로 보여도 프로그램에는 점과 선의 그림일 뿐입니다. 뮤즈스코어(MuseScore) 사용자 포럼에서도 "PDF는 그냥 그림"이라고 설명합니다. 악보 프로그램끼리 악보를 주고받는 공통 형식은 MusicXML이므로, 악보 인식의 목표는 그림을 MusicXML로 바꾸는 것입니다.</p>
+<ol>
+  <li><span class="step">01</span>PDF나 사진을 악보 인식 도구에 넣는다</li>
+  <li><span class="step">02</span>도구가 오선·음표·쉼표·조표를 읽어 MusicXML을 만든다</li>
+  <li><span class="step">03</span>뮤즈스코어·시벨리우스·도리코 같은 악보 프로그램에서 열어 고친다</li>
+</ol>
+
+<h2>도구 비교</h2>
+<div class="tbl"><table>
+<tr><th>도구</th><th>방식·가격</th><th>특징</th></tr>
+<tr><td>뮤즈스코어 PDF 가져오기</td><td>무료, musescore.com 온라인 변환</td><td>파일 메뉴의 PDF 가져오기를 누르면 뮤즈스코어닷컴의 변환 페이지로 연결됩니다. 오디베리스(Audiveris)를 바탕으로 한 실험 기능이라 결과가 고르지 않습니다</td></tr>
+<tr><td>오디베리스</td><td>무료, 컴퓨터에 설치</td><td>뮤즈스코어 변환의 바탕이 되는 오픈소스 프로그램입니다. 직접 설치하면 변환 중에 더 많이 고칠 수 있다고 사용자 포럼에서 권합니다</td></tr>
+<tr><td>플레이스코어 2(PlayScore 2)</td><td>앱은 무료, 기능은 유료 구독(한국 앱스토어: 프로페셔널 월 9,900원·연 66,000원)</td><td>휴대폰 카메라로 찍거나 PDF를 넣으면 바로 연주해 주고, MusicXML·MIDI로 내보냅니다</td></tr>
+<tr><td>사운드슬라이스(Soundslice)</td><td>웹 브라우저, 스캔 기능은 유료 플랜(보도 기준)</td><td>머신러닝 기반으로 인식 품질이 좋다는 평가가 많습니다. 결과를 MusicXML로 받아 다른 프로그램에서 쓸 수 있습니다</td></tr>
+<tr><td>뉴직(Newzik)</td><td>앱·웹, 유료 기능 포함</td><td>PDF를 넣으면 라이브스코어(LiveScore)로 바꾸고, 검토한 뒤 MusicXML로 내보냅니다</td></tr>
+</table></div>
+<p>가격은 2026년 11월 22일 한국 앱스토어 기준이며 바뀔 수 있습니다. 악보 표기 전문 매체 스코어링 노츠(Scoring Notes)는 머신러닝 기반 도구(뉴직·사운드슬라이스), 휴대폰 앱(플레이스코어 2 등), 전통 데스크톱 프로그램으로 나눠 비교했습니다.</p>
+
+<h2>변환 순서: 이렇게 하면 덜 고친다</h2>
+<ol>
+  <li><span class="step">01</span><b>원본을 깨끗하게</b>: 스캔본이라면 흑백, 300DPI 정도로 반듯하게 스캔한 파일이 잘 읽힌다고 사용자 포럼에서 권합니다.</li>
+  <li><span class="step">02</span><b>필요한 곡만</b>: 두꺼운 찬양집 전체가 아니라 필요한 곡의 페이지만 잘라 넣습니다. 뮤즈스코어 온라인 변환은 하루 한 건으로 제한된다는 안내가 있습니다(보도 기준).</li>
+  <li><span class="step">03</span><b>변환 후 원본과 대조</b>: 첫 마디부터 원본 PDF와 나란히 띄워 놓고 한 마디씩 봅니다.</li>
+  <li><span class="step">04</span><b>MusicXML로 저장</b>: 고친 결과를 MusicXML이나 뮤즈스코어 파일로 저장해 두면 다른 프로그램에서도 열 수 있습니다.</li>
+  <li><span class="step">05</span><b>조옮김·파트 정리</b>: 이제부터는 일반 악보처럼 조를 바꾸거나 파트를 나눌 수 있습니다. 조옮김 방법은 <a href="worship-transpose.html">찬양 반주 조옮김 노트</a>에 정리했습니다.</li>
+</ol>
+
+<h2>꼭 다시 봐야 할 곳</h2>
+<p>사용자 포럼과 리뷰에서 공통으로 지적하는 오류는 아래와 같습니다. 반주용 악보라면 특히 코드 기호와 가사를 꼼꼼히 봐야 합니다(작성자 정리).</p>
+<ul>
+  <li><b>조표와 임시표</b>: 샵·플랫이 하나 빠지면 곡 전체가 틀어집니다.</li>
+  <li><b>박자와 마디 길이</b>: 셋잇단음·붙임줄이 빠지면 마디 길이가 맞지 않습니다.</li>
+  <li><b>가사와 코드 기호</b>: 글자는 인식이 약합니다. 뮤즈스코어 온라인 변환은 가사나 다른 글자가 빠졌다는 사용자 경험담이 많습니다.</li>
+  <li><b>셈여림과 반복 기호</b>: 셈여림·크레셴도 표시, 도돌이표·D.S. 같은 기호가 빠지거나 다른 기호로 바뀝니다.</li>
+  <li><b>손글씨·흐린 복사본</b>: 사람 손으로 그린 악보나 여러 번 복사한 악보는 정확도가 크게 떨어집니다.</li>
+</ul>
+<div class="note-box"><b>현실적인 기대치</b> 오류를 찾아 고치는 일이 처음부터 입력하는 것보다 오래 걸릴 수도 있다는 사용자 의견도 있습니다(뮤즈스코어 포럼). 간단한 단선율·찬송가 4성부는 변환이 유리하고, 복잡한 피아노 편곡은 직접 입력이 빠를 수 있습니다.</div>
+
+<h2>저작권, 변환해도 원래 악보의 권리는 그대로</h2>
+<p>악보 파일 형식을 바꿨다고 해서 저작권이 사라지지는 않습니다. 직접 산 악보라도 변환한 파일을 단체 대화방에 올리거나 여러 사람에게 나눠 주면 배포에 해당해 권리자 허락이 필요할 수 있습니다. 찬송가·찬양 악보의 저작권 구분은 <a href="christmas-worship-accompaniment.html">성탄 찬양 반주 노트</a>에 정리해 두었습니다. 법률 판단이 필요한 경우에는 한국저작권위원회 상담을 이용하세요.</p>
+
+<h2>악보 변환 전 체크리스트</h2>
+<ul class="check">
+  <li>변환할 곡의 페이지만 깨끗한 PDF(흑백·반듯하게)로 준비한다</li>
+  <li>무료(뮤즈스코어·오디베리스)로 먼저 해 보고, 결과가 부족하면 유료 도구를 고른다</li>
+  <li>조표·박자·셋잇단음·가사·코드 기호를 원본과 한 마디씩 대조한다</li>
+  <li>고친 악보는 MusicXML로도 저장해 둔다</li>
+  <li>변환한 파일을 다른 사람에게 나누기 전에 저작권 허락이 필요한지 확인한다</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<h3>뮤즈스코어에서 PDF를 바로 열 수 있나요?</h3>
+<p>뮤즈스코어 자체가 PDF를 읽는 것은 아니고, PDF 가져오기를 누르면 뮤즈스코어닷컴의 온라인 변환(오디베리스 기반 실험 기능)으로 연결됩니다. 결과는 꼭 원본과 대조해 고쳐야 합니다.</p>
+<h3>무료로 쓸 수 있는 악보 인식 도구가 있나요?</h3>
+<p>뮤즈스코어 PDF 가져오기와 오디베리스는 무료입니다. 플레이스코어 2는 앱은 무료지만 주요 기능은 유료 구독이고, 사운드슬라이스의 스캔 기능은 유료 플랜에서 쓸 수 있다고 알려져 있습니다.</p>
+<h3>변환한 악보를 교회 단체방에 올려도 되나요?</h3>
+<p>형식을 바꿔도 원래 악보의 저작권은 그대로입니다. 여러 사람에게 나눠 주는 것은 배포에 해당할 수 있어 권리자 허락이 필요한지 먼저 확인해야 합니다.</p>
+
+<h2>참고 자료</h2>
+<ol class="sources">
+  <li><a href="https://musescore.org/en/node/323443" rel="noopener">뮤즈스코어 포럼, PDF는 그림이다·PDF 가져오기(오디베리스 기반 실험 기능)</a></li>
+  <li><a href="https://musescore.org/en/node/376686" rel="noopener">뮤즈스코어 포럼, musescore.com/import와 오디베리스</a></li>
+  <li><a href="https://musescore.org/en/node/352745" rel="noopener">뮤즈스코어 포럼, 오디베리스 직접 설치 권장</a></li>
+  <li><a href="https://musescore.org/en/node/99871" rel="noopener">뮤즈스코어 포럼, 300DPI 깨끗한 스캔 권장</a></li>
+  <li><a href="https://musescore.org/en/node/329654" rel="noopener">뮤즈스코어 포럼, PDF 변환 결과의 오류</a></li>
+  <li><a href="https://github.com/Audiveris/audiveris/releases" rel="noopener">Audiveris 공식 배포 페이지(GitHub)</a></li>
+  <li><a href="https://apps.apple.com/kr/app/playscore-2/id1449591118" rel="noopener">App Store(한국), PlayScore 2</a> (2026.11.22 확인)</li>
+  <li><a href="https://www.scoringnotes.com/reviews/scanning-the-current-omr-landscape/" rel="noopener">Scoring Notes, Scanning the current OMR landscape</a></li>
+  <li><a href="https://en.blog.newzik.com/blog/convertir-partition-pdf-en-musicxml" rel="noopener">Newzik 블로그, PDF 악보를 MusicXML로 바꾸는 법</a></li>
+  <li><a href="https://updf.com/knowledge/play-sheet-music-from-pdf/" rel="noopener">UPDF, PDF 악보 재생(사운드슬라이스 유료 플랜·뮤즈스코어 하루 1건 제한 정리)</a></li>
+</ol>
+<p class="sources">이 노트는 2026년 11월 22일에 각 도구의 공식 안내·앱스토어 정보와 뮤즈스코어 사용자 포럼, 악보 표기 매체 리뷰를 확인해 정리했습니다. 포럼과 블로그에서 온 내용은 사용자 경험 기준이며, 가격과 기능은 바뀔 수 있습니다. 저작권 관련 내용은 일반 안내이며 법률 자문이 아닙니다.</p>
+</article>
+
+<aside class="author">
+  <p class="label" style="font-size:12px;color:var(--violet);font-weight:500;margin:0">이 노트를 쓴 사람</p>
+  <p class="who">OHARU 이수연</p>
+  <p>헤어 · 메이크업 현장과 강의 12년, 피아노 교육 15년, 예배 반주 30년. 오하루라는 이름으로 직접 작곡 · 연주한 음원을 발표했고, clickply 채널에서는 수노를 활용해 95곡을 작사 · 프로듀싱했습니다. 지금은 한국AI융합연구원 AI 연구원으로 일하며 AI 음악 · 영상 · 뷰티 강의를 합니다.</p>
+  <div class="btns">
+    <a class="btn primary" href="../#contact">강의 · 레슨 문의하기</a>
+    <a class="btn" href="../#classes">AI 강의 살펴보기</a>
+    <a class="btn" href="../#about">오하루 소개</a>
+  </div>
+</aside>
+
+<section class="more">
+  <p style="font-family:var(--display);font-size:22px;margin:0 0 14px">함께 읽을 노트</p>
+  <ul>
+    <li><a href="worship-transpose.html">찬양 반주 조옮김, 트랜스포즈 버튼과 악보 프로그램 쓰는 법</a><span>반주 · 피아노 × AI</span></li>
+    <li><a href="christmas-worship-accompaniment.html">성탄 찬양 반주 준비, 코드 진행과 편곡 아이디어</a><span>반주 · 피아노 × AI</span></li>
+    <li><a href="worship-chord-progressions.html">찬양 반주 코드 진행, 초보가 먼저 익힐 5가지</a><span>반주 · 피아노 × AI</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 OHARU · 이수연</span>
+  <a href="../#notes">결 고운 하루 노트 목록</a>
+</footer>
+</div>
+</body>
+</html>

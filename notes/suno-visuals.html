@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>수노 Visuals 사용법 | 내 노래로 15초 영상 만들기</title>
+<meta name="description" content="2026년 11월 17일 나온 수노 Visuals. 노래로 최대 15초 영상·가사 영상·앨범 아트를 만드는 순서, 따로 사는 Visuals 크레딧, 저작권 필터와 워터마크를 수노 공식 발표 기준으로 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="수노(Suno) Visuals, 내 노래로 15초 영상 만드는 법">
+<meta property="og:description" content="노래를 끌어다 놓으면 영상이 된다. 15초 클립, 따로 드는 크레딧, 저작권 장치까지. 결 고운 하루 노트 · OHARU 이수연">
+<meta property="og:image" content="https://iamoharu.netlify.app/img/og-suno-visuals.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="수노(Suno) Visuals, 내 노래로 15초 영상 만드는 법, 결 고운 하루 노트 표지">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="결 고운 하루 · OHARU">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://iamoharu.netlify.app/notes/suno-visuals.html">
+<link rel="canonical" href="https://iamoharu.netlify.app/notes/suno-visuals.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<!--fonts:start-->
+<link rel="preload" href="/fonts/gowun-dodum-400.woff2?v=f4e0baeb" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Gowun Dodum";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/gowun-dodum-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/ibm-plex-mono-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-mono-500.woff2?v=f4e0baeb) format("woff2")}</style>
+<!--fonts:end-->
+<script type="application/ld+json">
+[{"@context": "https://schema.org", "@type": "Article", "headline": "수노(Suno) Visuals, 내 노래로 15초 영상 만드는 법", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "inLanguage": "ko", "image": ["https://iamoharu.netlify.app/img/note-suno-visuals.webp", "https://iamoharu.netlify.app/img/og-suno-visuals.png"], "author": {"@type": "Person", "name": "이수연", "alternateName": "OHARU", "url": "https://iamoharu.netlify.app/"}, "mainEntityOfPage": "https://iamoharu.netlify.app/notes/suno-visuals.html"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "수노 Visuals로 노래 전체 뮤직비디오를 만들 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "클립 하나는 최대 15초입니다. 클립을 늘리고 여러 개를 이어 붙여야 노래 전체를 채울 수 있고, 클립마다 Visuals 크레딧이 듭니다."}}, {"@type": "Question", "name": "노래 만들 때 쓰는 크레딧으로 영상도 만들 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "아닙니다. 수노 공식 발표 기준으로 Visuals 크레딧은 노래 크레딧과 따로 사야 합니다. 프로·프리미어 구독자에게는 한동안 체험 크레딧이 주어집니다."}}, {"@type": "Question", "name": "내 사진을 올려 영상으로 만들어도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "직접 만들었거나 쓸 권리가 있는 이미지만 올려야 합니다. 수노는 처음 올릴 때 권리 확인을 받고, 실존 인물·저작권 작품을 흉내 내는 요청은 걸러 냅니다."}}]}]
+</script>
+<style>
+:root{
+  --bg:#ffffff; --surface:#f8f7fb; --ink:#111111; --ink-soft:#5c5a63; --line:#e9e7ee;
+  --accent:#ece6fd; --on-accent:#3b2a85; --violet:#6a4bd6; --on-violet:#ffffff;
+  --display:"Gowun Dodum","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.85;
+  word-break:keep-all;overflow-wrap:break-word;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-size:20px;text-decoration:none}
+.brand span{color:var(--ink-soft);font-family:var(--body);font-size:13px;margin-left:8px}
+nav .back{font-size:14px;color:var(--ink-soft);text-decoration:none}
+nav .back:hover{color:var(--ink)}
+header{padding-block:48px 28px;display:grid;gap:16px}
+.crumb{font-size:13px;color:var(--violet);font-weight:500}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.3;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,6vw,46px)}
+.dates{font-size:13px;color:var(--ink-soft)}
+.summary{background:var(--accent);color:var(--on-accent);border-radius:16px;padding:22px 24px;margin:8px 0 12px}
+.summary b{display:block;font-size:13px;letter-spacing:.04em;margin-bottom:8px}
+.summary ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:15.5px;line-height:1.7}
+article h2{font-size:clamp(24px,4vw,30px);margin:56px 0 16px;padding-top:24px;border-top:1.5px solid var(--ink)}
+article h3{font-size:21px;margin:32px 0 10px}
+article p{margin:0 0 14px}
+article ul,article ol{margin:0 0 16px;padding-left:22px}
+article li{margin-bottom:6px}
+.step{display:inline-block;font-family:var(--mono);font-size:12px;color:var(--violet);margin-right:8px;vertical-align:2px}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.7;margin:0 0 18px;white-space:pre-wrap}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+pre code{background:none;border:0;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;border-bottom:1.5px solid var(--ink);font-size:14px}
+td:first-child{font-weight:500}
+.tags td:first-child{font-family:var(--mono);font-size:13px;font-weight:400}
+.note-box{border-left:3px solid var(--violet);background:var(--surface);padding:14px 18px;border-radius:0 12px 12px 0;margin:0 0 18px;font-size:15px;color:var(--ink-soft)}
+.note-box b{color:var(--ink)}
+.check{list-style:none;padding:0}
+.check li{padding:10px 0 10px 30px;border-bottom:1px solid var(--line);position:relative;margin:0}
+.check li::before{content:"";position:absolute;left:2px;top:16px;width:14px;height:14px;border:1.5px solid var(--violet);border-radius:4px}
+.sources{font-size:14px;color:var(--ink-soft)}
+.sources li{margin-bottom:8px}
+.sources a{color:var(--ink)}
+.author{margin-top:64px;border:1.5px solid var(--ink);border-radius:20px;padding:26px;display:grid;gap:12px}
+.author .who{font-family:var(--display);font-size:22px}
+.author p{margin:0;color:var(--ink-soft);font-size:15px;line-height:1.75}
+.author .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14.5px;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:var(--on-violet)}
+.more{margin-top:48px}
+.more h2{font-size:22px;border:0;padding:0;margin:0 0 14px}
+.more ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.more li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.more li span{color:var(--ink-soft);font-size:13px;white-space:nowrap}
+footer{padding-block:48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-soft)}
+.hero{margin:22px 0 8px}
+.hero img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.hero figcaption{margin-top:8px;font-size:12.5px;color:var(--ink-soft)}
+</style>
+
+<!--ga:start-->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MVBF937WLR');
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MVBF937WLR';document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--ga:end-->
+<!--naver:start-->
+<script>
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://wcs.pstatic.net/wcslog.js';
+s.onload=function(){if(!window.wcs_add)window.wcs_add={};wcs_add["wa"]="be82a2662495d8";if(window.wcs){wcs_do();}};document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--naver:end-->
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="../">OHARU<span>이수연</span></a>
+  <a class="back" href="../#notes">← 결 고운 하루 노트</a>
+</nav>
+<main>
+
+<header>
+  <p class="crumb">결 고운 하루 노트 · AI 음악 만들기</p>
+  <h1>수노(Suno) Visuals, 내 노래로 15초 영상 만드는 법</h1>
+  <p class="dates">2026년 11월 기준 · 작성 2026.11.22 · 수노 공식 블로그·Visuals 안내 페이지·보도 기준</p>
+  <div class="summary">
+    <b>핵심 요약</b>
+    <ol>
+      <li>수노는 2026년 11월 17일 Visuals를 내놓았습니다. 내 수노 노래로 박자에 맞춰 움직이는 가사 영상, 앨범 아트, 최대 15초 영상 클립을 만들고, 클립은 늘리거나 글로 다시 지시해 고칠 수 있습니다.</li>
+      <li>라이브러리의 노래를 Visuals 탭으로 끌어다 놓으면 시작됩니다. 영상 클립은 곡 구성과 가사를 따라가고 가사에 맞춰 입 모양을 맞춥니다(립싱크). 수노가 준비한 캐릭터나 내가 직접 만든 이미지로 시작할 수 있습니다.</li>
+      <li>Visuals 크레딧은 노래 크레딧과 따로 삽니다. 실존 가수·유명인·저작권 작품을 흉내 내는 요청은 걸러지고, 밖으로 공유하는 영상에는 워터마크가 들어갑니다.</li>
+    </ol>
+  </div>
+</header>
+
+<figure class="hero">
+  <img src="../img/note-suno-visuals.webp" srcset="../img/note-suno-visuals-768.webp 768w, ../img/note-suno-visuals.webp 1536w" sizes="(max-width:760px) 100vw, 760px" width="1536" height="1024" fetchpriority="high" alt="흰 책상 위 노트북 화면에 연보라 음파와 짧은 영상 클립 칸들이 이어져 있고, 헤드폰을 목에 건 사람의 오른손이 클립 하나를 가리키는 뒷모습">
+  <figcaption>AI 생성 이미지입니다.</figcaption>
+</figure>
+
+<article>
+<p>지금까지 수노(Suno)로 노래를 만들면 영상은 다른 도구에서 따로 만들어야 했습니다. 2026년 11월 17일 수노는 노래에 맞춘 이미지와 영상을 수노 안에서 만드는 Visuals를 내놓았습니다. 이 노트는 수노 공식 블로그와 Visuals 안내 페이지를 기준으로 정리했고, 가격이나 세부 숫자처럼 공식 글에서 확인하지 못한 내용은 보도 기준이라고 표시했습니다.</p>
+
+<h2>Visuals로 만들 수 있는 것</h2>
+<p>Visuals는 내 수노 노래를 바탕으로 새 이미지와 영상을 만드는 기능입니다. 수노 블로그가 밝힌 결과물은 크게 세 가지입니다.</p>
+<div class="tbl"><table>
+<tr><th>결과물</th><th>내용</th></tr>
+<tr><td>가사 영상</td><td>박자에 맞춰 움직이는 가사 영상</td></tr>
+<tr><td>앨범 아트</td><td>음악 분위기에 맞춘 이미지</td></tr>
+<tr><td>영상 클립</td><td>최대 15초. 곡 구성을 따라가고 가사에 맞춰 립싱크. 사진을 영상으로 바꾸기도 가능</td></tr>
+</table></div>
+<p>클립 하나는 최대 15초입니다. 3분짜리 노래 전체를 한 번에 영상으로 만드는 기능이 아니라, 짧은 클립을 만든 뒤 늘리고 고치고 이어 붙이는 방식입니다. 클립 길이는 5~15초 사이에서 고르고, 클립을 이어 시퀀스(Sequences)로 묶을 수 있다고 보도됐습니다(수노 도움말을 전한 보도 기준).</p>
+
+<h2>만드는 순서</h2>
+<ol>
+  <li><span class="step">01</span>수노에 로그인해 Visuals 탭을 엽니다(suno.com/visuals).</li>
+  <li><span class="step">02</span>내 라이브러리에서 영상으로 만들 노래를 Visuals 탭으로 끌어다 놓습니다.</li>
+  <li><span class="step">03</span>노래에서 쓸 구간(최대 15초)을 고릅니다. 기억에 남는 가사나 분위기가 바뀌는 부분을 고르면 짧은 클립이 살아납니다(작성자 팁).</li>
+  <li><span class="step">04</span>시작 이미지를 정합니다. 수노가 준비한 오리지널 캐릭터를 쓰거나, 내가 직접 만든 이미지를 올립니다.</li>
+  <li><span class="step">05</span>원하는 장면을 글로 적어 만들고, 마음에 들면 클립을 늘리거나 글로 다시 지시해 고칩니다.</li>
+</ol>
+<p>수노 공식 블로그는 웹·아이폰·안드로이드에서 시작한다고 밝혔지만, 일부 보도는 웹이 먼저이고 모바일은 몇 주 뒤라고 전했습니다. 앱에서 안 보이면 웹에서 먼저 써 보세요.</p>
+
+<h2>크레딧은 따로 든다</h2>
+<p>Visuals에서 쓰는 크레딧은 노래를 만드는 크레딧과 별개입니다. 지금 가진 노래 크레딧으로는 영상을 만들 수 없고, Visuals 크레딧을 따로 사야 합니다(suno.com/pricing/visuals).</p>
+<ul>
+  <li>Visuals 안내 페이지에 따르면 한동안 프로·프리미어 구독자에게 체험용 Visuals 크레딧이 조금 주어지고, 누구나 크레딧 묶음을 살 수 있습니다.</li>
+  <li>클립 길이와 화질(빠른 Fast가 표준 Standard보다 저렴)에 따라 드는 크레딧이 다르고, 산 크레딧은 기한 없이 쓸 수 있다고 보도됐습니다(Visuals 자주 묻는 질문을 전한 보도 기준).</li>
+  <li>2,500크레딧 묶음이 14.99달러부터라는 보도(블룸버그)가 있지만, 한국 결제 가격은 확인하지 못했습니다(확인 필요).</li>
+</ul>
+<p>노래 한 곡 전체를 영상으로 채우려면 15초 클립이 여러 개 필요합니다. 클립마다 크레딧이 드니, 처음에는 후렴 한 구간만 만들어 보고 결과를 본 뒤 늘리는 편이 안전합니다(작성자 해석).</p>
+
+<h2>저작권 장치와 올리기 전 주의점</h2>
+<p>수노는 Visuals에 여러 안전장치를 넣었다고 밝혔습니다.</p>
+<ul>
+  <li>특정 가수·유명인·저작권이 있는 작품이나 캐릭터를 그리는 업로드와 요청은 글·이미지 필터로 막습니다. 다른 서비스에서 되던 요청이 수노에서는 안 될 수 있습니다.</li>
+  <li>만든 영상과 이미지는 사용자에게 보여 주기 전에 커뮤니티 가이드라인 위반 여부를 검사합니다.</li>
+  <li>저작권 있는 소리가 든 파일은 오디블 매직(Audible Magic)·ACR클라우드·뮤직스매치 기술로 걸러 냅니다.</li>
+  <li>수노 밖으로 공유할 수 있는 영상에는 워터마크가 심어집니다.</li>
+  <li>처음 파일을 올릴 때는 직접 만든 것이고 쓸 권리가 있다는 확인을 받습니다. 어기면 콘텐츠 삭제나 계정 제한이 있을 수 있습니다.</li>
+</ul>
+<p>Visuals로 만든 영상을 유튜브에 올린다면 AI로 만든 사실적인 장면은 공개 표시가 필요할 수 있습니다. <a href="youtube-ai-monetization.html">유튜브 AI 콘텐츠 수익 정책 노트</a>를 함께 확인하세요. 노래 자체의 소유권과 플랜별 조건은 <a href="suno-lyrics.html">수노 작사 노트</a>와 <a href="suno-cover-extend.html">수노 커버·익스텐드 노트</a>에 정리해 두었습니다.</p>
+
+<h2>Visuals 쓰기 전 체크리스트</h2>
+<ul class="check">
+  <li>내 수노 노래 중 영상으로 만들 곡과 15초 구간을 먼저 정한다</li>
+  <li>Visuals 크레딧이 노래 크레딧과 따로라는 점을 확인하고, 체험 크레딧이 있는지 본다</li>
+  <li>올릴 이미지는 내가 직접 만들었거나 쓸 권리가 있는 것만 고른다</li>
+  <li>실존 인물·유명 캐릭터를 닮게 만드는 요청은 쓰지 않는다</li>
+  <li>유튜브·SNS에 올리기 전에 AI 공개 표시가 필요한지 확인한다</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<h3>수노 Visuals로 노래 전체 뮤직비디오를 만들 수 있나요?</h3>
+<p>클립 하나는 최대 15초입니다. 클립을 늘리고 여러 개를 이어 붙여야 노래 전체를 채울 수 있고, 클립마다 Visuals 크레딧이 듭니다.</p>
+<h3>노래 만들 때 쓰는 크레딧으로 영상도 만들 수 있나요?</h3>
+<p>아닙니다. 수노 공식 발표 기준으로 Visuals 크레딧은 노래 크레딧과 따로 사야 합니다. 프로·프리미어 구독자에게는 한동안 체험 크레딧이 주어집니다.</p>
+<h3>내 사진을 올려 영상으로 만들어도 되나요?</h3>
+<p>직접 만들었거나 쓸 권리가 있는 이미지만 올려야 합니다. 수노는 처음 올릴 때 권리 확인을 받고, 실존 인물·저작권 작품을 흉내 내는 요청은 걸러 냅니다.</p>
+
+<h2>참고 자료</h2>
+<ol class="sources">
+  <li><a href="https://suno.com/blog/introducing-visuals" rel="noopener">Suno 블로그, Introducing Visuals</a> (2026.11.17)</li>
+  <li><a href="https://suno.com/visuals" rel="noopener">Suno, Visuals 안내와 자주 묻는 질문</a> (2026.11.22 확인)</li>
+  <li><a href="https://letsdatascience.com/news/suno-launches-visuals-to-build-music-videos-from-15-second-c-c99d3efd" rel="noopener">Let's Data Science, Suno launches Visuals(블룸버그 보도 인용)</a> (2026.11)</li>
+  <li><a href="https://hermes-ai.net/news/suno-visuals-turns-your-ai-songs-into-synchronized-15-second-video-clips/" rel="noopener">Hermes, Suno Visuals 15-second clips</a> (2026.11)</li>
+  <li><a href="https://www.aimusicpreneur.com/ai-tools-news/suno-visuals-ai-music-video-generator-launch-h3-move/" rel="noopener">AI Musicpreneur, Suno Visuals 크레딧 정리</a> (2026.11)</li>
+  <li><a href="https://suno.bi/en/blog/suno-visuals-review-full-song-music-video" rel="noopener">SunoMV, Suno Visuals review(도움말 내용 정리)</a> (2026.11)</li>
+</ol>
+<p class="sources">이 노트는 2026년 11월 22일에 수노 공식 블로그와 Visuals 안내 페이지, 관련 보도를 확인해 정리했습니다. 가격·클립 길이 선택·시퀀스처럼 공식 블로그에서 직접 확인하지 못한 내용은 보도 기준으로 표시했습니다. 크레딧과 제공 범위는 바뀔 수 있으니 쓰기 전에 수노 화면을 다시 확인해 주세요.</p>
+</article>
+
+<aside class="author">
+  <p class="label" style="font-size:12px;color:var(--violet);font-weight:500;margin:0">이 노트를 쓴 사람</p>
+  <p class="who">OHARU 이수연</p>
+  <p>헤어 · 메이크업 현장과 강의 12년, 피아노 교육 15년, 예배 반주 30년. 오하루라는 이름으로 직접 작곡 · 연주한 음원을 발표했고, clickply 채널에서는 수노를 활용해 95곡을 작사 · 프로듀싱했습니다. 지금은 한국AI융합연구원 AI 연구원으로 일하며 AI 음악 · 영상 · 뷰티 강의를 합니다.</p>
+  <div class="btns">
+    <a class="btn primary" href="../#contact">강의 · 레슨 문의하기</a>
+    <a class="btn" href="../#classes">AI 강의 살펴보기</a>
+    <a class="btn" href="../#about">오하루 소개</a>
+  </div>
+</aside>
+
+<section class="more">
+  <p style="font-family:var(--display);font-size:22px;margin:0 0 14px">함께 읽을 노트</p>
+  <ul>
+    <li><a href="suno-cover-extend.html">수노(Suno) 커버·익스텐드, 내 곡을 바꾸고 이어 만드는 법</a><span>AI 음악 만들기</span></li>
+    <li><a href="youtube-ai-monetization.html">유튜브 AI 콘텐츠, 수익 정책 어디까지 알아야 하나</a><span>AI 시대의 창작과 교육</span></li>
+    <li><a href="suno-styles.html">수노(Suno) Styles 칸, 이렇게 쓰면 곡이 달라진다</a><span>AI 음악 만들기</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 OHARU · 이수연</span>
+  <a href="../#notes">결 고운 하루 노트 목록</a>
+</footer>
+</div>
+</body>
+</html>

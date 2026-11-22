@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>저작권 등록과 AI | AI 사용 명시 추진과 지금 기준</title>
+<meta name="description" content="문체부가 저작권 등록 신청 때 AI 사용 여부와 부분을 적도록 시행령·시행규칙 개정을 추진합니다. 지금 등록 기준, 사람이 기여한 부분만 보호되는 원칙, 창작 기록 남기는 법을 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="저작권 등록할 때 AI 사용을 밝히게 된다, 창작자가 알아둘 것">
+<meta property="og:description" content="AI로 만든 곡과 그림, 어디까지 내 저작물로 등록될까. 정부 추진 방향과 지금 기준. 결 고운 하루 노트 · OHARU 이수연">
+<meta property="og:image" content="https://iamoharu.netlify.app/img/og-ai-copyright-registration.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="저작권 등록할 때 AI 사용을 밝히게 된다, 창작자가 알아둘 것, 결 고운 하루 노트 표지">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="결 고운 하루 · OHARU">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://iamoharu.netlify.app/notes/ai-copyright-registration.html">
+<link rel="canonical" href="https://iamoharu.netlify.app/notes/ai-copyright-registration.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<!--fonts:start-->
+<link rel="preload" href="/fonts/gowun-dodum-400.woff2?v=f4e0baeb" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Gowun Dodum";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/gowun-dodum-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/ibm-plex-mono-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-mono-500.woff2?v=f4e0baeb) format("woff2")}</style>
+<!--fonts:end-->
+<script type="application/ld+json">
+[{"@context": "https://schema.org", "@type": "Article", "headline": "저작권 등록할 때 AI 사용을 밝히게 된다, 창작자가 알아둘 것", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "inLanguage": "ko", "image": ["https://iamoharu.netlify.app/img/note-ai-copyright-registration.webp", "https://iamoharu.netlify.app/img/og-ai-copyright-registration.png"], "author": {"@type": "Person", "name": "이수연", "alternateName": "OHARU", "url": "https://iamoharu.netlify.app/"}, "mainEntityOfPage": "https://iamoharu.netlify.app/notes/ai-copyright-registration.html"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "AI로 만든 노래도 저작권 등록이 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "AI 결과물 그 자체는 등록할 수 없습니다. 2025년 등록 안내서 기준으로 사람이 쓴 가사나 사람이 고치고 더한 부분처럼 창작적으로 기여한 부분만 등록 대상입니다."}}, {"@type": "Question", "name": "지금 저작권 등록할 때 AI 사용을 꼭 적어야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "2026년 11월 22일 기준으로 표시 의무는 없습니다. 다만 정부가 시행령·시행규칙 개정으로 AI 사용 여부와 활용 부분을 적도록 추진하고 있어, 기록을 미리 남겨 두는 것이 좋습니다."}}, {"@type": "Question", "name": "AI 결과물을 내 작품으로 등록하면 어떻게 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "안내서는 사람의 기여 없는 AI 결과물을 저작물로 등록하면 허위 등록으로 처벌될 수 있다고 밝힙니다."}}]}]
+</script>
+<style>
+:root{
+  --bg:#ffffff; --surface:#f8f7fb; --ink:#111111; --ink-soft:#5c5a63; --line:#e9e7ee;
+  --accent:#ece6fd; --on-accent:#3b2a85; --violet:#6a4bd6; --on-violet:#ffffff;
+  --display:"Gowun Dodum","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.85;
+  word-break:keep-all;overflow-wrap:break-word;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-size:20px;text-decoration:none}
+.brand span{color:var(--ink-soft);font-family:var(--body);font-size:13px;margin-left:8px}
+nav .back{font-size:14px;color:var(--ink-soft);text-decoration:none}
+nav .back:hover{color:var(--ink)}
+header{padding-block:48px 28px;display:grid;gap:16px}
+.crumb{font-size:13px;color:var(--violet);font-weight:500}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.3;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,6vw,46px)}
+.dates{font-size:13px;color:var(--ink-soft)}
+.summary{background:var(--accent);color:var(--on-accent);border-radius:16px;padding:22px 24px;margin:8px 0 12px}
+.summary b{display:block;font-size:13px;letter-spacing:.04em;margin-bottom:8px}
+.summary ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:15.5px;line-height:1.7}
+article h2{font-size:clamp(24px,4vw,30px);margin:56px 0 16px;padding-top:24px;border-top:1.5px solid var(--ink)}
+article h3{font-size:21px;margin:32px 0 10px}
+article p{margin:0 0 14px}
+article ul,article ol{margin:0 0 16px;padding-left:22px}
+article li{margin-bottom:6px}
+.step{display:inline-block;font-family:var(--mono);font-size:12px;color:var(--violet);margin-right:8px;vertical-align:2px}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.7;margin:0 0 18px;white-space:pre-wrap}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+pre code{background:none;border:0;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;border-bottom:1.5px solid var(--ink);font-size:14px}
+td:first-child{font-weight:500}
+.tags td:first-child{font-family:var(--mono);font-size:13px;font-weight:400}
+.note-box{border-left:3px solid var(--violet);background:var(--surface);padding:14px 18px;border-radius:0 12px 12px 0;margin:0 0 18px;font-size:15px;color:var(--ink-soft)}
+.note-box b{color:var(--ink)}
+.check{list-style:none;padding:0}
+.check li{padding:10px 0 10px 30px;border-bottom:1px solid var(--line);position:relative;margin:0}
+.check li::before{content:"";position:absolute;left:2px;top:16px;width:14px;height:14px;border:1.5px solid var(--violet);border-radius:4px}
+.sources{font-size:14px;color:var(--ink-soft)}
+.sources li{margin-bottom:8px}
+.sources a{color:var(--ink)}
+.author{margin-top:64px;border:1.5px solid var(--ink);border-radius:20px;padding:26px;display:grid;gap:12px}
+.author .who{font-family:var(--display);font-size:22px}
+.author p{margin:0;color:var(--ink-soft);font-size:15px;line-height:1.75}
+.author .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14.5px;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:var(--on-violet)}
+.more{margin-top:48px}
+.more h2{font-size:22px;border:0;padding:0;margin:0 0 14px}
+.more ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.more li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.more li span{color:var(--ink-soft);font-size:13px;white-space:nowrap}
+footer{padding-block:48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-soft)}
+.hero{margin:22px 0 8px}
+.hero img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.hero figcaption{margin-top:8px;font-size:12.5px;color:var(--ink-soft)}
+</style>
+
+<!--ga:start-->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MVBF937WLR');
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MVBF937WLR';document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--ga:end-->
+<!--naver:start-->
+<script>
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://wcs.pstatic.net/wcslog.js';
+s.onload=function(){if(!window.wcs_add)window.wcs_add={};wcs_add["wa"]="be82a2662495d8";if(window.wcs){wcs_do();}};document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--naver:end-->
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="../">OHARU<span>이수연</span></a>
+  <a class="back" href="../#notes">← 결 고운 하루 노트</a>
+</nav>
+<main>
+
+<header>
+  <p class="crumb">결 고운 하루 노트 · AI 시대의 창작과 교육</p>
+  <h1>저작권 등록할 때 AI 사용을 밝히게 된다, 창작자가 알아둘 것</h1>
+  <p class="dates">2026년 11월 기준 · 작성 2026.11.22 · 문체부·한국저작권위원회 발표와 보도 기준</p>
+  <div class="summary">
+    <b>핵심 요약</b>
+    <ol>
+      <li>문화체육관광부는 2026년 11월 12일 서울 저작권 포럼에서 저작권 등록 신청 단계부터 AI를 썼는지, 어떤 부분에 썼는지 구체적으로 적도록 시행령·시행규칙 개정을 추진한다고 밝혔습니다. 지금은 표시 의무가 없습니다.</li>
+      <li>지금 기준으로도 AI가 만든 결과물 자체는 저작물로 등록할 수 없고, 사람이 창작적으로 기여한 부분만 등록 대상입니다. AI 결과물을 내 저작물처럼 등록하면 허위 등록으로 처벌받을 수 있습니다.</li>
+      <li>정부는 실제 등록 사례를 반영한 안내서 개정판을 올해 안이나 내년 초에 내겠다고 했습니다(보도 기준). 창작자는 지금부터 프롬프트·수정 과정·직접 만든 부분을 기록해 두는 것이 좋습니다.</li>
+    </ol>
+  </div>
+</header>
+
+<figure class="hero">
+  <img src="../img/note-ai-copyright-registration.webp" srcset="../img/note-ai-copyright-registration-768.webp 768w, ../img/note-ai-copyright-registration.webp 1536w" sizes="(max-width:760px) 100vw, 760px" width="1536" height="1024" fetchpriority="high" alt="흰 책상 위에 오선지 악보와 노트북이 놓여 있고, 오른손에 쥔 연보라 펜으로 작업 기록 노트에 날짜와 메모를 적는 손">
+  <figcaption>AI 생성 이미지입니다.</figcaption>
+</figure>
+
+<article>
+<p>AI로 노래를 만들거나 그림을 그리는 일이 흔해지면서 "이 작품을 내 이름으로 저작권 등록할 수 있을까"라는 질문이 늘었습니다. 2026년 11월 12일 정부는 저작권 등록 때 AI 사용 사실을 밝히도록 제도를 바꾸겠다고 했습니다. 이 노트는 문화체육관광부·한국저작권위원회 발표와 이를 전한 보도, 그리고 2025년에 나온 등록 안내서를 바탕으로 정리했습니다. 아직 법령이 바뀐 것은 아니고 추진 단계라는 점을 먼저 짚어 둡니다.</p>
+
+<h2>무엇이 발표됐나</h2>
+<p>문체부와 한국저작권위원회는 11월 12일 서울 앰배서더 풀만 호텔에서 "생성형 AI와 저작권, 지속 가능한 창작 생태계 구축"을 주제로 2026 서울 저작권 포럼을 열었습니다. 이 자리에서 문체부 저작권정책과장은 정부 계획을 이렇게 밝혔습니다(지디넷코리아 보도 기준).</p>
+<ul>
+  <li>지금은 저작권을 등록할 때 AI를 썼는지 표시할 의무가 없습니다.</li>
+  <li>앞으로 시행령과 시행규칙을 고쳐 등록 신청 단계부터 AI를 썼는지, 어떤 부분에 썼는지 구체적으로 적도록 하는 방안을 추진합니다.</li>
+  <li>실제 등록 사례를 반영한 안내서 개정판을 올해 안이나 내년 초에 낼 계획입니다.</li>
+  <li>AI 학습에 쓰이는 저작물의 권리 정보를 한곳에서 확인하는 통합 플랫폼을 올해 말까지 만들고, 어문·음악 분야부터 시작합니다.</li>
+</ul>
+<div class="note-box"><b>아직 시행 전입니다</b> 발표는 "추진한다"는 방향이고, 개정안 입법예고나 시행 날짜는 아직 나오지 않았습니다(2026년 11월 22일 기준, 확인 필요). 시행되면 이 노트를 날짜와 함께 고치겠습니다.</div>
+
+<h2>지금 기준: 사람이 기여한 부분만 등록된다</h2>
+<p>문체부와 한국저작권위원회는 2025년 7월 「생성형 AI 활용 저작물의 저작권 등록 안내서」를 냈습니다. 지금 등록 실무는 이 안내서를 따릅니다(법률신문에 실린 안내서 정리 기준).</p>
+<div class="tbl"><table>
+<tr><th>경우</th><th>등록 여부</th></tr>
+<tr><td>AI가 만든 결과물을 그대로 쓴 경우</td><td>등록 불가. 사람이 만든 것이 아니라 저작물 요건을 갖추지 못함. 저작물로 등록하면 허위 등록으로 처벌될 수 있음</td></tr>
+<tr><td>사람이 쓴 글에 AI가 그림을 붙인 만화처럼 나뉘는 경우</td><td>사람이 쓴 글 부분만 어문저작물로 등록</td></tr>
+<tr><td>AI 결과물을 사람이 고치거나 더한 경우</td><td>사람이 고치고 더한 창작적 부분만 등록 가능</td></tr>
+<tr><td>여러 결과물을 사람이 고르고 배열한 경우</td><td>선택·배열에 창작성이 있으면 그 부분 등록 가능</td></tr>
+<tr><td>내 원래 작품을 AI에 넣어 새로 만든 경우</td><td>2차적 저작물로 등록될 수 있음</td></tr>
+</table></div>
+<ul>
+  <li>사람의 기여는 "표현을 내가 정하고 과정을 이끌었는가(통제 가능성)"와 "의도한 표현을 얻을 수 있었는가(예측 가능성)"로 봅니다.</li>
+  <li>저작자는 사람이어야 하며 AI 개발사를 저작자로 적을 수 없습니다.</li>
+  <li>위원회는 형식 심사만 하고 기여 정도를 따지지 않으므로, 신청서의 저작물 설명 칸에 사람이 기여한 부분을 적고 제출 사본에서 그 부분이 보이게 해야 합니다.</li>
+  <li>안내서는 창작 과정 기록을 남겨 두라고 권합니다. 등록이나 분쟁 때 증거가 될 수 있습니다.</li>
+</ul>
+<p>AI 음악의 저작권 흐름, 음악저작권협회 기준과 철회 과정은 <a href="ai-music-copyright.html">AI 노래 저작권 노트</a>에 따로 정리해 두었습니다.</p>
+
+<h2>해외는 어떻게 보고 있나</h2>
+<p>같은 포럼에서는 미국과 중국의 흐름도 소개됐습니다(지디넷코리아 보도 기준).</p>
+<ul>
+  <li><b>미국</b>: AI 학습과 저작권에 대한 사회적 합의가 아직 없고 판결도 엇갈립니다. 앤트로픽 사건에서는 합법적으로 얻은 저작물로 학습한 것은 공정이용이 될 수 있다고 봤지만, 불법 복제물을 쓴 부분은 침해로 판단했습니다. 메타 사건에서는 작가들이 피해를 입증하지 못해 메타가 이겼습니다.</li>
+  <li><b>중국</b>: 프롬프트를 여러 번 고치거나 결과물을 골랐다는 사실만으로 저작권을 인정하는 데는 신중해야 한다는 입장이 소개됐습니다. 반면 AI가 만든 장면을 사람이 고르고 배열해 새 결과물을 만들었다면 편집에 대한 창작 기여를 인정할 여지가 있다고 봤습니다.</li>
+</ul>
+
+<h2>창작자가 지금부터 해 둘 일</h2>
+<p>제도가 바뀌면 "어디에 AI를 썼는지"를 적어야 합니다. 그때 가서 기억을 더듬지 않도록 작업할 때마다 기록을 남겨 두는 것이 좋습니다(작성자 정리).</p>
+<ol>
+  <li><span class="step">01</span><b>작업 노트</b>: 날짜, 쓴 도구와 버전(예: 수노 v6), 넣은 프롬프트를 적습니다.</li>
+  <li><span class="step">02</span><b>내가 만든 부분 표시</b>: 가사·멜로디·코드·편곡 중 직접 쓴 부분과 AI 결과를 고친 부분을 나눠 적습니다.</li>
+  <li><span class="step">03</span><b>중간 파일 보관</b>: 손으로 쓴 가사, 직접 녹음한 멜로디, 수정 전후 파일을 지우지 말고 폴더에 모아 둡니다.</li>
+  <li><span class="step">04</span><b>공개할 때도 표시</b>: 유튜브·음원 사이트에 올릴 때 AI 사용 사실을 밝히는 규칙도 함께 확인합니다(<a href="youtube-ai-monetization.html">유튜브 AI 콘텐츠 노트</a>).</li>
+</ol>
+<p>음악·미술 교육 현장에서는 학생 작품에도 같은 습관을 들이면 좋습니다. "어디까지가 내 생각이고 어디부터 AI 도움인가"를 스스로 적게 하면 창작 윤리 교육과 저작권 교육을 함께 할 수 있습니다(작성자 해석).</p>
+
+<h2>등록 전 체크리스트</h2>
+<ul class="check">
+  <li>AI 결과물 그대로가 아니라 내가 창작적으로 기여한 부분이 있는지 확인한다</li>
+  <li>신청서 저작물 설명 칸에 사람이 기여한 부분을 구체적으로 적는다</li>
+  <li>제출 사본에서 내가 기여한 부분이 드러나게 한다</li>
+  <li>프롬프트·수정 과정·중간 파일을 날짜와 함께 보관한다</li>
+  <li>시행령·시행규칙 개정 소식(입법예고)을 한국저작권위원회 공지로 확인한다</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<h3>AI로 만든 노래도 저작권 등록이 되나요?</h3>
+<p>AI 결과물 그 자체는 등록할 수 없습니다. 2025년 등록 안내서 기준으로 사람이 쓴 가사나 사람이 고치고 더한 부분처럼 창작적으로 기여한 부분만 등록 대상입니다.</p>
+<h3>지금 저작권 등록할 때 AI 사용을 꼭 적어야 하나요?</h3>
+<p>2026년 11월 22일 기준으로 표시 의무는 없습니다. 다만 정부가 시행령·시행규칙 개정으로 AI 사용 여부와 활용 부분을 적도록 추진하고 있어, 기록을 미리 남겨 두는 것이 좋습니다.</p>
+<h3>AI 결과물을 내 작품으로 등록하면 어떻게 되나요?</h3>
+<p>안내서는 사람의 기여 없는 AI 결과물을 저작물로 등록하면 허위 등록으로 처벌될 수 있다고 밝힙니다.</p>
+
+<h2>참고 자료</h2>
+<ol class="sources">
+  <li><a href="https://zdnet.co.kr/view/?no=20261112160345" rel="noopener">지디넷코리아, 저작권 등록 때 AI 활용 밝히도록 제도 개선 추진</a> (2026.11.12)</li>
+  <li><a href="https://www.copyright.or.kr/notify/press-release/view.do?brdctsno=56143" rel="noopener">한국저작권위원회 보도자료, 2026 서울 저작권 포럼 성료</a> (2026.11.12)</li>
+  <li><a href="https://m.korea.kr/briefing/pressReleaseView.do?newsId=156788833" rel="noopener">대한민국 정책브리핑, 인공지능과 저작권의 상생 모델 모색(문체부 보도자료)</a> (2026.11.12)</li>
+  <li><a href="https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=209882" rel="noopener">법률신문, 생성형 AI 활용 저작물의 저작권 등록 안내서 주요 내용</a> (안내서 2025.07.15)</li>
+  <li><a href="https://www.newsis.com/view/NISX20260226_0003527302" rel="noopener">뉴시스, 생성형 AI 학습 공정이용 안내서 발간</a> (2026.02.26)</li>
+  <li><a href="https://www.copyright.or.kr/information-materials/publication/research-report/view.do?brdctsno=55211" rel="noopener">한국저작권위원회, 생성형 인공지능의 저작물 학습에 대한 공정이용 안내서</a> (2026.02.26)</li>
+</ol>
+<p class="sources">이 노트는 2026년 11월 22일에 문체부·한국저작권위원회 발표와 보도, 2025년 등록 안내서 정리 자료를 확인해 썼습니다. 제도 개선은 추진 단계로 시행 날짜가 정해지지 않았고, 창작 기록 방법은 작성자 정리입니다. 구체적인 등록·분쟁 판단은 한국저작권위원회 상담이나 전문가에게 확인하세요.</p>
+</article>
+
+<aside class="author">
+  <p class="label" style="font-size:12px;color:var(--violet);font-weight:500;margin:0">이 노트를 쓴 사람</p>
+  <p class="who">OHARU 이수연</p>
+  <p>헤어 · 메이크업 현장과 강의 12년, 피아노 교육 15년, 예배 반주 30년. 오하루라는 이름으로 직접 작곡 · 연주한 음원을 발표했고, clickply 채널에서는 수노를 활용해 95곡을 작사 · 프로듀싱했습니다. 지금은 한국AI융합연구원 AI 연구원으로 일하며 AI 음악 · 영상 · 뷰티 강의를 합니다.</p>
+  <div class="btns">
+    <a class="btn primary" href="../#contact">강의 · 레슨 문의하기</a>
+    <a class="btn" href="../#classes">AI 강의 살펴보기</a>
+    <a class="btn" href="../#about">오하루 소개</a>
+  </div>
+</aside>
+
+<section class="more">
+  <p style="font-family:var(--display);font-size:22px;margin:0 0 14px">함께 읽을 노트</p>
+  <ul>
+    <li><a href="ai-music-copyright.html">AI로 만든 노래의 저작권, 지금 어디까지 왔나</a><span>AI 시대의 창작과 교육</span></li>
+    <li><a href="youtube-ai-monetization.html">유튜브 AI 콘텐츠, 수익 정책 어디까지 알아야 하나</a><span>AI 시대의 창작과 교육</span></li>
+    <li><a href="music-education-ai.html">음악 교육 현장의 AI 도구, 지금 어디까지 왔나</a><span>AI 시대의 창작과 교육</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 OHARU · 이수연</span>
+  <a href="../#notes">결 고운 하루 노트 목록</a>
+</footer>
+</div>
+</body>
+</html>

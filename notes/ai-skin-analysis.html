@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 피부 분석 앱, 어디까지 믿을까 | 진단과 관리의 경계</title>
+<meta name="description" content="셀카로 잡티·주름·피부결 점수를 매기는 AI 피부 분석 앱. 무엇을 보는지, 식약처 기준으로 본 의료기기와 관리 앱의 경계, 결과가 흔들리는 이유와 잘 쓰는 법을 정리.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 피부 분석 앱, 어디까지 믿을 수 있나">
+<meta property="og:description" content="피부 점수는 진단이 아니다. 식약처 웰니스 기준과 결과가 흔들리는 이유, 잘 쓰는 법. 결 고운 하루 노트 · OHARU 이수연">
+<meta property="og:image" content="https://iamoharu.netlify.app/img/og-ai-skin-analysis.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI 피부 분석 앱, 어디까지 믿을 수 있나, 결 고운 하루 노트 표지">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:site_name" content="결 고운 하루 · OHARU">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://iamoharu.netlify.app/notes/ai-skin-analysis.html">
+<link rel="canonical" href="https://iamoharu.netlify.app/notes/ai-skin-analysis.html">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/img/icon-192.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<!--fonts:start-->
+<link rel="preload" href="/fonts/gowun-dodum-400.woff2?v=f4e0baeb" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:"Gowun Dodum";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/gowun-dodum-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url(/fonts/ibm-plex-mono-400.woff2?v=f4e0baeb) format("woff2")}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url(/fonts/ibm-plex-mono-500.woff2?v=f4e0baeb) format("woff2")}</style>
+<!--fonts:end-->
+<script type="application/ld+json">
+[{"@context": "https://schema.org", "@type": "Article", "headline": "AI 피부 분석 앱, 어디까지 믿을 수 있나", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "inLanguage": "ko", "image": ["https://iamoharu.netlify.app/img/note-ai-skin-analysis.webp", "https://iamoharu.netlify.app/img/og-ai-skin-analysis.png"], "author": {"@type": "Person", "name": "이수연", "alternateName": "OHARU", "url": "https://iamoharu.netlify.app/"}, "mainEntityOfPage": "https://iamoharu.netlify.app/notes/ai-skin-analysis.html"}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "AI 피부 분석 결과를 피부과 진단처럼 믿어도 되나요?", "acceptedAnswer": {"@type": "Answer", "text": "아닙니다. 대부분의 앱은 사진 통계와 비교한 관리 참고용 점수를 줍니다. 걱정되는 증상은 피부과 진료로 확인해야 합니다."}}, {"@type": "Question", "name": "같은 날 찍었는데 점수가 왜 다르게 나오나요?", "acceptedAnswer": {"@type": "Answer", "text": "조명, 카메라 보정, 화장, 각도에 따라 사진이 달라지기 때문입니다. 같은 조건에서 찍어 추이를 보는 것이 정확합니다."}}, {"@type": "Question", "name": "피부 분석 앱은 의료기기인가요?", "acceptedAnswer": {"@type": "Answer", "text": "식약처 판단기준(2026년 2월 개정)에 따르면 제품이 내세우는 사용 목적과 위해도로 판단합니다. 일상적 관리 목적이면 웰니스 제품에 가깝고, 질환 진단을 내세우면 의료기기 영역일 수 있습니다."}}]}]
+</script>
+<style>
+:root{
+  --bg:#ffffff; --surface:#f8f7fb; --ink:#111111; --ink-soft:#5c5a63; --line:#e9e7ee;
+  --accent:#ece6fd; --on-accent:#3b2a85; --violet:#6a4bd6; --on-violet:#ffffff;
+  --display:"Gowun Dodum","Noto Sans KR",system-ui,sans-serif;
+  --body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#111111; --surface:#1b1a20; --ink:#f3f2f6; --ink-soft:#a8a5b2; --line:#2c2a33;
+  --accent:#2c2450; --on-accent:#e4dcff; --violet:#9c86f2; --on-violet:#111111; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.85;
+  word-break:keep-all;overflow-wrap:break-word;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+.wrap{max-width:760px;margin:0 auto}
+nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--display);font-size:20px;text-decoration:none}
+.brand span{color:var(--ink-soft);font-family:var(--body);font-size:13px;margin-left:8px}
+nav .back{font-size:14px;color:var(--ink-soft);text-decoration:none}
+nav .back:hover{color:var(--ink)}
+header{padding-block:48px 28px;display:grid;gap:16px}
+.crumb{font-size:13px;color:var(--violet);font-weight:500}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.3;margin:0;text-wrap:balance}
+h1{font-size:clamp(32px,6vw,46px)}
+.dates{font-size:13px;color:var(--ink-soft)}
+.summary{background:var(--accent);color:var(--on-accent);border-radius:16px;padding:22px 24px;margin:8px 0 12px}
+.summary b{display:block;font-size:13px;letter-spacing:.04em;margin-bottom:8px}
+.summary ol{margin:0;padding-left:20px;display:grid;gap:4px;font-size:15.5px;line-height:1.7}
+article h2{font-size:clamp(24px,4vw,30px);margin:56px 0 16px;padding-top:24px;border-top:1.5px solid var(--ink)}
+article h3{font-size:21px;margin:32px 0 10px}
+article p{margin:0 0 14px}
+article ul,article ol{margin:0 0 16px;padding-left:22px}
+article li{margin-bottom:6px}
+.step{display:inline-block;font-family:var(--mono);font-size:12px;color:var(--violet);margin-right:8px;vertical-align:2px}
+pre{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 18px;overflow-x:auto;font-family:var(--mono);font-size:13.5px;line-height:1.7;margin:0 0 18px;white-space:pre-wrap}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface);border:1px solid var(--line);border-radius:5px;padding:1px 6px}
+pre code{background:none;border:0;padding:0;font-size:inherit}
+.tbl{overflow-x:auto;margin:0 0 18px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:700;border-bottom:1.5px solid var(--ink);font-size:14px}
+td:first-child{font-weight:500}
+.tags td:first-child{font-family:var(--mono);font-size:13px;font-weight:400}
+.note-box{border-left:3px solid var(--violet);background:var(--surface);padding:14px 18px;border-radius:0 12px 12px 0;margin:0 0 18px;font-size:15px;color:var(--ink-soft)}
+.note-box b{color:var(--ink)}
+.check{list-style:none;padding:0}
+.check li{padding:10px 0 10px 30px;border-bottom:1px solid var(--line);position:relative;margin:0}
+.check li::before{content:"";position:absolute;left:2px;top:16px;width:14px;height:14px;border:1.5px solid var(--violet);border-radius:4px}
+.sources{font-size:14px;color:var(--ink-soft)}
+.sources li{margin-bottom:8px}
+.sources a{color:var(--ink)}
+.author{margin-top:64px;border:1.5px solid var(--ink);border-radius:20px;padding:26px;display:grid;gap:12px}
+.author .who{font-family:var(--display);font-size:22px}
+.author p{margin:0;color:var(--ink-soft);font-size:15px;line-height:1.75}
+.author .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.btn{display:inline-block;padding:11px 20px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14.5px;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--violet);border-color:var(--violet);color:var(--on-violet)}
+.more{margin-top:48px}
+.more h2{font-size:22px;border:0;padding:0;margin:0 0 14px}
+.more ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.more li{padding:12px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;font-size:15px}
+.more li span{color:var(--ink-soft);font-size:13px;white-space:nowrap}
+footer{padding-block:48px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px;color:var(--ink-soft)}
+.hero{margin:22px 0 8px}
+.hero img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid var(--line)}
+.hero figcaption{margin-top:8px;font-size:12.5px;color:var(--ink-soft)}
+</style>
+
+<!--ga:start-->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MVBF937WLR');
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MVBF937WLR';document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--ga:end-->
+<!--naver:start-->
+<script>
+(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://wcs.pstatic.net/wcslog.js';
+s.onload=function(){if(!window.wcs_add)window.wcs_add={};wcs_add["wa"]="be82a2662495d8";if(window.wcs){wcs_do();}};document.head.appendChild(s);}
+function w(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000});}else{setTimeout(l,1500);}}
+if(document.readyState==='complete'){w();}else{addEventListener('load',w);}})();
+</script>
+<!--naver:end-->
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="../">OHARU<span>이수연</span></a>
+  <a class="back" href="../#notes">← 결 고운 하루 노트</a>
+</nav>
+<main>
+
+<header>
+  <p class="crumb">결 고운 하루 노트 · 뷰티 × AI</p>
+  <h1>AI 피부 분석 앱, 어디까지 믿을 수 있나</h1>
+  <p class="dates">2026년 11월 기준 · 작성 2026.11.22 · 식약처 판단기준(2026.2 개정) 보도·앱 공식 설명 기준</p>
+  <div class="summary">
+    <b>핵심 요약</b>
+    <ol>
+      <li>AI 피부 분석 앱은 셀카 한 장으로 잡티·주름·피부결·다크서클 같은 항목에 점수를 매기고 관리법이나 제품을 추천합니다. 점수는 수많은 사진 통계와 비교한 상대값입니다.</li>
+      <li>식약처는 2026년 2월 12일 의료기기와 개인용 건강관리(웰니스) 제품을 가르는 지침서를 고쳤습니다. 의료기기인지는 기술보다 제품이 내세우는 사용 목적(표시·광고·설명)과 위해도로 판단합니다.</li>
+      <li>조명·카메라·화장·각도에 따라 점수는 쉽게 달라집니다. 같은 조건에서 꾸준히 기록해 변화를 보는 데 쓰고, 점·여드름 변화처럼 걱정되는 증상은 피부과 진료로 확인하는 것이 맞습니다.</li>
+    </ol>
+  </div>
+</header>
+
+<figure class="hero">
+  <img src="../img/note-ai-skin-analysis.webp" srcset="../img/note-ai-skin-analysis-768.webp 768w, ../img/note-ai-skin-analysis.webp 1536w" sizes="(max-width:760px) 100vw, 760px" width="1536" height="1024" fetchpriority="high" alt="흰 세면대 앞에서 왼손으로 스마트폰을 들고 화면 속 연보라 피부 점수 그래프를 보며 오른손으로 볼을 가볍게 만지는 여성의 뒷모습과 손">
+  <figcaption>AI 생성 이미지입니다.</figcaption>
+</figure>
+
+<article>
+<p>"내 피부 나이는 몇 살일까" 하는 궁금증에 사진 한 장으로 답해 주는 앱이 많아졌습니다. 메이크업 앱 안에 피부 분석이 들어 있기도 하고, 피부 분석만 하는 앱도 있습니다. 이 노트는 앱이 무엇을 보는지, 법적으로 어디까지가 관리용이고 어디부터 의료 영역인지, 결과를 어떻게 읽어야 하는지를 정리했습니다. 법 기준은 식약처 지침서 개정을 전한 보도와 협회 공지를 바탕으로 했고, 지침서 원문 전체를 직접 열어 확인하지는 못했습니다.</p>
+
+<h2>AI 피부 분석 앱은 무엇을 보나</h2>
+<p>대부분 셀카를 찍거나 올리면 얼굴 피부를 몇 가지 항목으로 나눠 점수를 매깁니다. 예를 들어 유캠 메이크업(YouCam Makeup)은 7만 장이 넘는 실제 사진 통계를 바탕으로 잡티·주름·피부결·다크서클 네 가지에 점수를 준다고 설명합니다. 같은 회사의 기업용 피부 분석 솔루션은 15가지 지표를 본다고 안내합니다.</p>
+<div class="tbl"><table>
+<tr><th>자주 보는 항목</th><th>앱이 보는 것</th><th>읽을 때 주의</th></tr>
+<tr><td>잡티·색소</td><td>주변보다 어두운 점과 얼룩</td><td>조명 색과 그림자에 크게 흔들림</td></tr>
+<tr><td>주름·피부결</td><td>선과 요철의 그림자</td><td>표정·각도·카메라 보정에 민감</td></tr>
+<tr><td>모공·유분</td><td>반사광과 작은 구멍</td><td>세안 직후와 오후 결과가 다름</td></tr>
+<tr><td>다크서클·홍조</td><td>눈 밑·볼의 색 차이</td><td>화장 여부에 따라 달라짐</td></tr>
+</table></div>
+<p>점수는 "많은 사람의 사진과 비교했을 때 어느 쪽에 가까운가"를 나타내는 값입니다. 피부 속 상태를 직접 잰 측정값이 아니라는 점을 먼저 기억해 두세요(작성자 해석).</p>
+
+<h2>의료기기와 관리 앱, 경계는 어디인가</h2>
+<p>식품의약품안전처는 2026년 2월 12일 「의료기기와 개인용 건강관리(웰니스) 제품 판단기준」 지침서를 고쳤습니다. 미국 식품의약국(FDA)의 웰니스 지침 개정(2026년 1월) 내용을 일부 반영해 제품 유형별 판단 기준과 실제 판단 사례를 더했습니다.</p>
+<ul>
+  <li>이 지침에서 의료기기인지는 제품의 물리적 특성보다 제조자가 내세우는 사용 목적과 실제 위해도로 판단합니다.</li>
+  <li>사용 목적은 표시·광고·구두나 서면 설명, 판매할 때의 선전을 종합해 봅니다. 즉 같은 기술이라도 "진단한다"고 광고하면 판단이 달라질 수 있습니다.</li>
+  <li>지침서에는 휴대폰 카메라에 렌즈를 붙여 피부를 확대해 건조 상태를 확인하는 제품이 일상적 건강관리 예시로 실려 있습니다.</li>
+</ul>
+<p>따라서 피부 상태를 기록하고 관리 습관을 돕는 앱은 관리용(웰니스)에 가깝고, 피부 질환을 진단하거나 판정한다고 내세우면 의료기기 영역에 들어갈 수 있습니다(지침 내용을 바탕으로 한 작성자 해석). 식약처는 의료기기로 허가받지 않은 뷰티 기기를 피부 구조를 바꾼다고 광고하면 의료기기 오인 광고가 될 수 있다고도 밝힌 적이 있습니다.</p>
+<div class="note-box"><b>이렇게 읽으세요</b> 앱의 점수와 "피부 나이"는 관리 참고용입니다. 점이 커지거나 모양·색이 바뀌는 경우, 낫지 않는 염증처럼 걱정되는 변화는 앱 결과와 상관없이 피부과에서 확인하세요.</div>
+
+<h2>결과가 흔들리는 이유</h2>
+<p>헤어·메이크업 현장에서 사진으로 피부 톤을 보면 같은 사람도 조명에 따라 전혀 달라 보입니다(현장 실무 기준). 피부 분석 앱도 사진을 보고 판단하기 때문에 같은 영향을 받습니다.</p>
+<ol>
+  <li><span class="step">01</span><b>조명</b>: 노란 실내등은 잡티와 홍조를 흐리게, 창가의 강한 빛은 요철을 과하게 보이게 합니다.</li>
+  <li><span class="step">02</span><b>카메라 보정</b>: 휴대폰 기본 카메라의 피부 보정이나 뷰티 모드가 켜져 있으면 점수가 실제보다 좋게 나옵니다.</li>
+  <li><span class="step">03</span><b>화장과 스킨케어</b>: 선크림·쿠션·톤업 크림은 색과 결을 바꿉니다.</li>
+  <li><span class="step">04</span><b>각도와 거리</b>: 고개를 조금만 돌려도 그림자가 생겨 주름 점수가 바뀝니다.</li>
+</ol>
+<p>화면 색이 실제와 달라 보이는 이유는 <a href="ai-virtual-makeup.html">AI 가상 메이크업 앱 노트</a>에서 자세히 다뤘습니다. 퍼스널컬러 사진도 같은 원리라 <a href="personal-color.html">퍼스널컬러 노트</a>의 사진 찍는 법이 그대로 도움이 됩니다.</p>
+
+<h2>잘 쓰는 법과 개인정보</h2>
+<ul>
+  <li><b>같은 조건으로 기록</b>: 같은 시간대(예: 아침 세안 후), 같은 장소·조명, 맨얼굴, 같은 거리에서 찍어 몇 주 단위 변화를 봅니다.</li>
+  <li><b>점수보다 추이</b>: 하루 점수에 기뻐하거나 실망하기보다 그래프가 어느 쪽으로 가는지 봅니다.</li>
+  <li><b>추천 제품은 광고일 수 있음</b>: 분석 결과와 함께 나오는 제품 추천은 판매와 이어진 경우가 많습니다. 성분과 내 피부 반응을 먼저 보세요.</li>
+  <li><b>얼굴 사진은 개인정보</b>: 사진이 기기 안에서 처리되는지 서버로 가는지, 얼마나 보관되는지 개인정보 처리방침을 확인합니다. 앱별 보관 기간 비교는 <a href="ai-virtual-makeup.html">가상 메이크업 앱 노트</a>에 정리해 두었습니다.</li>
+</ul>
+<p>미용 교육 현장에서는 고객 상담 때 "점수"보다 "변화 기록"을 보여 주는 용도로 쓰면 오해가 적습니다. 진단처럼 들리는 말 대신 "사진으로 본 피부결 변화"처럼 설명하는 것이 안전합니다(작성자 해석).</p>
+
+<h2>피부 분석 앱 쓰기 전 체크리스트</h2>
+<ul class="check">
+  <li>앱 설명에 "진단"이 아니라 "분석·관리 참고"라고 되어 있는지 확인한다</li>
+  <li>휴대폰 카메라의 뷰티 모드·피부 보정을 끄고 찍는다</li>
+  <li>같은 시간·조명·거리·맨얼굴로 찍어 기록한다</li>
+  <li>얼굴 사진의 처리 위치와 보관 기간을 개인정보 처리방침에서 확인한다</li>
+  <li>걱정되는 점·염증 변화는 앱 결과와 상관없이 피부과에서 확인한다</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<h3>AI 피부 분석 결과를 피부과 진단처럼 믿어도 되나요?</h3>
+<p>아닙니다. 대부분의 앱은 사진 통계와 비교한 관리 참고용 점수를 줍니다. 걱정되는 증상은 피부과 진료로 확인해야 합니다.</p>
+<h3>같은 날 찍었는데 점수가 왜 다르게 나오나요?</h3>
+<p>조명, 카메라 보정, 화장, 각도에 따라 사진이 달라지기 때문입니다. 같은 조건에서 찍어 추이를 보는 것이 정확합니다.</p>
+<h3>피부 분석 앱은 의료기기인가요?</h3>
+<p>식약처 판단기준(2026년 2월 개정)에 따르면 제품이 내세우는 사용 목적과 위해도로 판단합니다. 일상적 관리 목적이면 웰니스 제품에 가깝고, 질환 진단을 내세우면 의료기기 영역일 수 있습니다.</p>
+
+<h2>참고 자료</h2>
+<ol class="sources">
+  <li><a href="https://www.rapportian.com/news/articleView.html?idxno=232553" rel="noopener">라포르시안, 식약처 의료기기·웰니스 제품 판단기준 지침서 개정</a> (2026.02.12)</li>
+  <li><a href="https://www.foodtoday.or.kr/news/article.html?no=202482" rel="noopener">푸드투데이, 식약처 판단기준 개정·FDA 가이던스 반영</a> (2026.02.12)</li>
+  <li><a href="https://www.kha.or.kr/kha_home/notice_list.do?mode=view&amp;articleNo=46304" rel="noopener">대한병원협회 공지, 웰니스 판단기준 개정 안내(식약처 의료기기정책과-1036)</a> (2026.02.13)</li>
+  <li><a href="https://www.k-health.com/news/articleView.html?idxno=90414" rel="noopener">헬스경향, 웰니스 제품 판단기준 개정이 주는 시사점</a> (2026.03)</li>
+  <li><a href="https://koa.or.kr/bbs/download.php?code=insurance&amp;number=34970" rel="noopener">의료기기와 개인용 건강관리(웰니스) 제품 판단기준(공무원 지침서) 2026년 2월판 사본</a></li>
+  <li><a href="https://v.daum.net/v/20250515095042512" rel="noopener">아이뉴스24, 뷰티 디바이스 과장 광고와 식약처 입장</a> (2025.05.15)</li>
+  <li><a href="https://www.perfectcorp.com/ko/consumer/blog/ai-skincare/how-to-use-skincare-app" rel="noopener">YouCam 공식 블로그, 스킨케어 앱으로 무료 피부 분석 받는 법</a></li>
+  <li><a href="https://www.perfectcorp.com/ko/business/showcase/skincare/home" rel="noopener">Perfect Corp., AI 피부 분석 솔루션 안내</a> (2026.11.22 확인)</li>
+</ol>
+<p class="sources">이 노트는 2026년 11월 22일에 식약처 지침서 개정 보도와 협회 공지, 앱 회사 공식 설명을 확인해 정리했습니다. 지침서 원문 전체는 직접 확인하지 못했고, 의료기기·웰니스 경계에 대한 정리는 작성자 해석입니다. 의료적 판단이 필요한 경우 반드시 전문의와 상담하세요.</p>
+</article>
+
+<aside class="author">
+  <p class="label" style="font-size:12px;color:var(--violet);font-weight:500;margin:0">이 노트를 쓴 사람</p>
+  <p class="who">OHARU 이수연</p>
+  <p>헤어 · 메이크업 현장과 강의 12년, 피아노 교육 15년, 예배 반주 30년. 오하루라는 이름으로 직접 작곡 · 연주한 음원을 발표했고, clickply 채널에서는 수노를 활용해 95곡을 작사 · 프로듀싱했습니다. 지금은 한국AI융합연구원 AI 연구원으로 일하며 AI 음악 · 영상 · 뷰티 강의를 합니다.</p>
+  <div class="btns">
+    <a class="btn primary" href="../#contact">강의 · 레슨 문의하기</a>
+    <a class="btn" href="../#classes">AI 강의 살펴보기</a>
+    <a class="btn" href="../#about">오하루 소개</a>
+  </div>
+</aside>
+
+<section class="more">
+  <p style="font-family:var(--display);font-size:22px;margin:0 0 14px">함께 읽을 노트</p>
+  <ul>
+    <li><a href="ai-virtual-makeup.html">AI 가상 메이크업 앱, 어디까지 믿을 수 있나</a><span>뷰티 × AI</span></li>
+    <li><a href="personal-color.html">퍼스널컬러 진단, 받기 전에 알아 둘 것과 AI 활용법</a><span>뷰티 × AI</span></li>
+    <li><a href="ai-hairstyle-simulation.html">AI 헤어스타일 시뮬레이션, 미용실 가기 전에 알아 둘 것</a><span>뷰티 × AI</span></li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 OHARU · 이수연</span>
+  <a href="../#notes">결 고운 하루 노트 목록</a>
+</footer>
+</div>
+</body>
+</html>
