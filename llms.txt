@@ -17,6 +17,7 @@
 - 공식 채널: [유튜브 @오하루-oharu](https://www.youtube.com/@%EC%98%A4%ED%95%98%EB%A3%A8-oharu), [멜론](https://www.melon.com/artist/timeline.htm?artistId=4170391), [Spotify](https://open.spotify.com/artist/47AE9ibGMnjhErPM3VonxE), [Apple Music](https://music.apple.com/kr/artist/1809666267), [위키데이터 Q142024758](https://www.wikidata.org/wiki/Q142024758)
 
 ## 결 고운 하루 노트
+- [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-11-4.html): 2026년 11월 넷째 주 AI 소식: 12월 챗GPT·코덱스 사용량 공유(플러스·프로·비즈니스), 제미나이 기록 유지하며 학습 끄기, 클로드 아티팩트 앱으로 설치(베타), 네이버·카카오 12월 AI 에이전트 출시 예고, 수노 블랙프라이데이 연간 요금제 할인 (2026-11-30)
 - [이번 주 AI 소식 5가지](https://iamoharu.netlify.app/notes/ai-news-2026-11-3.html): 2026년 11월 셋째 주 AI 소식: 제미나이 태스크 한국 포함 6개국 무료(Gemini 4 Hydrogen), 챗GPT 스페이스 플러스 확대, 챗GPT 라이브 받아쓰기(10분 제한 해제), 챗GPT 모바일 새 화면과 닷 시험, 앤트로픽 나스닥 상장 (2026-11-23)
 - [제미나이 태스크 무료로 쓰는 법](https://iamoharu.netlify.app/notes/gemini-tasks-free.html): 제미나이 태스크(구 스파크) 한국 무료 이용 조건(만 18세 이상·개인 계정), 시작 순서, 미국 먼저인 전화·결제·문자 기능, 결제·개인정보 주의점 (2026-11-23)
 - [수노(Suno) Visuals, 내 노래로 15초 영상 만드는 법](https://iamoharu.netlify.app/notes/suno-visuals.html): 수노 Visuals(2026.11.17): 가사 영상·앨범 아트·최대 15초 영상 클립, 노래 크레딧과 별도인 Visuals 크레딧, 저작권 필터와 워터마크 (2026-11-23)
