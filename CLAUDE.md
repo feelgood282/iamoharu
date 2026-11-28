@@ -208,6 +208,7 @@
 | 2026-12-01 09:00 예약 | AI 활용 노하우 | 제미나이 태스크 2편: 한국에서 맡길 만한 일·미국 먼저인 기능·결제와 개인정보 확인 4가지 | gemini-tasks-free | https://blog.naver.com/iamoharu/224496049738 |
 | 2026-12-02 09:00 예약 | AI 음악 만들기 | 수노(Suno) Visuals 2편: 노래 크레딧과 따로 드는 Visuals 크레딧·저작권 필터 5가지·유튜브 올리기 전 체크 | suno-visuals | https://blog.naver.com/iamoharu/224496072796 |
 | 2026-12-03 09:00 예약 | 뷰티 × AI | AI 피부 분석 앱 2편: 의료기기일까 관리 앱일까? 식약처 기준·얼굴 사진 개인정보 확인·잘 쓰는 법 4가지 | ai-skin-analysis | https://blog.naver.com/iamoharu/224496091908 |
+| 2026-12-04 09:00 예약 | 반주 · 피아노 × AI | PDF 악보 편집하는 법 2편: 덜 고치는 변환 5단계·꼭 다시 볼 곳 5가지·변환한 악보 저작권 (뮤즈스코어) | sheet-music-omr | https://blog.naver.com/iamoharu/224496140244 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
