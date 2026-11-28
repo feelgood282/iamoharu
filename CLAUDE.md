@@ -205,6 +205,7 @@
 | 2026-11-27 09:00 예약 | 반주 · 피아노 × AI | PDF 악보 편집하는 법 1편: 악보 인식(OMR)이란? 뮤즈스코어·오디베리스·플레이스코어 등 무료·유료 도구 5가지 비교 | sheet-music-omr | https://blog.naver.com/iamoharu/224487380145 |
 | 2026-11-28 09:00 예약 | AI 시대의 창작과 교육 | AI로 만든 노래·그림 저작권 등록 1편: 정부 "등록할 때 AI 사용 밝혀야" 추진, 지금 등록되는 것과 안 되는 것 | ai-copyright-registration | https://blog.naver.com/iamoharu/224487406088 |
 | 2026-11-30 09:00 예약 | AI 뉴스 브리핑 | 이번 주 AI 소식 5가지 (11월 넷째 주): 챗GPT 사용량 통합·제미나이 학습 끄기·클로드 앱 설치·네이버 AI 에이전트 | ai-news-2026-11-4 | https://blog.naver.com/iamoharu/224496000665 |
+| 2026-12-01 09:00 예약 | AI 활용 노하우 | 제미나이 태스크 2편: 한국에서 맡길 만한 일·미국 먼저인 기능·결제와 개인정보 확인 4가지 | gemini-tasks-free | https://blog.naver.com/iamoharu/224496049738 |
 
 ## 유튜브 쇼츠 연결 (2026-11-05)
 - 오하루 채널(@오하루-oharu, 이름 "오하루 OHARU")에 소개 쇼츠 게시: https://youtube.com/shorts/lJ_KEitS7B0 ("30초로 보는 작곡가 오하루 OHARU")
